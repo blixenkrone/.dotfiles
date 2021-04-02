@@ -1,0 +1,17 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Simon Blixenkrone
+	email = sblixenkrone@gmail.com
+[init]
+	defaultBranch = master
+[alias]
+	open =
+[github]
+	token = ef685d01abecc811e07dfc83f50b2329b8da9f6f
+	user = blixenkrone
+[pull]
+	rebase = false

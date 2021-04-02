@@ -1,0 +1,3 @@
+FROM go:1.16-alpine
+WORKDIR /mock
+RUN go build -o /mock/setup.run ./setup.go
