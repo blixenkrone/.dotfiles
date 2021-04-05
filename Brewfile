@@ -95,3 +95,5 @@ cask "vlc"
 cask "nordvpn"
 # Signal sms
 cask "signal"
+# Copy paste helper
+cask "flycut"
