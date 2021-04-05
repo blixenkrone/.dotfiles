@@ -69,6 +69,8 @@ cask "docker"
 cask "firefox"
 # Chrome browser
 cask "google-chrome"
+# TOR browser
+cask "tor-browser"
 # Insomnia HTTP client
 cask "insomnia"
 # Spotify
@@ -79,6 +81,10 @@ cask "sublime-test"
 cask "visual-studio-code"
 # Notion productivity and notes
 cask "notion"
+# Terminal client
+cask "iterm2"
+# Balena etcher flash software
+cask "balenaetcher"
 # Messenger client
 cask "all-in-one-messenger"
 # Slack
@@ -87,3 +93,5 @@ cask "slack"
 cask "vlc"
 # Nord VPN
 cask "nordvpn"
+# Signal sms
+cask "signal"
