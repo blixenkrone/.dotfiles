@@ -62,7 +62,7 @@ cask "keybase"
 # Mail client
 cask "hey"
 # Github desktop client
-cask "hey"
+cask "github"
 # Docker desktop
 cask "docker"
 # Firefox browser
