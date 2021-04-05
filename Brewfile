@@ -13,6 +13,14 @@ brew "python@3.9"
 brew "awscli"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# Docker VM
+brew "docker"
+# Docker compose
+brew "docker-compose"
+# Docker machine
+brew "docker-machine"
+# Helm
+brew "helm"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -54,7 +62,9 @@ cask "keybase"
 # Mail client
 cask "hey"
 # Github desktop client
-cask "github"
+cask "hey"
+# Docker desktop
+cask "docker"
 # Firefox browser
 cask "firefox"
 # Chrome browser
