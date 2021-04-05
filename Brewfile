@@ -97,3 +97,5 @@ cask "nordvpn"
 cask "signal"
 # Copy paste helper
 cask "flycut"
+# README terminal reader
+cask "glow"
