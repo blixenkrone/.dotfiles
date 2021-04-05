@@ -55,6 +55,8 @@ brew "derailed/k9s/k9s"
 brew "garden-io/garden/garden-cli"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
+# README terminal reader
+brew "glow"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
 # End-to-end encryption software
@@ -97,5 +99,3 @@ cask "nordvpn"
 cask "signal"
 # Copy paste helper
 cask "flycut"
-# README terminal reader
-cask "glow"
