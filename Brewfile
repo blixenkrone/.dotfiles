@@ -2,9 +2,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
-tap "derailed/k9s"
 tap "garden-io/garden"
-tap "cloudflare/cloudflare"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
@@ -19,6 +17,8 @@ brew "docker"
 brew "docker-compose"
 # Docker machine
 brew "docker-machine"
+# Command-line fuzzy finder written in Go
+brew "fzf"
 # Helm
 brew "helm"
 # GitHub command-line tool
@@ -27,6 +27,8 @@ brew "gh"
 brew "git"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Render markdown on the CLI
+brew "glow"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Node version management
@@ -39,6 +41,8 @@ brew "sops"
 brew "terraform"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Vi 'workalike' with many additional features
+brew "vim"
 # JavaScript package manager
 brew "yarn"
 # Download YouTube videos from the command-line
@@ -55,8 +59,6 @@ brew "derailed/k9s/k9s"
 brew "garden-io/garden/garden-cli"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
-# README terminal reader
-brew "glow"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
 # End-to-end encryption software
@@ -99,3 +101,5 @@ cask "nordvpn"
 cask "signal"
 # Copy paste helper
 cask "flycut"
+# Move and resize windows using keyboard shortcuts or snap areas
+cask "rectangle"
