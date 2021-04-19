@@ -3,6 +3,7 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 tap "garden-io/garden"
+tap "prototool"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
@@ -58,6 +59,8 @@ brew "derailed/k9s/k9s"
 # Development engine for Kubernetes
 brew "garden-io/garden/garden-cli"
 # A Zsh Theme
+brew "romkatv/powerlevel10k/powerlevel10k"
+# A protoc
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
