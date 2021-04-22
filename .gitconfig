@@ -6,7 +6,7 @@
 	clean = git-lfs clean -- %f
 [user]
 	name = Simon Blixenkrone
-	email = sblixenkrone@hey.com
+	email = sblixenkrone@gmail.com
 [init]
 	defaultBranch = master
 [alias]
