@@ -82,6 +82,8 @@ cask "tor-browser"
 cask "insomnia"
 # Spotify
 cask "spotify"
+# PDF reader
+case "skim"
 # Sublime text editor
 cask "sublime-test"
 # VSCode text editor
