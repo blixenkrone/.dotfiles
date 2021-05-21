@@ -4,6 +4,8 @@ tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 tap "garden-io/garden"
 tap "prototool"
+tap "act"
+tap "wireshark"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
@@ -30,6 +32,8 @@ brew "git"
 brew "go"
 # Render markdown on the CLI
 brew "glow"
+# Run github actions locally
+brew "act"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Node version management
@@ -108,3 +112,5 @@ cask "signal"
 cask "flycut"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Network tool
+cask "wireshark"
