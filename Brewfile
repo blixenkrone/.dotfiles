@@ -92,9 +92,7 @@ case "skim"
 cask "sublime-test"
 # VSCode text editor
 cask "visual-studio-code"
-# Notion productivity and notes
-cask "notion"
-# Terminal client
+Terminal client
 cask "iterm2"
 # Balena etcher flash software
 cask "balenaetcher"
