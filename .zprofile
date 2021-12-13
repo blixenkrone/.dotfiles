@@ -7,7 +7,8 @@ alias top='sudo top'
 alias purge='sudo purge'
 alias ls=logo-ls
 alias gitconflict='git diff --name-only --diff-filter=U | cat'
-alias gmtv="echo 'Tidying code...' && goimports -w ./internal && gofmt -s -w ./internal && go mod vendor && go mod tidy && go mod verify"
+alias goimportfmt="echo 'Formatting imports...' && goimports -w ./internal"
+alias gmtv="echo 'Tidying code...' && gofmt -s -w ./internal && go mod vendor && go mod tidy && go mod verify"
 alias gmt="echo 'Tidying code...' && go mod tidy && go mod verify"
 alias gotest="echo 'Testing all code...' && go test -timeout 35s \$(go list ./... | grep -v /vendor/)"
 alias gotestrace="echo 'Running tests with race flag...' && go test -race ./internal/..."
@@ -25,6 +26,7 @@ export AWS_SESSION_TOKEN_TTL=8h
 export AWS_ASSUME_ROLE_TTL=1h
 # DEV PATH
 export DEV=$HOME/dev
+export DOTFILES=$HOME/.dotfiles
 
 # BREW
 export BREW_DIR=/usr/local/opt
@@ -35,7 +37,7 @@ export PATH=$PATH:$(go env GOPATH)/bin
 export GOROOT=/usr/local/opt/go/libexec
 export GOPRIVATE=github.com/flypay/*
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
-export GO111MODULE=auto
+export GO111MODULE=on
 export AWS_SESSION_TTL=8h
 export AWS_ASSUME_ROLE_TTL=1h
 

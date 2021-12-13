@@ -88,8 +88,6 @@ cask "insomnia"
 cask "spotify"
 # PDF reader
 case "skim"
-# Sublime text editor
-cask "sublime-test"
 # VSCode text editor
 cask "visual-studio-code"
 Terminal client

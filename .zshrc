@@ -73,7 +73,7 @@ plugins=(
   vscode
   brew
   iterm2
-  osx
+  macos
   golang
   docker
 )
