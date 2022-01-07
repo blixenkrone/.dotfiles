@@ -87,10 +87,10 @@ cask "insomnia"
 # Spotify
 cask "spotify"
 # PDF reader
-case "skim"
+cask "skim"
 # VSCode text editor
 cask "visual-studio-code"
-Terminal client
+# Terminal client
 cask "iterm2"
 # Balena etcher flash software
 cask "balenaetcher"
@@ -110,3 +110,5 @@ cask "flycut"
 cask "rectangle"
 # Network tool
 cask "wireshark"
+# Application uninstaller
+cask "appcleaner"
