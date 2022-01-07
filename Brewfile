@@ -3,9 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 tap "garden-io/garden"
-tap "prototool"
-tap "act"
-tap "wireshark"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
