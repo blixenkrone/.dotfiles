@@ -14,6 +14,7 @@ alias gotest="echo 'Testing all code...' && go test -timeout 35s \$(go list ./..
 alias gotestrace="echo 'Running tests with race flag...' && go test -race ./internal/..."
 alias gotestinternal="echo 'Testing all code...' && go test -timeout 35s ./internal/..."
 alias brew-up='brew upgrade && brew update'
+alias buf='/usr/local/bin/buf'
 
 # FLYT
 alias noflytfuckups='gmtv && gotestinternal'
