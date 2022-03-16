@@ -6,7 +6,6 @@ alias gs="git switch"
 alias top='sudo top'
 alias purge='sudo purge'
 alias ls=logo-ls
-alias gitconflict='git diff --name-only --diff-filter=U | cat'
 alias goimportfmt="echo 'Formatting imports...' && goimports -w ./internal"
 alias gmtv="echo 'Tidying code...' && gofmt -s -w ./internal && go mod vendor && go mod tidy && go mod verify"
 alias gmt="echo 'Tidying code...' && go mod tidy && go mod verify"
@@ -61,3 +60,8 @@ gitall() {
     fi
     git push
 }
+
+gitconflicts() {
+    git merge $1 --no-ff --no-commit 
+}
+
