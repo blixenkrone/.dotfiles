@@ -96,6 +96,8 @@ brew "vim"
 brew "yarn"
 # Download YouTube videos from the command-line
 brew "youtube-dl"
+# UNIX shell (command interpreter)
+brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
