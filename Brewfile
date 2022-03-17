@@ -5,6 +5,7 @@ tap "garden-io/garden"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Run your GitHub Actions locally 🚀
@@ -22,7 +23,7 @@ brew "glib"
 # Pack, ship and run any application as a lightweight container
 brew "docker", link: false
 # Isolated development environments using Docker
-brew "docker-compose"
+brew "docker-compose", link: false
 # Create Docker hosts locally and on cloud providers
 brew "docker-machine"
 # Command-line fuzzy finder written in Go
@@ -31,10 +32,16 @@ brew "fzf"
 brew "gh"
 # Distributed revision control system
 brew "git"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Update multiple git repositories at once
 brew "gitup"
 # Render markdown on the CLI
 brew "glow"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Generate introspection data for GObject libraries
@@ -45,6 +52,8 @@ brew "golangci-lint"
 brew "harfbuzz"
 # Framework for layout and rendering of i18n text
 brew "pango"
+# Library to render SVG files using Cairo
+brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Kubernetes package manager
@@ -67,6 +76,8 @@ brew "protobuf"
 brew "prototool"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Powerful, clean, object-oriented scripting language
+brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
 # Editor of encrypted files
@@ -96,17 +107,29 @@ brew "cloudflare/cloudflare/cloudflared"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Development engine for Kubernetes
-brew "garden-io/garden/garden-cli", link: false
+brew "garden-io/garden/garden-cli"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
 cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault"
+# Tool to flash OS images to SD cards & USB drives
+cask "balenaetcher"
+# Web browser
+cask "firefox"
 # Clipboard manager for developers
 cask "flycut"
+# Web browser
+cask "google-chrome"
+# Web browser
+cask "google-chrome-canary"
 # Access the HEY email service
 cask "hey"
+# Terminal emulator as alternative to Apple's Terminal app
+cask "iterm2"
+# Note taking and to-do application with synchronization capabilities
+cask "joplin"
 # End-to-end encryption software
 cask "keybase"
 # Shows the next meeting in the menu bar
@@ -117,7 +140,11 @@ cask "nordvpn"
 cask "rambox"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+# Instant messaging application focusing on security
+cask "signal"
 # PDF reader and note-taking application
 cask "skim"
+# Multimedia player
+cask "vlc"
 # Network protocol analyzer
 cask "wireshark"
