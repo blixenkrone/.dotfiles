@@ -76,6 +76,7 @@ plugins=(
   macos
   golang
   docker
+  thefuck
 )
 
 source $ZSH/oh-my-zsh.sh

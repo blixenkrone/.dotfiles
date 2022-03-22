@@ -86,6 +86,8 @@ brew "sops"
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Programmatically correct mistyped console commands
+brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
 # Display directories as trees (with optional color/HTML output)
@@ -146,6 +148,8 @@ cask "rectangle"
 cask "signal"
 # PDF reader and note-taking application
 cask "skim"
+# Editor for designing and documenting APIs
+cask "stoplight-studio"
 # Multimedia player
 cask "vlc"
 # Network protocol analyzer
