@@ -60,12 +60,16 @@ brew "graphviz"
 brew "helm"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Simple tool to make locally trusted development certificates
+brew "mkcert"
 # Node version management
 brew "n"
 # HTTP/2 C Library
 brew "nghttp2"
 # Platform built on V8 to build network applications
 brew "node"
+# Libraries for security-enabled client and server applications
+brew "nss"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tool for managing OCI containers and pods
