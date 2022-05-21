@@ -22,8 +22,6 @@ alias flytawsstaging="unset AWS_VAULT && aws-vault exec flypay-staging && kubect
 alias flytawsproduction="unset AWS_VAULT && aws-vault exec flypay-production && kubectl config use-context gen4-production"
 alias flytcci='open https://app.circleci.com/pipelines/github/flypay/$(basename $(pwd))'
 
-export AWS_SESSION_TOKEN_TTL=8h
-export AWS_ASSUME_ROLE_TTL=1h
 # DEV PATH
 export DEV=$HOME/dev
 export DOTFILES=$HOME/.dotfiles
@@ -40,13 +38,16 @@ export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
 
 # AWS
-export AWS_SESSION_TTL=8h
-export AWS_ASSUME_ROLE_TTL=1h
-export AWS_ACCESS_KEY_ID=AKIA36LKSWTPCGHXGQIAW
-export AWS_SECRET_ACCESS_KEY=d72auKBDjVPms4TDxZioDH8cAIlWFgWcwTaDqzM4
+# export AWS_SESSION_TTL=8h
+# export AWS_ASSUME_ROLE_TTL=1h
+export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
+export AWS_SECRET_ACCESS_KEY=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
 
 # GOLAND
 export goland=/usr/local/bin/goland
+
+# RESTIC
+RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 
 unsetopt correct_all
 setopt correct
