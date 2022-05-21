@@ -38,8 +38,12 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPRIVATE=github.com/flypay/*
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
+
+# AWS
 export AWS_SESSION_TTL=8h
 export AWS_ASSUME_ROLE_TTL=1h
+export AWS_ACCESS_KEY_ID=AKIA36LKSWTPCGHXGQIAW
+export AWS_SECRET_ACCESS_KEY=d72auKBDjVPms4TDxZioDH8cAIlWFgWcwTaDqzM4
 
 # GOLAND
 export goland=/usr/local/bin/goland

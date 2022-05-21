@@ -8,7 +8,7 @@
 	name = Simon Blixenkrone
 	email = sblixenkrone@gmail.com
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [alias]
 	open =
 [github]

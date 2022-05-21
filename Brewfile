@@ -46,6 +46,8 @@ brew "gnutls"
 brew "go"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# Database migrations CLI tool
+brew "golang-migrate"
 # Fast linters runner for Go
 brew "golangci-lint"
 # OpenType text shaping engine
@@ -60,6 +62,8 @@ brew "graphviz"
 brew "helm"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# General purpose TCP-IP emulator
+brew "libslirp"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Node version management
@@ -67,25 +71,31 @@ brew "n"
 # HTTP/2 C Library
 brew "nghttp2"
 # Platform built on V8 to build network applications
-brew "node"
+brew "node", link: false
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tool for managing OCI containers and pods
 brew "podman"
+# Object-relational database system
+brew "postgresql"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Your Swiss Army Knife for Protocol Buffers
 brew "prototool"
 # Persistent key-value database, with built-in net interface
 brew "redis"
+# Fast, efficient and secure backup program
+brew "restic"
 # Powerful, clean, object-oriented scripting language
 brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
 # Editor of encrypted files
 brew "sops"
+# Generate type safe Go from SQL
+brew "sqlc"
 # Tool Command Language
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
@@ -156,5 +166,7 @@ cask "skim"
 cask "stoplight-studio"
 # Multimedia player
 cask "vlc"
+# Rust-based terminal
+cask "warp"
 # Network protocol analyzer
 cask "wireshark"
