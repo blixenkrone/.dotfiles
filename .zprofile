@@ -70,3 +70,4 @@ gitconflicts() {
     git merge $1 --no-ff --no-commit 
 }
 
+eval $(/opt/homebrew/bin/brew shellenv)
