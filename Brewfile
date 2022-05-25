@@ -24,8 +24,6 @@ brew "glib"
 brew "docker", link: false
 # Isolated development environments using Docker
 brew "docker-compose", link: false
-# Create Docker hosts locally and on cloud providers
-brew "docker-machine"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -148,8 +146,6 @@ cask "hey"
 cask "iterm2"
 # Note taking and to-do application with synchronization capabilities
 cask "joplin"
-# End-to-end encryption software
-cask "keybase"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # VPN client for secure internet access and private browsing
