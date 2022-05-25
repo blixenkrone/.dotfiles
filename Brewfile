@@ -5,6 +5,7 @@ tap "garden-io/garden"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "romkatv/powerlevel10k"
@@ -136,6 +137,7 @@ cask "balenaetcher"
 cask "firefox"
 # Clipboard manager for developers
 cask "flycut"
+cask "font-hack-nerd-font"
 # Web browser
 cask "google-chrome"
 # Web browser

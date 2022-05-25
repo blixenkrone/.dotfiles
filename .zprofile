@@ -13,7 +13,7 @@ alias gotest="echo 'Testing all code...' && go test -timeout 35s \$(go list ./..
 alias gotestrace="echo 'Running tests with race flag...' && go test -race ./internal/..."
 alias gotestinternal="echo 'Testing all code...' && go test -timeout 35s ./internal/..."
 alias brew-up='brew upgrade && brew update'
-alias buf='/usr/local/bin/buf'
+alias buf='/opt/homebrew/bin/buf'
 
 # FLYT
 alias noflytfuckups='gmtv && gotestinternal'
@@ -24,16 +24,17 @@ alias flytcci='open https://app.circleci.com/pipelines/github/flypay/$(basename 
 
 # DEV PATH
 export DEV=$HOME/dev
-export DOTFILES=$HOME/.dotfiles
+export DOTFILES=$HOME/dev/.dotfiles
 
 # BREW
-export BREW_DIR=/usr/local/opt
+# OBS the CPU arch determines the brew dir. For M1 chips it's /opt/homebrew
+# export BREW_DIR=/usr/local/opt
+export BREW_DIR=/opt/homebrew
 
 # GOLANG VARS
-export GOPATH=/Users/blix/dev/golib
+export GOPATH=$HOME/dev/go
+export GOROOT=$BREW_DIR/opt/go/libexec
 export PATH=$PATH:$(go env GOPATH)/bin
-export GOROOT=/usr/local/opt/go/libexec
-export GOPRIVATE=github.com/flypay/*
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
 
@@ -44,7 +45,7 @@ export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
 export AWS_SECRET_ACCESS_KEY=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
 
 # GOLAND
-export goland=/usr/local/bin/goland
+export goland=$BREW_DIR/bin/goland
 
 # RESTIC
 RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
