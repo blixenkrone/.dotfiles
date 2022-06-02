@@ -9,7 +9,7 @@ fi
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/blix/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -69,7 +69,6 @@ plugins=(
   git
   github
   gitfast
-  git-open # for `$ git open` -> github project url
   vscode
   brew
   iterm2
@@ -88,8 +87,8 @@ source $ZSH/oh-my-zsh.sh
   fi
 
 source ~/.zprofile
-source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # eval $(thefuck --alias)
 source ~/.ghprofile
 
@@ -116,9 +115,10 @@ source ~/.ghprofile
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $BREW_DIR/opt/powerlevel10k/powerlevel10k.zsh-theme
+
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

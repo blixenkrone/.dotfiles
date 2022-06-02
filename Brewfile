@@ -11,20 +11,18 @@ tap "homebrew/core"
 tap "romkatv/powerlevel10k"
 # Run your GitHub Actions locally 🚀
 brew "act"
-# Use AWS IAM credentials to authenticate to Kubernetes
-brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
+# Core application library for C
+brew "glib"
+# Use AWS IAM credentials to authenticate to Kubernetes
+brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
-# Core application library for C
-brew "glib"
-# Pack, ship and run any application as a lightweight container
-brew "docker", link: false
 # Isolated development environments using Docker
-brew "docker-compose", link: false
+brew "docker-compose"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # GitHub command-line tool
@@ -61,6 +59,8 @@ brew "graphviz"
 brew "helm"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# Lazier way to manage everything docker
+brew "lazydocker"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # Simple tool to make locally trusted development certificates
@@ -70,7 +70,7 @@ brew "n"
 # HTTP/2 C Library
 brew "nghttp2"
 # Platform built on V8 to build network applications
-brew "node", link: false
+brew "node"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Emulator for x86 and PowerPC
@@ -105,6 +105,8 @@ brew "thefuck"
 brew "tig"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Undo git commands. Your damage control git buddy
+brew "ugit"
 # Vi 'workalike' with many additional features
 brew "vim"
 # JavaScript package manager
@@ -133,35 +135,49 @@ cask "appcleaner"
 cask "aws-vault"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# App to build and share containerized applications and microservices
+cask "docker"
 # Web browser
 cask "firefox"
 # Clipboard manager for developers
 cask "flycut"
 cask "font-hack-nerd-font"
+# Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more
+cask "franz"
 # Web browser
 cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
 # Access the HEY email service
 cask "hey"
+# Utility to hide menu bar items
+cask "hiddenbar"
+# HTTP and GraphQL Client
+cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
-# Note taking and to-do application with synchronization capabilities
-cask "joplin"
+# Keyboard customizer
+cask "karabiner-elements"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
-# Free and Open Source messaging and emailing app
-cask "rambox"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
 # PDF reader and note-taking application
 cask "skim"
+# Team communication and collaboration software
+cask "slack"
+# Music streaming service
+cask "spotify"
+# System monitor for the menu bar
+cask "stats"
 # Editor for designing and documenting APIs
 cask "stoplight-studio"
+# To-do list
+cask "todoist"
 # Multimedia player
 cask "vlc"
 # Rust-based terminal
