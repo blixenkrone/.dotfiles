@@ -32,12 +32,13 @@ export PATH=$PATH:$GOPATH/bin
 export GOROOT=$BREW_DIR/opt/go/libexec
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
+export GOPRIVATE=github.com/clicksandmortar/*
 
 # AWS
 # export AWS_SESSION_TTL=8h
 # export AWS_ASSUME_ROLE_TTL=1h
-export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
-export AWS_SECRET_ACCESS_KEY=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
+# export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
+# export AWS_SECRET_ACCESS_KEY=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
 
 # GOLAND
 export goland=$BREW_DIR/bin/goland
