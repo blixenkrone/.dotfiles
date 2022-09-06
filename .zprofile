@@ -35,8 +35,8 @@ export GO111MODULE=on
 export GOPRIVATE=github.com/clicksandmortar/*
 
 # AWS
-# export AWS_SESSION_TTL=8h
-# export AWS_ASSUME_ROLE_TTL=1h
+export AWS_SESSION_TTL=8h
+export AWS_ASSUME_ROLE_TTL=1h
 # export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
 # export AWS_SECRET_ACCESS_KEY=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
 
@@ -51,6 +51,8 @@ export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 
 # RUST
 
+# LUNARVIM
+export PATH=~/.local/bin/:$PATH
 
 gitall() {
     git add .
