@@ -12,11 +12,6 @@ alias gotestinternal="echo 'Testing all code...' && go test -timeout 35s ./inter
 alias brew-up='brew upgrade && brew update'
 alias buf='/opt/homebrew/bin/buf'
 
-# FLYT
-alias flytawsdevelopment="unset AWS_VAULT && aws-vault exec flypay-development && kubectl config use-context flyt-development"
-alias flytawsstaging="unset AWS_VAULT && aws-vault exec flypay-staging && kubectl config use-context gen4-staging"
-alias flytawsproduction="unset AWS_VAULT && aws-vault exec flypay-production && kubectl config use-context gen4-production"
-
 # DEV PATH
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
@@ -37,17 +32,12 @@ export GOPRIVATE=github.com/clicksandmortar/*
 # AWS
 export AWS_SESSION_TTL=8h
 export AWS_ASSUME_ROLE_TTL=1h
-# export AWS_ACCESS_KEY_ID=AKIA36LKSWTPHSSF3TC3
-# export AWS_SECRET_ACCESS_KEY=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
 
 # GOLAND
 export goland=$BREW_DIR/bin/goland
 
 # RESTIC
 export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
-
-# unsetopt correct_all
-# setopt correct
 
 # RUST
 
