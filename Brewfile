@@ -2,6 +2,7 @@ tap "bufbuild/buf"
 tap "cloudflare/cloudflare"
 tap "derailed/k9s"
 tap "garden-io/garden"
+tap "goreleaser/tap"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -80,6 +81,8 @@ brew "libssh"
 brew "localstack"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
+# Mock code autogenerator for Golang
+brew "mockery"
 # Node version management
 brew "n"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -150,6 +153,8 @@ brew "cloudflare/cloudflare/cloudflared"
 brew "derailed/k9s/k9s"
 # Development engine for Kubernetes
 brew "garden-io/garden/garden-cli"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser/tap/goreleaser"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
@@ -164,8 +169,11 @@ cask "discord"
 cask "docker"
 # Web browser
 cask "firefox"
+# Web browser
+cask "firefox-developer-edition"
 # Clipboard manager for developers
 cask "flycut"
+# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
 # Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more
 cask "franz"
