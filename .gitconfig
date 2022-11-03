@@ -33,7 +33,8 @@
 [init]
 	defaultBranch = main
 [alias]
-	open =
+    # ATTENTION: All aliases prefixed with ! run in /bin/sh make sure you use sh syntax, not bash/zsh or whatever
+    recentbr = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [github]
 	token = ef685d01abecc811e07dfc83f50b2329b8da9f6f
 	user = blixenkrone

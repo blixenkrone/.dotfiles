@@ -1,4 +1,5 @@
 tap "bufbuild/buf"
+tap "clicksandmortar/launchpad"
 tap "cloudflare/cloudflare"
 tap "derailed/k9s"
 tap "garden-io/garden"
@@ -69,6 +70,8 @@ brew "graphviz"
 brew "gum"
 # Kubernetes package manager
 brew "helm"
+# User-friendly cURL replacement (command-line HTTP client)
+brew "httpie"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Lazier way to manage everything docker
@@ -93,6 +96,8 @@ brew "nghttp2"
 brew "node"
 # Libraries for security-enabled client and server applications
 brew "nss"
+# Manage multiple Node.js versions
+brew "nvm"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tool for managing OCI containers and pods
@@ -115,6 +120,8 @@ brew "restic"
 brew "rsync"
 # Safe, concurrent, practical language
 brew "rust"
+# Static analysis and lint tool, for (ba)sh scripts
+brew "shellcheck"
 # Editor of encrypted files
 brew "sops"
 # Generate type safe Go from SQL
@@ -147,6 +154,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # A new way of working with Protocol Buffers.
 brew "bufbuild/buf/buf"
+# Software to be used as a service scaffolding tool for Clicks & Mortar engineers
+brew "clicksandmortar/launchpad/launchpad"
 # Cloudflare Tunnel
 brew "cloudflare/cloudflare/cloudflared"
 # Kubernetes CLI To Manage Your Clusters In Style!
@@ -167,6 +176,8 @@ cask "balenaetcher"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
+# Draw.io is free online diagram software
+cask "drawio"
 # Web browser
 cask "firefox"
 # Web browser
@@ -193,6 +204,8 @@ cask "iterm2"
 cask "kap"
 # Keyboard customizer
 cask "karabiner-elements"
+# Tool to prevent the system from going into sleep mode
+cask "keepingyouawake"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # Meet, chat, call, and collaborate in just one place

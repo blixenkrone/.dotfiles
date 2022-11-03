@@ -11,6 +11,7 @@ alias gotestrace="echo 'Running tests with race flag...' && go test -race ./inte
 alias gotestinternal="echo 'Testing all code...' && go test -timeout 35s ./internal/..."
 alias brew-up='brew upgrade && brew update'
 alias buf='/opt/homebrew/bin/buf'
+alias lzd='lazydocker'
 
 # DEV PATH
 export DEV=$HOME/dev
@@ -27,7 +28,10 @@ export PATH=$PATH:$GOPATH/bin
 export GOROOT=$BREW_DIR/opt/go/libexec
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
+
+# GOLANG VARS: C&M
 export GOPRIVATE=github.com/clicksandmortar/*
+export HOMEBREW_GITHUB_API_TOKEN=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
 
 # AWS
 export AWS_SESSION_TTL=8h
@@ -60,4 +64,3 @@ gitconflicts() {
 }
 
 eval $(/opt/homebrew/bin/brew shellenv)
-alias lzd='lazydocker'
