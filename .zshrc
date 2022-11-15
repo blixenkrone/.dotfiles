@@ -87,7 +87,7 @@ source $ZSH/oh-my-zsh.sh
   fi
 
 source ~/.zprofile
-# source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # eval $(thefuck --alias)
 source ~/.ghprofile

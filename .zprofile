@@ -29,10 +29,6 @@ export GOROOT=$BREW_DIR/opt/go/libexec
 export GOPROXY=export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
 
-# GOLANG VARS: C&M
-export GOPRIVATE=github.com/clicksandmortar/*
-export HOMEBREW_GITHUB_API_TOKEN=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
-
 # AWS
 export AWS_SESSION_TTL=8h
 export AWS_ASSUME_ROLE_TTL=1h
@@ -62,5 +58,7 @@ gitall() {
 gitconflicts() {
     git merge $1 --no-ff --no-commit
 }
+
+. ~/.camprofile
 
 eval $(/opt/homebrew/bin/brew shellenv)
