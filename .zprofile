@@ -31,7 +31,7 @@ export GO111MODULE=on
 
 # GOLANG VARS: C&M
 export GOPRIVATE=github.com/clicksandmortar/*
-export HOMEBREW_GITHUB_API_TOKEN=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
+export HOMEBREW_GITHUB_API_TOKEN=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
 
 # AWS
 export AWS_SESSION_TTL=8h

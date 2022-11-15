@@ -108,6 +108,8 @@ brew "postgresql@14"
 brew "pre-commit"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Go support for Google's protocol buffers
+brew "protoc-gen-go"
 # Your Swiss Army Knife for Protocol Buffers
 brew "prototool"
 # Cloud native development platform
@@ -186,8 +188,6 @@ cask "firefox-developer-edition"
 cask "flycut"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
-# Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more
-cask "franz"
 # Web browser
 cask "google-chrome"
 # Web browser
@@ -212,6 +212,8 @@ cask "meetingbar"
 cask "microsoft-teams"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Free and Open Source messaging and emailing app
+cask "rambox"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Instant messaging application focusing on security
