@@ -26,7 +26,7 @@ export BREW_DIR=/opt/homebrew
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=$BREW_DIR/opt/go/libexec
-export GOPROXY=export GOPROXY=https://goproxy.io,direct
+export GOPROXY=https://goproxy.io,direct
 export GO111MODULE=on
 
 # AWS

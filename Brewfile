@@ -10,8 +10,10 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
 tap "romkatv/powerlevel10k"
+tap "stripe/stripe-cli"
 # Run your GitHub Actions locally 🚀
 brew "act"
 # Core application library for C
@@ -22,8 +24,12 @@ brew "python@3.9"
 brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Yet another cross-platform graphical process/system monitor
+brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# Create and view interactive cheat sheets for *nix commands
+brew "cheat"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Modern replacement for 'ls'
@@ -40,6 +46,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Update multiple git repositories at once
 brew "gitup"
 # Render markdown on the CLI
@@ -72,6 +80,8 @@ brew "gum"
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Network authentication protocol
+brew "krb5"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Lazier way to manage everything docker
@@ -92,6 +102,8 @@ brew "n"
 brew "neovim"
 # HTTP/2 C Library
 brew "nghttp2"
+# Port scanning utility for large networks
+brew "nmap"
 # Platform built on V8 to build network applications
 brew "node"
 # Libraries for security-enabled client and server applications
@@ -108,6 +120,10 @@ brew "postgresql@14"
 brew "pre-commit"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
+# Protocol buffers library
+brew "protobuf-c"
+# Protocol buffers (Google's data interchange format)
+brew "protobuf@3", link: true
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
 # Your Swiss Army Knife for Protocol Buffers
@@ -144,6 +160,8 @@ brew "ugit"
 brew "vim"
 # WebSockets the Unix way
 brew "websocketd"
+# Personal information dashboard for your terminal
+brew "wtfutil"
 # JavaScript package manager
 brew "yarn"
 # Download YouTube videos from the command-line
@@ -166,6 +184,8 @@ brew "derailed/k9s/k9s"
 brew "garden-io/garden/garden-cli"
 # Deliver Go binaries as fast and easily as possible
 brew "goreleaser/tap/goreleaser"
+# Standalone pact command-line executable using the Ruby Pact implementation and Travelling Ruby
+brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
@@ -228,6 +248,8 @@ cask "spotify"
 cask "stats"
 # Editor for designing and documenting APIs
 cask "stoplight-studio"
+# Remote access and connectivity software focused on security
+cask "teamviewer"
 # To-do list
 cask "todoist"
 # Open-source code editor
