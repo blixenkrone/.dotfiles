@@ -92,6 +92,9 @@ source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # eval $(thefuck --alias)
 source ~/.ghprofile
 
+# Zoxide init shell
+eval "$(zoxide init zsh)" 
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment

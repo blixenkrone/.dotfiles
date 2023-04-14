@@ -22,8 +22,12 @@ brew "glib"
 brew "python@3.9"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Clone of cat(1) with syntax highlighting and Git integration
+brew "bat"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Fish completion for brew-cask
@@ -36,6 +40,8 @@ brew "docker-compose"
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Terminal JSON viewer
+brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Toolkit for image loading and pixel buffer manipulation
@@ -46,6 +52,8 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Audit git repos for secrets
+brew "gitleaks"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Update multiple git repositories at once
@@ -74,6 +82,8 @@ brew "pango"
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# GUI toolkit
+brew "gtk+"
 # Tool for glamorous shell scripts
 brew "gum"
 # Kubernetes package manager
@@ -116,6 +126,8 @@ brew "qemu"
 brew "podman"
 # Object-relational database system
 brew "postgresql@14"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Protocol buffers (Google's data interchange format)
@@ -123,7 +135,7 @@ brew "protobuf"
 # Protocol buffers library
 brew "protobuf-c"
 # Protocol buffers (Google's data interchange format)
-brew "protobuf@3", link: true
+brew "protobuf@3"
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
 # Your Swiss Army Knife for Protocol Buffers
@@ -144,6 +156,8 @@ brew "shellcheck"
 brew "sops"
 # Generate type safe Go from SQL
 brew "sqlc"
+# Open source continuous file synchronization application
+brew "syncthing"
 # Tool Command Language
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
@@ -164,8 +178,8 @@ brew "websocketd"
 brew "wtfutil"
 # JavaScript package manager
 brew "yarn"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
@@ -184,7 +198,7 @@ brew "derailed/k9s/k9s"
 brew "garden-io/garden/garden-cli"
 # Deliver Go binaries as fast and easily as possible
 brew "goreleaser/tap/goreleaser"
-# Standalone pact command-line executable using the Ruby Pact implementation and Travelling Ruby
+# Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
 # A Zsh Theme
 brew "romkatv/powerlevel10k/powerlevel10k"
@@ -230,6 +244,8 @@ cask "keepingyouawake"
 cask "meetingbar"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
+# Web browser focused on privacy and on minimizing tracking and fingerprinting
+cask "mullvad-browser"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Free and Open Source messaging and emailing app
@@ -250,6 +266,8 @@ cask "stats"
 cask "stoplight-studio"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
+# Unpacks archive files
+cask "the-unarchiver"
 # To-do list
 cask "todoist"
 # Open-source code editor
