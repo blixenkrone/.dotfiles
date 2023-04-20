@@ -16,6 +16,7 @@ alias brewbundle='brew bundle dump --describe --force'
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export EDITOR="/Applications/Visual\ Studio\ Code.app/"
+export SYNC=$HOME/Sync
 
 # BREW
 # OBS the CPU arch determines the brew dir. For M1 chips it's /opt/homebrew
