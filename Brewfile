@@ -14,8 +14,14 @@ tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
 tap "romkatv/powerlevel10k"
 tap "stripe/stripe-cli"
-# Run your GitHub Actions locally 🚀
+# Run your GitHub Actions locally
 brew "act"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Core application library for C
 brew "glib"
 # Interpreted, interactive, object-oriented programming language
@@ -24,18 +30,28 @@ brew "python@3.9"
 brew "aws-iam-authenticator"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
+# Text processing system for reStructuredText
+brew "docutils"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# OpenType text shaping engine
+brew "harfbuzz"
+# Remove large files or passwords from Git history like git-filter-branch
+brew "bfg"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# JSON, YAML, TOML, XML, and CSV query and modification tool
+brew "dasel"
 # Isolated development environments using Docker
 brew "docker-compose"
+# CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
+brew "dsq"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -44,6 +60,8 @@ brew "fd"
 brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Graphics library to dynamically manipulate images
+brew "gd"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
@@ -52,10 +70,10 @@ brew "gh"
 brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Quickly rewrite git repository history
+brew "git-filter-repo"
 # Audit git repos for secrets
 brew "gitleaks"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
 # Update multiple git repositories at once
 brew "gitup"
 # Render markdown on the CLI
@@ -74,8 +92,8 @@ brew "gobject-introspection"
 brew "golang-migrate"
 # Fast linters runner for Go
 brew "golangci-lint"
-# OpenType text shaping engine
-brew "harfbuzz"
+# Image manipulation
+brew "netpbm"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Library to render SVG files using Cairo
@@ -90,6 +108,8 @@ brew "gum"
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Network authentication protocol
 brew "krb5"
 # Kubernetes command-line interface
@@ -120,6 +140,8 @@ brew "node"
 brew "nss"
 # Manage multiple Node.js versions
 brew "nvm"
+# Display the PID number for a given process name
+brew "pidof"
 # Emulator for x86 and PowerPC
 brew "qemu"
 # Tool for managing OCI containers and pods
@@ -142,6 +164,8 @@ brew "protoc-gen-go"
 brew "prototool"
 # Cloud native development platform
 brew "pulumi"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.10"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Fast, efficient and secure backup program
@@ -152,10 +176,14 @@ brew "rsync"
 brew "rust"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
+# Cross-platform application to monitor your network traffic
+brew "sniffnet"
 # Editor of encrypted files
 brew "sops"
 # Generate type safe Go from SQL
 brew "sqlc"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Open source continuous file synchronization application
 brew "syncthing"
 # Tool Command Language
@@ -166,6 +194,8 @@ brew "terraform"
 brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
+# Lightweight BitTorrent client
+brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Undo git commands. Your damage control git buddy
@@ -212,7 +242,7 @@ cask "balenaetcher"
 cask "discord"
 # App to build and share containerized applications and microservices
 cask "docker"
-# Draw.io is free online diagram software
+# Online diagram software
 cask "drawio"
 # Web browser
 cask "firefox"
@@ -248,6 +278,10 @@ cask "microsoft-teams"
 cask "mullvad-browser"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
+# Read/write support for ext2/3/4 formatted volumes
+cask "paragon-extfs"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Move and resize windows using keyboard shortcuts or snap areas
@@ -270,6 +304,8 @@ cask "teamviewer"
 cask "the-unarchiver"
 # To-do list
 cask "todoist"
+# Open-source BitTorrent client
+cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -278,3 +314,29 @@ cask "vlc"
 cask "warp"
 # Network protocol analyzer
 cask "wireshark"
+vscode "4ops.terraform"
+vscode "aaron-bond.better-comments"
+vscode "adpyke.vscode-sql-formatter"
+vscode "akamud.vscode-theme-onedark"
+vscode "Cardinal90.multi-cursor-case-preserve"
+vscode "christian-kohler.path-intellisense"
+vscode "DavidAnson.vscode-markdownlint"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "eamodio.gitlens"
+vscode "firsttris.vscode-jest-runner"
+vscode "foxundermoon.shell-format"
+vscode "golang.go-nightly"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.python"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.atom-keybindings"
+vscode "ms-vscode.cpptools"
+vscode "ms-vscode.vscode-typescript-next"
+vscode "qinjia.seti-icons"
+vscode "rust-lang.rust-analyzer"
+vscode "serayuzgur.crates"
+vscode "wayou.vscode-todo-highlight"
+vscode "windmilleng.vscode-go-autotest"
+vscode "zhuangtongfa.material-theme"
+vscode "zxh404.vscode-proto3"
