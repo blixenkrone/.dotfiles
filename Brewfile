@@ -52,14 +52,20 @@ brew "dasel"
 brew "docker-compose"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
 brew "dsq"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Platform built on V8 to build network applications
+brew "node"
 # Terminal JSON viewer
 brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # Toolkit for image loading and pixel buffer manipulation
@@ -94,6 +100,8 @@ brew "golang-migrate"
 brew "golangci-lint"
 # Image manipulation
 brew "netpbm"
+# GNU triangulated surface library
+brew "gts"
 # Framework for layout and rendering of i18n text
 brew "pango"
 # Library to render SVG files using Cairo
@@ -110,8 +118,6 @@ brew "helm"
 brew "httpie"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
-# Network authentication protocol
-brew "krb5"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # Lazier way to manage everything docker
@@ -120,6 +126,8 @@ brew "lazydocker"
 brew "libslirp"
 # C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
+# Cryptographic recipes and primitives for Python
+brew "python-cryptography"
 # Fully functional local AWS cloud stack
 brew "localstack"
 # Simple tool to make locally trusted development certificates
@@ -128,18 +136,20 @@ brew "mkcert"
 brew "mockery"
 # Node version management
 brew "n"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
 brew "nghttp2"
 # Port scanning utility for large networks
 brew "nmap"
-# Platform built on V8 to build network applications
-brew "node"
 # Libraries for security-enabled client and server applications
 brew "nss"
 # Manage multiple Node.js versions
 brew "nvm"
+# Create, run, and share large language models (LLMs)
+brew "ollama"
 # Display the PID number for a given process name
 brew "pidof"
 # Emulator for x86 and PowerPC
@@ -230,7 +240,7 @@ brew "garden-io/garden/garden-cli"
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
-# A Zsh Theme
+# Theme for zsh
 brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
 cask "appcleaner"
@@ -238,6 +248,8 @@ cask "appcleaner"
 cask "aws-vault"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
+# Cross platform SQL editor and database management app
+cask "beekeeper-studio"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerized applications and microservices
@@ -278,12 +290,14 @@ cask "microsoft-teams"
 cask "mullvad-browser"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
+# Verify system files structure, run miscellaneous maintenance and more
+cask "onyx"
 # Read/write support for ext2/3/4 formatted volumes
 cask "paragon-extfs"
 # Free and Open Source messaging and emailing app
 cask "rambox"
+# Control your tools with a few keystrokes
+cask "raycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Instant messaging application focusing on security
@@ -294,6 +308,8 @@ cask "skim"
 cask "slack"
 # Music streaming service
 cask "spotify"
+# Free, open-source, and completely encrypted notes app
+cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
 # Editor for designing and documenting APIs
@@ -318,12 +334,14 @@ vscode "4ops.terraform"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.vscode-sql-formatter"
 vscode "akamud.vscode-theme-onedark"
+vscode "ardenivanov.svelte-intellisense"
 vscode "Cardinal90.multi-cursor-case-preserve"
 vscode "christian-kohler.path-intellisense"
 vscode "DavidAnson.vscode-markdownlint"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "firsttris.vscode-jest-runner"
+vscode "fivethree.vscode-svelte-snippets"
 vscode "foxundermoon.shell-format"
 vscode "golang.go-nightly"
 vscode "mikestead.dotenv"
@@ -334,8 +352,10 @@ vscode "ms-vscode.atom-keybindings"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "qinjia.seti-icons"
+vscode "redhat.vscode-xml"
 vscode "rust-lang.rust-analyzer"
 vscode "serayuzgur.crates"
+vscode "svelte.svelte-vscode"
 vscode "wayou.vscode-todo-highlight"
 vscode "windmilleng.vscode-go-autotest"
 vscode "zhuangtongfa.material-theme"

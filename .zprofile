@@ -60,6 +60,11 @@ gitconflicts() {
     git merge $1 --no-ff --no-commit
 }
 
+cover() {
+    t="/tmp/go-cover.$$.tmp"
+    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
+}
+
 . ~/.camprofile
 
 eval $(/opt/homebrew/bin/brew shellenv)
