@@ -28,16 +28,22 @@ brew "glib"
 brew "python@3.9"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Text processing system for reStructuredText
 brew "docutils"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # OpenType text shaping engine
 brew "harfbuzz"
+# Development kit for the Java programming language
+brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
 # Yet another cross-platform graphical process/system monitor
@@ -46,6 +52,14 @@ brew "bottom"
 brew "brew-cask-completion"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# Library for encoding and decoding .avif files
+brew "libavif"
+# Graphics library to dynamically manipulate images
+brew "gd"
+# General-purpose scripting language
+brew "php"
+# Dependency Manager for PHP
+brew "composer"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Isolated development environments using Docker
@@ -64,10 +78,6 @@ brew "node"
 brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
-# Library for encoding and decoding .avif files
-brew "libavif"
-# Graphics library to dynamically manipulate images
-brew "gd"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
 # GitHub command-line tool
@@ -136,6 +146,8 @@ brew "mkcert"
 brew "mockery"
 # Node version management
 brew "n"
+# NCurses Disk Usage
+brew "ncdu"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -158,6 +170,8 @@ brew "qemu"
 brew "podman"
 # Object-relational database system
 brew "postgresql@14"
+# Theme for zsh
+brew "powerlevel10k"
 # Tool for creating isolated virtual python environments
 brew "virtualenv"
 # Framework for managing multi-language pre-commit hooks
@@ -240,8 +254,6 @@ brew "garden-io/garden/garden-cli"
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
-# Theme for zsh
-brew "romkatv/powerlevel10k/powerlevel10k"
 # Application uninstaller
 cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
@@ -335,6 +347,7 @@ vscode "aaron-bond.better-comments"
 vscode "adpyke.vscode-sql-formatter"
 vscode "akamud.vscode-theme-onedark"
 vscode "ardenivanov.svelte-intellisense"
+vscode "bmewburn.vscode-intelephense-client"
 vscode "Cardinal90.multi-cursor-case-preserve"
 vscode "christian-kohler.path-intellisense"
 vscode "DavidAnson.vscode-markdownlint"
