@@ -80,6 +80,8 @@ brew "fx"
 brew "fzf"
 # Toolkit for image loading and pixel buffer manipulation
 brew "gdk-pixbuf"
+# Disk usage analyzer with console interface written in Go
+brew "gdu"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -146,8 +148,6 @@ brew "mkcert"
 brew "mockery"
 # Node version management
 brew "n"
-# NCurses Disk Usage
-brew "ncdu"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility

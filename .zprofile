@@ -11,6 +11,7 @@ alias cd='z'
 alias cat='bat'
 alias ls='exa'
 alias brewbundle='brew bundle dump --describe --force'
+alias ncdu='gdu-go'
 
 # DEV PATH
 export DEV=$HOME/dev
