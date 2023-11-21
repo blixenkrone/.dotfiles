@@ -1,4 +1,4 @@
-alias d-c='docker compose'
+alias d-c='docker-compose'
 alias d-m='docker-machine'
 alias gs="git switch"
 alias top='sudo top'
@@ -15,6 +15,7 @@ alias ncdu='gdu-go'
 
 # DEV PATH
 export DEV=$HOME/dev
+export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 export DOTFILES=$HOME/dev/.dotfiles
 export EDITOR="/Applications/Visual\ Studio\ Code.app/"
 export SYNC=$HOME/Sync

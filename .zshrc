@@ -93,7 +93,7 @@ source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.ghprofile
 
 # Zoxide init shell
-eval "$(zoxide init zsh)" 
+eval "$(zoxide init zsh)"
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -118,7 +118,8 @@ eval "$(zoxide init zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source $BREW_DIR/opt/powerlevel10k/powerlevel10k.zsh-theme
+source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
+
 
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
