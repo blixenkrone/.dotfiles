@@ -1,5 +1,5 @@
-alias d-c='docker-compose'
 alias d-m='docker-machine'
+alias d-c='docker-compose'
 alias gs="git switch"
 alias top='sudo top'
 alias gmt="echo 'Tidying code...' && go mod tidy && go mod verify"
@@ -15,10 +15,12 @@ alias ncdu='gdu-go'
 
 # DEV PATH
 export DEV=$HOME/dev
-export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin/"
 export DOTFILES=$HOME/dev/.dotfiles
 export EDITOR="/Applications/Visual\ Studio\ Code.app/"
 export SYNC=$HOME/Sync
+
+# DOCKER
+export PATH="$PATH:/opt/homebrew/bin/docker "
 
 # BREW
 # OBS the CPU arch determines the brew dir. For M1 chips it's /opt/homebrew
@@ -65,6 +67,10 @@ gitconflicts() {
 cover() {
     t="/tmp/go-cover.$$.tmp"
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
+}
+
+hexfiend() {
+  open -a "Hex Fiend" $1
 }
 
 . ~/.camprofile

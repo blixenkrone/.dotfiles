@@ -14,6 +14,7 @@ tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
 tap "romkatv/powerlevel10k"
 tap "stripe/stripe-cli"
+tap "tabbyml/tabby"
 # Run your GitHub Actions locally
 brew "act"
 # Image format providing lossless and lossy compression for web images
@@ -38,6 +39,8 @@ brew "docutils"
 brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # OpenType text shaping engine
@@ -62,12 +65,12 @@ brew "php"
 brew "composer"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
 # Isolated development environments using Docker
 brew "docker-compose"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
 brew "dsq"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
@@ -132,6 +135,8 @@ brew "httpie"
 brew "jq"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
+# LastPass command-line interface tool
+brew "lastpass-cli"
 # Lazier way to manage everything docker
 brew "lazydocker"
 # General purpose TCP-IP emulator
@@ -222,6 +227,8 @@ brew "tig"
 brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Network diagnostic tool, inspired by mtr
+brew "trippy"
 # Undo git commands. Your damage control git buddy
 brew "ugit"
 # Vi 'workalike' with many additional features
@@ -254,6 +261,8 @@ brew "garden-io/garden/garden-cli"
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
+# Tabby: AI Coding Assitatnt
+brew "tabbyml/tabby/tabby"
 # Application uninstaller
 cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
@@ -280,6 +289,8 @@ cask "font-hack-nerd-font"
 cask "google-chrome"
 # Web browser
 cask "google-chrome-canary"
+# Hex editor focussing on speed
+cask "hex-fiend"
 # Access the HEY email service
 cask "hey"
 # Utility to hide menu bar items
@@ -302,10 +313,10 @@ cask "microsoft-teams"
 cask "mullvad-browser"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
+# Knowledge base that works on top of a local folder of plain text Markdown files
+cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
-# Read/write support for ext2/3/4 formatted volumes
-cask "paragon-extfs"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Control your tools with a few keystrokes
@@ -350,13 +361,18 @@ vscode "ardenivanov.svelte-intellisense"
 vscode "bmewburn.vscode-intelephense-client"
 vscode "Cardinal90.multi-cursor-case-preserve"
 vscode "christian-kohler.path-intellisense"
+vscode "Codium.codium"
 vscode "DavidAnson.vscode-markdownlint"
+vscode "dotiful.dotfiles-syntax-highlighting"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "firsttris.vscode-jest-runner"
 vscode "fivethree.vscode-svelte-snippets"
 vscode "foxundermoon.shell-format"
+vscode "GitHub.copilot"
+vscode "GitHub.copilot-chat"
 vscode "golang.go-nightly"
+vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
 vscode "ms-azuretools.vscode-docker"
 vscode "ms-python.python"
@@ -364,11 +380,13 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.atom-keybindings"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.vscode-typescript-next"
+vscode "ms-vsliveshare.vsliveshare"
 vscode "qinjia.seti-icons"
 vscode "redhat.vscode-xml"
 vscode "rust-lang.rust-analyzer"
 vscode "serayuzgur.crates"
 vscode "svelte.svelte-vscode"
+vscode "TabbyML.vscode-tabby"
 vscode "wayou.vscode-todo-highlight"
 vscode "windmilleng.vscode-go-autotest"
 vscode "zhuangtongfa.material-theme"

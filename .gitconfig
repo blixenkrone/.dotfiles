@@ -9,6 +9,14 @@
     features = decorations
     side-by-side = true
     line-numbers = true
+    light = false
+    navigate = true
+
+[merge]
+    conflictstyle = diff3
+
+[diff]
+    colorMoved = default
 
 [delta "interactive"]
     keep-plus-minus-markers = false
