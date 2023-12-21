@@ -130,3 +130,5 @@ source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 # TODO: Want this?
 # Starship init shell
 # eval "$(starship init zsh)"
+
+source /Users/blixenkrone/.config/broot/launcher/bash/br

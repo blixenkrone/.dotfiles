@@ -14,6 +14,7 @@ alias brewbundle='brew bundle dump --describe --force'
 alias ncdu='gdu-go'
 
 # DEV PATH
+export EDITOR="hx"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export EDITOR="/Applications/Visual\ Studio\ Code.app/"

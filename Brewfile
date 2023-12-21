@@ -53,6 +53,8 @@ brew "bfg"
 brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# New way to see and navigate directory trees
+brew "broot"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Library for encoding and decoding .avif files
@@ -127,6 +129,8 @@ brew "graphviz"
 brew "gtk+"
 # Tool for glamorous shell scripts
 brew "gum"
+# Post-modern modal text editor
+brew "helix"
 # Kubernetes package manager
 brew "helm"
 # User-friendly cURL replacement (command-line HTTP client)
@@ -169,7 +173,7 @@ brew "nvm"
 brew "ollama"
 # Display the PID number for a given process name
 brew "pidof"
-# Emulator for x86 and PowerPC
+# Generic machine emulator and virtualizer
 brew "qemu"
 # Tool for managing OCI containers and pods
 brew "podman"
@@ -247,7 +251,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# A new way of working with Protocol Buffers.
+# The best way of working with Protocol Buffers.
 brew "bufbuild/buf/buf"
 # Software to be used as a service scaffolding tool for Clicks & Mortar engineers
 brew "clicksandmortar/launchpad/launchpad"
@@ -263,6 +267,8 @@ brew "goreleaser/tap/goreleaser"
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
 # Tabby: AI Coding Assitatnt
 brew "tabbyml/tabby/tabby"
+# GPU-accelerated terminal emulator
+cask "alacritty"
 # Application uninstaller
 cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
