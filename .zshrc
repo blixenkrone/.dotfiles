@@ -132,3 +132,4 @@ source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 # eval "$(starship init zsh)"
 
 source /Users/blixenkrone/.config/broot/launcher/bash/br
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"

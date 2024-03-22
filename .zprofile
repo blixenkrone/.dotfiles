@@ -21,11 +21,10 @@ export EDITOR="/Applications/Visual\ Studio\ Code.app/"
 export SYNC=$HOME/Sync
 
 # DOCKER
-export PATH="$PATH:/opt/homebrew/bin/docker "
+export PATH="$PATH:/opt/homebrew/bin/docker"
 
 # BREW
 # OBS the CPU arch determines the brew dir. For M1 chips it's /opt/homebrew
-# export BREW_DIR=/usr/local/opt
 export BREW_DIR=/opt/homebrew
 
 # GOLANG VARS

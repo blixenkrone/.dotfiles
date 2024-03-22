@@ -65,10 +65,12 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
-# Pack, ship and run any application as a lightweight container
-brew "docker"
+# Bash, Zsh and Fish completion for Docker
+brew "docker-completion"
 # Isolated development environments using Docker
 brew "docker-compose"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
@@ -147,10 +149,10 @@ brew "lazydocker"
 brew "libslirp"
 # C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
-# Cryptographic recipes and primitives for Python
-brew "python-cryptography"
 # Fully functional local AWS cloud stack
 brew "localstack"
+# Mac App Store command-line interface
+brew "mas"
 # Simple tool to make locally trusted development certificates
 brew "mkcert"
 # Mock code autogenerator for Golang
@@ -205,6 +207,8 @@ brew "redis"
 brew "restic"
 # Utility that provides fast incremental file transfer
 brew "rsync"
+# Powerful, clean, object-oriented scripting language
+brew "ruby", link: true
 # Safe, concurrent, practical language
 brew "rust"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -277,11 +281,13 @@ cask "aws-vault"
 cask "balenaetcher"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
+# Opensource IDE for exploring and testing api's
+cask "bruno"
 # Server and cloud storage browser
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
-# App to build and share containerized applications and microservices
+# App to build and share containerised applications and microservices
 cask "docker"
 # Online diagram software
 cask "drawio"
@@ -293,6 +299,8 @@ cask "firefox-developer-edition"
 cask "flycut"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Free and open-source image editor
+cask "gimp"
 # Web browser
 cask "google-chrome"
 # Web browser
@@ -309,7 +317,7 @@ cask "insomnia"
 cask "iterm2"
 # Open-source screen recorder built with web technology
 cask "kap"
-# Keyboard customizer
+# Keyboard customiser
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
@@ -319,6 +327,8 @@ cask "meetingbar"
 cask "microsoft-teams"
 # Web browser focused on privacy and on minimizing tracking and fingerprinting
 cask "mullvad-browser"
+# Reverse proxy, secure introspectable tunnels to localhost
+cask "ngrok"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -343,8 +353,6 @@ cask "spotify"
 cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
-# Editor for designing and documenting APIs
-cask "stoplight-studio"
 # Remote access and connectivity software focused on security
 cask "teamviewer"
 # Unpacks archive files
@@ -361,43 +369,46 @@ cask "vlc"
 cask "warp"
 # Network protocol analyzer
 cask "wireshark"
+# Multiplayer code editor
+cask "zed"
+mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835
 vscode "4ops.terraform"
 vscode "a-h.templ"
 vscode "aaron-bond.better-comments"
 vscode "adpyke.vscode-sql-formatter"
-vscode "akamud.vscode-theme-onedark"
+vscode "asvetliakov.vscode-neovim"
 vscode "bmewburn.vscode-intelephense-client"
-vscode "Cardinal90.multi-cursor-case-preserve"
+vscode "cardinal90.multi-cursor-case-preserve"
+vscode "catppuccin.catppuccin-vsc"
 vscode "christian-kohler.path-intellisense"
-vscode "codewonders.helix"
-vscode "Codium.codium"
-vscode "DavidAnson.vscode-markdownlint"
+vscode "davidanson.vscode-markdownlint"
 vscode "dotiful.dotfiles-syntax-highlighting"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "firsttris.vscode-jest-runner"
 vscode "foxundermoon.shell-format"
-vscode "GitHub.copilot"
-vscode "GitHub.copilot-chat"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "golang.go-nightly"
 vscode "jasew.vscode-helix-emulation"
 vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
 vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.atom-keybindings"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "ms-vsliveshare.vsliveshare"
+vscode "pbkit.vscode-pbkit"
 vscode "qinjia.seti-icons"
 vscode "redhat.vscode-xml"
 vscode "rust-lang.rust-analyzer"
 vscode "serayuzgur.crates"
 vscode "silverquark.dancehelix"
-vscode "TabbyML.vscode-tabby"
+vscode "tabbyml.vscode-tabby"
 vscode "vintharas.learn-vim"
-vscode "vscodevim.vim"
 vscode "wayou.vscode-todo-highlight"
 vscode "windmilleng.vscode-go-autotest"
-vscode "zhuangtongfa.material-theme"
 vscode "zxh404.vscode-proto3"
