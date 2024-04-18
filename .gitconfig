@@ -9,7 +9,7 @@
     features = decorations
     side-by-side = true
     line-numbers = true
-    light = false
+    dark = true
     navigate = true
 
 [merge]

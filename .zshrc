@@ -76,6 +76,7 @@ plugins=(
   golang
   docker
   thefuck
+  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -86,7 +87,6 @@ source $ZSH/oh-my-zsh.sh
     compinit
   fi
 
-source ~/.zprofile
 source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # eval $(thefuck --alias)
@@ -120,16 +120,12 @@ eval "$(zoxide init zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# TODO: Want this?
-# Starship init shell
-# eval "$(starship init zsh)"
-
 source /Users/blixenkrone/.config/broot/launcher/bash/br
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+source ~/.zprofile

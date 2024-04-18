@@ -4,6 +4,7 @@ tap "cloudflare/cloudflare"
 tap "derailed/k9s"
 tap "garden-io/garden"
 tap "goreleaser/tap"
+tap "grishka/grishka"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/cask"
@@ -145,6 +146,8 @@ brew "kubernetes-cli"
 brew "lastpass-cli"
 # Lazier way to manage everything docker
 brew "lazydocker"
+# Simple terminal UI for git commands
+brew "lazygit"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # C library SSHv1/SSHv2 client and server protocols
@@ -175,8 +178,8 @@ brew "nvm"
 brew "ollama"
 # Display the PID number for a given process name
 brew "pidof"
-# Generic machine emulator and virtualizer
-brew "qemu"
+# Open source backend for your next project in 1 file
+brew "pocketbase"
 # Tool for managing OCI containers and pods
 brew "podman"
 # Object-relational database system
@@ -201,10 +204,14 @@ brew "prototool"
 brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Generic machine emulator and virtualizer
+brew "qemu"
 # Persistent key-value database, with built-in net interface
 brew "redis"
 # Fast, efficient and secure backup program
 brew "restic"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Powerful, clean, object-oriented scripting language
@@ -231,6 +238,8 @@ brew "terraform"
 brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
+# Official tldr client written in Rust
+brew "tlrc"
 # Lightweight BitTorrent client
 brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
@@ -247,6 +256,8 @@ brew "websocketd"
 brew "wtfutil"
 # JavaScript package manager
 brew "yarn"
+# Pluggable terminal workspace, with terminal multiplexer as the base feature
+brew "zellij"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -321,12 +332,16 @@ cask "kap"
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
+# Open source code editor written in Rust
+cask "lapce"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # Meet, chat, call, and collaborate in just one place
 cask "microsoft-teams"
 # Web browser focused on privacy and on minimizing tracking and fingerprinting
 cask "mullvad-browser"
+# Unofficial Google Nearby Share app
+cask "neardrop"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
@@ -371,44 +386,3 @@ cask "warp"
 cask "wireshark"
 # Multiplayer code editor
 cask "zed"
-mas "TestFlight", id: 899247664
-mas "Xcode", id: 497799835
-vscode "4ops.terraform"
-vscode "a-h.templ"
-vscode "aaron-bond.better-comments"
-vscode "adpyke.vscode-sql-formatter"
-vscode "asvetliakov.vscode-neovim"
-vscode "bmewburn.vscode-intelephense-client"
-vscode "cardinal90.multi-cursor-case-preserve"
-vscode "catppuccin.catppuccin-vsc"
-vscode "christian-kohler.path-intellisense"
-vscode "davidanson.vscode-markdownlint"
-vscode "dotiful.dotfiles-syntax-highlighting"
-vscode "dsznajder.es7-react-js-snippets"
-vscode "eamodio.gitlens"
-vscode "firsttris.vscode-jest-runner"
-vscode "foxundermoon.shell-format"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "golang.go-nightly"
-vscode "jasew.vscode-helix-emulation"
-vscode "mechatroner.rainbow-csv"
-vscode "mikestead.dotenv"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.atom-keybindings"
-vscode "ms-vscode.vscode-typescript-next"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "pbkit.vscode-pbkit"
-vscode "qinjia.seti-icons"
-vscode "redhat.vscode-xml"
-vscode "rust-lang.rust-analyzer"
-vscode "serayuzgur.crates"
-vscode "silverquark.dancehelix"
-vscode "tabbyml.vscode-tabby"
-vscode "vintharas.learn-vim"
-vscode "wayou.vscode-todo-highlight"
-vscode "windmilleng.vscode-go-autotest"
-vscode "zxh404.vscode-proto3"

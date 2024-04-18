@@ -47,7 +47,11 @@ export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 
 # RUST
 
-# LUNARVIM
+# FZF
+export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
+
 export PATH=~/.local/bin/:$PATH
 
 gitall() {
@@ -64,6 +68,10 @@ gitconflicts() {
     git merge $1 --no-ff --no-commit
 }
 
+gitcurrentbranch() {
+    git branch --show-current
+}
+
 cover() {
     t="/tmp/go-cover.$$.tmp"
     go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
@@ -75,4 +83,13 @@ hexfiend() {
 
 . ~/.camprofile
 
+# Set up fzf key bindings and fuzzy completion
+export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+  --color=fg:-1,fg+:#d0d0d0,bg:-1,bg+:#262626
+  --color=hl:#5f87af,hl+:#5fd7ff,info:#afaf87,marker:#87ff00
+  --color=prompt:#d7005f,spinner:#af5fff,pointer:#af5fff,header:#87afaf
+  --color=border:#262626,label:#aeaeae,query:#d9d9d9'
+
 eval $(/opt/homebrew/bin/brew shellenv)
+
+eval "$(fzf --zsh)"
