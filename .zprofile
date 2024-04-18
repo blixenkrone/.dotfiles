@@ -53,7 +53,7 @@ export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_ALT_C_COMMAND="fd --type=d --hidden --strip-cwd-prefix --exclude .git"
 
 # BAT
-export BAT_THEME=tokyonight_night
+# export BAT_THEME=tokyonight_night
 
 export PATH=~/.local/bin/:$PATH
 
