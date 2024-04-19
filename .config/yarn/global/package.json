@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "create-react-app": "^5.0.1",
-    "neovim": "^4.10.1",
-    "tree-sitter-cli": "^0.20.6"
-  }
-}
