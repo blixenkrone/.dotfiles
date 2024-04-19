@@ -96,3 +96,4 @@ export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
 eval $(/opt/homebrew/bin/brew shellenv)
 
 eval "$(fzf --zsh)"
+. ~/.config/fzf/fzf-git.sh/fzf-git.sh
