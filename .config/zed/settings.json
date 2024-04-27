@@ -7,9 +7,17 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "vim_mode": false,
+  "terminal": {},
+  "vim": {},
+  "features": {
+    "copilot": false
+  },
+  "theme": "Catppuccin Macchiato - No Italics",
   "telemetry": {
+    "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 16,
-  "buffer_font_size": 16
+  "ui_font_size": 14,
+  "buffer_font_size": 14
 }

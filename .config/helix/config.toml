@@ -25,10 +25,9 @@ newline = "none"
 # space = "·"
 tab = "→"
 newline = "⏎"
-tabpad = "·" # Tabs will look like "→···" (depending on tab width)
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
-
-
+# Alt-q = ["jump_view_left"]
+# Alt-w = ["jump_view_right"]

@@ -14,10 +14,19 @@ foreground = "0xc5c8c6"
 family = "MesloLGS NF"
 
 [window]
-opacity = 0.95
-startup_mode = "Windowed"
-padding.x = 10
-padding.y = 10
+decorations = "buttonless"
+dynamic_padding = false
+opacity = 0.9
 
-decorations = "Buttonless"
+[window.padding]
+x = 25
+y = 20
+# opacity = 0.99
+# startup_mode = "Windowed"
+# padding.x = 10
+# padding.y = 20
 
+# decorations = "None"
+
+# decorations = "Full"
+# startup_mode = "Maximized"
