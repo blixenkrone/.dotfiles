@@ -3,8 +3,8 @@ import = [
 ]
 
 [colors.cursor]
-cursor = "0xc5c8c6"
-text = "0x1d1f21"
+# cursor = "0xc5c8c6"
+# text = "0x1d1f21"
 
 [colors.primary]
 background = "0x1f2f51"
@@ -17,10 +17,11 @@ family = "MesloLGS NF"
 decorations = "buttonless"
 dynamic_padding = false
 opacity = 0.9
+option_as_alt = "both"
 
 [window.padding]
-x = 25
-y = 20
+x = 2
+y = 2
 # opacity = 0.99
 # startup_mode = "Windowed"
 # padding.x = 10

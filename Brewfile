@@ -24,18 +24,14 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
 # Core application library for C
 brew "glib"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
+# Protocol definitions and daemon for D-Bus at-spi
+brew "at-spi2-core"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Text processing system for reStructuredText
-brew "docutils"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Official Amazon AWS command-line interface
@@ -56,8 +52,14 @@ brew "bottom"
 brew "brew-cask-completion"
 # New way to see and navigate directory trees
 brew "broot"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# Get a file from an HTTP, HTTPS or FTP server
+brew "curl"
 # Library for encoding and decoding .avif files
 brew "libavif"
 # Graphics library to dynamically manipulate images
@@ -74,12 +76,26 @@ brew "dasel"
 brew "docker-completion"
 # Isolated development environments using Docker
 brew "docker-compose"
+# Text processing system for reStructuredText
+brew "docutils"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
 brew "dsq"
 # Modern replacement for 'ls'
 brew "exa"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
+# C library SSHv1/SSHv2 client and server protocols
+brew "libssh"
+# Framework for layout and rendering of i18n text
+brew "pango"
+# Create thumbnails for your video files
+brew "ffmpegthumbnailer"
 # Platform built on V8 to build network applications
 brew "node"
 # Terminal JSON viewer
@@ -104,12 +120,6 @@ brew "gitleaks"
 brew "gitup"
 # Render markdown on the CLI
 brew "glow"
-# Library to load and enumerate PKCS#11 modules
-brew "p11-kit"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Generate introspection data for GObject libraries
@@ -122,8 +132,6 @@ brew "golangci-lint"
 brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -148,10 +156,12 @@ brew "lastpass-cli"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # General purpose TCP-IP emulator
 brew "libslirp"
-# C library SSHv1/SSHv2 client and server protocols
-brew "libssh"
+# Next-gen compiler infrastructure
+brew "llvm"
 # Fully functional local AWS cloud stack
 brew "localstack"
 # Mac App Store command-line interface
@@ -182,12 +192,12 @@ brew "pidof"
 brew "pocketbase"
 # Tool for managing OCI containers and pods
 brew "podman"
+# PDF rendering library (based on the xpdf-3.0 code base)
+brew "poppler"
 # Object-relational database system
 brew "postgresql@14"
 # Theme for zsh
 brew "powerlevel10k"
-# Tool for creating isolated virtual python environments
-brew "virtualenv"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
 # Protocol buffers (Google's data interchange format)
@@ -248,14 +258,20 @@ brew "tree"
 brew "trippy"
 # Undo git commands. Your damage control git buddy
 brew "ugit"
+# Command-line unarchiving tools supporting multiple formats
+brew "unar"
 # Vi 'workalike' with many additional features
 brew "vim"
+# Tool for creating isolated virtual python environments
+brew "virtualenv"
 # WebSockets the Unix way
 brew "websocketd"
 # Personal information dashboard for your terminal
 brew "wtfutil"
 # JavaScript package manager
 brew "yarn"
+# Blazing fast terminal file manager written in Rust, based on async I/O
+brew "yazi"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
 # Shell extension to navigate your filesystem faster
@@ -298,6 +314,8 @@ cask "bruno"
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
+# Data recovery software
+cask "disk-drill"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Online diagram software
@@ -310,6 +328,8 @@ cask "firefox-developer-edition"
 cask "flycut"
 # Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
+# Developer targeted fonts with a high number of glyphs
+cask "font-symbols-only-nerd-font"
 # Free and open-source image editor
 cask "gimp"
 # Web browser

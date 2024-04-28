@@ -67,16 +67,11 @@ COMPLETION_WAITING_DOTS="true"
 # User configuration
 plugins=(
   git
-  github
-  gitfast
-  vscode
   brew
-  iterm2
   macos
+  fzf
   golang
   docker
-  thefuck
-  fzf
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -101,11 +96,13 @@ eval "$(zoxide init zsh)"
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
- if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='nano'
- else
-   export EDITOR='vim'
- fi
+
+export EDITOR='helix'
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='helix'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -127,5 +124,6 @@ source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 
 source /Users/blixenkrone/.config/broot/launcher/bash/br
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
 
 source ~/.zprofile
