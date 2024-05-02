@@ -3,8 +3,8 @@ import = [
 ]
 
 [colors.cursor]
-# cursor = "0xc5c8c6"
-# text = "0x1d1f21"
+cursor = "0xc5c8c6"
+text = "0x1d1f21"
 
 [colors.primary]
 background = "0x1f2f51"
