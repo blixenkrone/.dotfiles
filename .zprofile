@@ -14,7 +14,7 @@ alias brewbundle='brew bundle dump --describe --force'
 alias ncdu='gdu-go'
 alias zj='zellij'
 alias lg='lazygit'
-alias lzd='lazygit'
+alias lzd='lazydocker'
 
 # DEV PATH
 export EDITOR="helix"
