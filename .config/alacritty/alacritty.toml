@@ -10,8 +10,8 @@ import = [
 ]
 
 [colors.cursor]
-cursor = "0xc5c8c6"
-text = "0x1d1f21"
+# cursor = "0xc5c8c6"
+# text = "0x1d1f21"
 
 [colors.primary]
 
@@ -33,3 +33,13 @@ title = "blix"
 x = 5
 y = 5
 # startup_mode = "Maximized"
+
+
+[keyboard]
+bindings = [
+    { key = "8", mods = "Alt|Shift", chars = "{" },
+    { key = "9", mods = "Alt|Shift", chars = "}" },
+    { key = "8", mods = "Alt", chars = "[" },
+    { key = "9", mods = "Alt", chars = "]" },
+    { key = "i", mods = "Alt", chars = "|" },
+]
