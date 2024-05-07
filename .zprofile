@@ -20,7 +20,6 @@ alias lzd='lazydocker'
 export EDITOR="helix"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
-export EDITOR="/Applications/Visual\ Studio\ Code.app/"
 export SYNC=$HOME/Sync
 
 # DOCKER
