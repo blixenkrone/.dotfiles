@@ -9,12 +9,13 @@ alias buf='/opt/homebrew/bin/buf'
 alias lzd='lazydocker'
 alias cd='z'
 alias cat='bat'
-alias ls='exa'
+alias ls='exa -la --icons'
 alias brewbundle='brew bundle dump --describe --force'
 alias ncdu='gdu-go'
+alias zj='zellij'
 
 # DEV PATH
-export EDITOR="hx"
+export EDITOR="helix"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export EDITOR="/Applications/Visual\ Studio\ Code.app/"
@@ -84,7 +85,6 @@ hexfiend() {
   open -a "Hex Fiend" $1
 }
 
-. ~/.camprofile
 
 # Set up fzf key bindings and fuzzy completion
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
