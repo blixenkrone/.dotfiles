@@ -31,15 +31,15 @@ display-messages = true
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
-A-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
-A-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
+S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
+S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-e = [":sh zellij run --floating -n 'yazi picker' -- /Users/blixenkrone/.config/zsh/scripts/open_in_helix_from_yazi.sh"]
-
+y = [":clipboard-yank", "yank"]
 
 [keys.normal.backspace]
-b = ":sh zellij run -f -- just build"
-r = ":sh zellij run -f -- just run"
-t = ":sh zellij run -f -- just test"
 g = ":sh zellij run -fc -- lazygit"
 f = ":sh zellij run -fc -- yy"
+t = ":sh zellij run -f -- just test"
+b = ":sh zellij run -f -- just build"
+r = ":sh zellij run -f -- just run"
