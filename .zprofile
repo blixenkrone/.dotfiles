@@ -15,9 +15,10 @@ alias ncdu='gdu-go'
 alias zj='zellij'
 alias lg='lazygit'
 alias lzd='lazydocker'
+alias y='yazi'
 
 # DEV PATH
-export EDITOR="helix"
+export EDITOR="hx"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export SYNC=$HOME/Sync
@@ -48,6 +49,9 @@ export goland=$BREW_DIR/bin/goland
 export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 
 # RUST
+
+# ZIG
+export PATH=$PATH:/opt/homebrew/bin/zig
 
 # FZF
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"

@@ -1,5 +1,6 @@
 # theme = "gruvbox_dark_hard"
-theme = "nightfox"
+# theme = "nightfox"
+theme = "tokyonight_moon"
 
 [editor]
 line-number = "relative"
@@ -30,12 +31,18 @@ display-messages = true
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
-C-s = ":w" # Maps Ctrl-s to the typable command :w which is an alias for :write (save file)
+# C-s = ":w" 
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 g = { a = "code_action" } # Maps `ga` to show possible code actions
 C-e = [":sh zellij run --floating -n 'yazi picker' -- /Users/blixenkrone/.config/zsh/scripts/open_in_helix_from_yazi.sh"]
 y = [":clipboard-yank", "yank"]
+"ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
+S-A-f = [":format"]
+
+[keys.insert]
+"A-x" = "normal_mode"     # Maps Alt-X to enter normal mode
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"
