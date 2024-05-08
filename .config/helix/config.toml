@@ -29,6 +29,7 @@ newline = "⏎"
 [editor.lsp]
 display-messages = true
 
+
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
 # C-s = ":w" 
@@ -39,6 +40,7 @@ C-e = [":sh zellij run --floating -n 'yazi picker' -- /Users/blixenkrone/.config
 y = [":clipboard-yank", "yank"]
 "ret" = ["open_below", "normal_mode"] # Maps the enter key to open_below then re-enter normal mode
 S-A-f = [":format"]
+S-A-s = [":write"]
 
 [keys.insert]
 "A-x" = "normal_mode"     # Maps Alt-X to enter normal mode
