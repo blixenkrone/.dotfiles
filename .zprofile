@@ -17,6 +17,7 @@ alias lg='lazygit'
 alias lzd='lazydocker'
 alias y='yazi'
 
+
 # DEV PATH
 export EDITOR="hx"
 export DEV=$HOME/dev
@@ -34,7 +35,6 @@ export BREW_DIR=/opt/homebrew
 export GOPATH=$HOME/dev/go
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=$BREW_DIR/opt/go/libexec
-# export GOPROXY=https://goproxy.io,direct
 export GOPROXY="https://proxy.golang.org,direct"
 export GO111MODULE=on
 
@@ -51,7 +51,7 @@ export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 # RUST
 
 # ZIG
-export PATH=$PATH:/opt/homebrew/bin/zig
+export PATH=$PATH:$BREW_DIR/bin/zig
 
 # FZF
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"

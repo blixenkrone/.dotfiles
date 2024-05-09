@@ -52,3 +52,4 @@ f = ":sh zellij run -fc -- yy"
 t = ":sh zellij run -f -- just test"
 b = ":sh zellij run -f -- just build"
 r = ":sh zellij run -f -- just run"
+
