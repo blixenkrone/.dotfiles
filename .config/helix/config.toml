@@ -49,7 +49,6 @@ j = { k = "normal_mode" } # Maps `jk` to exit insert mode
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"
 f = ":sh zellij run -fc -- yy"
-t = ":sh zellij run -f -- just test"
+t = ":sh zellij run -f -- go test | $(:sh $filename)"
 b = ":sh zellij run -f -- just build"
 r = ":sh zellij run -f -- just run"
-

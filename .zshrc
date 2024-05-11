@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -68,37 +69,33 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(
   git
   brew
-  macos
   fzf
   golang
   docker
+  thefuck
 )
 
-source $ZSH/oh-my-zsh.sh
 
-  if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-    autoload -Uz compinit
-    compinit
-  fi
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+  autoload -Uz compinit
+  compinit
+fi
 
-# source $BREW_DIR/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# source $BREW_DIR/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+eval $(/opt/homebrew/bin/brew shellenv)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-# eval $(thefuck --alias)
-source ~/.ghprofile
+source $ZSH/oh-my-zsh.sh
 
-# Zoxide init shell
+# (( ${+commands[zellij]} )) && eval "$(zellij setup --generate-auto-start zsh)"
+
 eval "$(zoxide init zsh)"
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+eval "$(atuin init zsh)"
+eval "$(fzf --zsh)"
+. ~/.config/fzf/fzf-git.sh/fzf-git.sh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Preferred editor for local and remote sessions
-
 export EDITOR='helix'
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
@@ -106,34 +103,16 @@ else
   export EDITOR='helix'
 fi
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
-
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-function yy() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
-
-source ~/.zprofile
-eval "$(atuin init zsh)"
+. ~/.ghprofile
+# source ~/.config/zellij/zsh_completion.zsh
+. ~/.zprofile
