@@ -42,4 +42,5 @@ bindings = [
     { key = "8", mods = "Alt", chars = "[" },
     { key = "9", mods = "Alt", chars = "]" },
     { key = "i", mods = "Alt", chars = "|" },
+    { key = "'", mods = "Alt", chars = "@" },
 ]
