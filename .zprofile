@@ -1,3 +1,4 @@
+alias c='clear'
 alias d-m='docker-machine'
 alias d-c='docker-compose'
 alias gs="git switch"
