@@ -83,7 +83,7 @@ show_preview = true
 ## characters that count as a part of a word
 # word_chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-## number of context lines to show when scrolling by pages
+# number of context lines to show when scrolling by pages
 # scroll_context_lines = 1
 
 ## use ctrl instead of alt as the shortcut modifier key for numerical UI shortcuts

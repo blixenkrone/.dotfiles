@@ -73,7 +73,8 @@ plugins=(
   golang
   docker
   thefuck
-  zellij
+  ripgrep
+  zoxide
 )
 
 
