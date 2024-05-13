@@ -78,6 +78,8 @@ plugins=(
 )
 
 
+source $ZSH/oh-my-zsh.sh
+
 if type brew &>/dev/null; then
   FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
   autoload -Uz compinit
@@ -87,7 +89,6 @@ fi
 eval $(/opt/homebrew/bin/brew shellenv)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source $ZSH/oh-my-zsh.sh
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"

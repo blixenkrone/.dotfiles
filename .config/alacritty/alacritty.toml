@@ -9,9 +9,6 @@ import = [
 
 ]
 
-[shell]
-program = "/bin/zsh"
-args = ["-l"]
 
 [colors.cursor]
 # cursor = "0xc5c8c6"
@@ -43,4 +40,5 @@ bindings = [
     { key = "9", mods = "Alt", chars = "]" },
     { key = "i", mods = "Alt", chars = "|" },
     { key = "'", mods = "Alt", chars = "@" },
+    { key = "7", mods = "Alt|Shift", chars = '\' },
 ]
