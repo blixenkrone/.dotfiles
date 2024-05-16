@@ -77,7 +77,6 @@ plugins=(
   zoxide
 )
 
-
 source $ZSH/oh-my-zsh.sh
 
 if type brew &>/dev/null; then
@@ -110,7 +109,6 @@ fi
 # For a full list of active aliases, run `alias`.
 
 source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 

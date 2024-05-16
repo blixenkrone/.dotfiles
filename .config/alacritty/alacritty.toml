@@ -9,6 +9,9 @@ import = [
 
 ]
 
+# [shell]
+# program = "/bin/zsh"
+# args = ["-l"]
 
 [colors.cursor]
 # cursor = "0xc5c8c6"
