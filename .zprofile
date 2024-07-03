@@ -17,8 +17,16 @@ alias ncdu='gdu-go'
 alias zj='zellij -l welcome'
 alias lg='lazygit'
 alias lzd='lazydocker'
-alias y='yazi'
+# alias y='yazi'
 
+function yy() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
 
 # DEV PATH
 export EDITOR="hx"
