@@ -53,7 +53,8 @@ S-A-s = [":write"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 
 [keys.insert]
-"A-x" = "normal_mode"     # Maps Alt-X to enter normal mode
+"A-<" = "normal_mode"     # Maps Alt-X to enter normal mode
+j = { k = "normal_mode"} 
 
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"

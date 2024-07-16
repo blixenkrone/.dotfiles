@@ -11,6 +11,7 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
+tap "nao1215/tap"
 tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
 tap "romkatv/powerlevel10k"
@@ -30,8 +31,16 @@ brew "python@3.12"
 brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
 brew "at-spi2-core"
+# Improved shell history for zsh, bash, fish and nushell
+brew "atuin"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Official Amazon AWS command-line interface
@@ -50,12 +59,6 @@ brew "bfg"
 brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
-# New way to see and navigate directory trees
-brew "broot"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -68,12 +71,10 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
-brew "docker-completion"
+brew "docker-completion", link: false
 # Isolated development environments using Docker
 brew "docker-compose"
 # Text processing system for reStructuredText
@@ -96,6 +97,8 @@ brew "libssh"
 brew "pango"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
+# User-friendly command-line shell for UNIX-like operating systems
+brew "fish"
 # Platform built on V8 to build network applications
 brew "node"
 # Terminal JSON viewer
@@ -156,8 +159,6 @@ brew "lastpass-cli"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # Next-gen compiler infrastructure
@@ -170,8 +171,6 @@ brew "mas"
 brew "mkcert"
 # Mock code autogenerator for Golang
 brew "mockery"
-# Node version management
-brew "n"
 # Fast, highly customisable system info script
 brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -214,6 +213,8 @@ brew "prototool"
 brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Persistent key-value database, with built-in net interface
@@ -225,7 +226,7 @@ brew "ripgrep"
 # Utility that provides fast incremental file transfer
 brew "rsync"
 # Powerful, clean, object-oriented scripting language
-brew "ruby", link: true
+brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
 # Static analysis and lint tool, for (ba)sh scripts
@@ -238,18 +239,24 @@ brew "sops"
 brew "sqlc"
 # Cross-shell prompt for astronauts
 brew "starship"
+# Modern and pretty fancy file manager for the terminal
+brew "superfile"
 # Open source continuous file synchronization application
 brew "syncthing"
 # Tool Command Language
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Powerful free data recovery utility
+brew "testdisk"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Text interface for Git repositories
 brew "tig"
 # Official tldr client written in Rust
 brew "tlrc"
+# Program that allows you to count code, quickly
+brew "tokei"
 # Lightweight BitTorrent client
 brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
@@ -274,6 +281,10 @@ brew "yarn"
 brew "yazi"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
 brew "zellij"
+# Programming language designed for robustness, optimality, and clarity
+brew "zig"
+# Language Server for Zig
+brew "zls"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -296,7 +307,7 @@ brew "garden-io/garden/garden-cli"
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
-# Tabby: AI Coding Assitatnt
+# Tabby: AI Coding Assistant
 brew "tabbyml/tabby/tabby"
 # GPU-accelerated terminal emulator
 cask "alacritty"
@@ -323,19 +334,17 @@ cask "drawio"
 # Web browser
 cask "firefox"
 # Web browser
-cask "firefox-developer-edition"
+cask "firefox@developer-edition"
 # Clipboard manager for developers
 cask "flycut"
-# Developer targeted fonts with a high number of glyphs
 cask "font-hack-nerd-font"
-# Developer targeted fonts with a high number of glyphs
 cask "font-symbols-only-nerd-font"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
 cask "google-chrome"
 # Web browser
-cask "google-chrome-canary"
+cask "google-chrome@canary"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Access the HEY email service
@@ -356,8 +365,6 @@ cask "keepingyouawake"
 cask "lapce"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
-# Meet, chat, call, and collaborate in just one place
-cask "microsoft-teams"
 # Web browser focused on privacy and on minimizing tracking and fingerprinting
 cask "mullvad-browser"
 # Unofficial Google Nearby Share app
@@ -370,6 +377,8 @@ cask "nordvpn"
 cask "obsidian"
 # Verify system files structure, run miscellaneous maintenance and more
 cask "onyx"
+# Toolbox companion for QMK Firmware
+cask "qmk-toolbox"
 # Free and Open Source messaging and emailing app
 cask "rambox"
 # Control your tools with a few keystrokes
@@ -406,3 +415,43 @@ cask "warp"
 cask "wireshark"
 # Multiplayer code editor
 cask "zed"
+mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835
+vscode "4ops.terraform"
+vscode "a-h.templ"
+vscode "aaron-bond.better-comments"
+vscode "adpyke.vscode-sql-formatter"
+vscode "azemoh.one-monokai"
+vscode "bmewburn.vscode-intelephense-client"
+vscode "cardinal90.multi-cursor-case-preserve"
+vscode "catppuccin.catppuccin-vsc"
+vscode "christian-kohler.path-intellisense"
+vscode "davidanson.vscode-markdownlint"
+vscode "dotiful.dotfiles-syntax-highlighting"
+vscode "dsznajder.es7-react-js-snippets"
+vscode "eamodio.gitlens"
+vscode "enkia.tokyo-night"
+vscode "firsttris.vscode-jest-runner"
+vscode "foxundermoon.shell-format"
+vscode "golang.go-nightly"
+vscode "jasew.vscode-helix-emulation"
+vscode "mechatroner.rainbow-csv"
+vscode "mikestead.dotenv"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-vscode-remote.remote-containers"
+vscode "ms-vscode.atom-keybindings"
+vscode "ms-vscode.vscode-typescript-next"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "mvllow.rose-pine"
+vscode "pbkit.vscode-pbkit"
+vscode "qinjia.seti-icons"
+vscode "redhat.vscode-xml"
+vscode "rust-lang.rust-analyzer"
+vscode "serayuzgur.crates"
+vscode "silverquark.dancehelix"
+vscode "vintharas.learn-vim"
+vscode "wayou.vscode-todo-highlight"
+vscode "windmilleng.vscode-go-autotest"
+vscode "zxh404.vscode-proto3"
