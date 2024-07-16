@@ -89,6 +89,9 @@ eval $(/opt/homebrew/bin/brew shellenv)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+if command -v ngrok &>/dev/null; then
+  eval "$(ngrok completion)"
+fi
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 eval "$(fzf --zsh)"
