@@ -94,7 +94,8 @@ if command -v ngrok &>/dev/null; then
 fi
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
+source <(fzf --zsh)
 . ~/.config/fzf/fzf-git.sh/fzf-git.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
