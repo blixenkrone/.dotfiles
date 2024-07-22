@@ -11,22 +11,22 @@ args = ["-l"]
 # text = "0x1d1f21"
 
 [font.normal]
-family = "MesloLGS NF"
+family = "MesloLGS Nerd Font Mono"
 
 [font]
-size = 14
+size = 16
 
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.8
+opacity = 0.9
 blur = true
 option_as_alt = "both"
 startup_mode = "Windowed"
 
 [window.padding]
-x = 5
-y = 5
+x = 2
+y = 2
 
 [keyboard]
 bindings = [
