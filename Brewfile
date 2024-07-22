@@ -45,6 +45,8 @@ brew "cryptography"
 brew "python@3.11"
 # Official Amazon AWS command-line interface
 brew "awscli"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -338,6 +340,7 @@ cask "firefox@developer-edition"
 # Clipboard manager for developers
 cask "flycut"
 cask "font-hack-nerd-font"
+cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
 # Free and open-source image editor
 cask "gimp"
@@ -411,6 +414,8 @@ cask "visual-studio-code"
 cask "vlc"
 # Rust-based terminal
 cask "warp"
+# GPU-accelerated cross-platform terminal emulator and multiplexer
+cask "wezterm"
 # Network protocol analyzer
 cask "wireshark"
 # Multiplayer code editor
