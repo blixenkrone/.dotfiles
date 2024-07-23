@@ -9,6 +9,9 @@ bufferline = "always"
 auto-save = true
 color-modes = true
 
+[editor.soft-wrap]
+enable = true
+
 [editor.statusline]
 left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
 center = ["file-name", "version-control"]
@@ -31,12 +34,16 @@ newline = "none"
 [editor.whitespace.characters]
 space = " "
 nbsp = "⍽"    # Non Breaking SPace
-tab = "→"
+# tab = "→"
 newline = "⏎"
+
+[editor.indent-guides]
+render = true
 
 [editor.lsp]
 display-messages = true
 snippets = true
+display-inlay-hints = true
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
@@ -63,4 +70,14 @@ f = ":sh zellij run -fc -- yy"
 t = ":sh zellij run -f -- go test | $(:sh $filename)"
 b = ":sh zellij run -f -- just build"
 r = ":sh zellij run -f -- just run"
+c = ":bco"
+h = ":toggle lsp.display-inlay-hints"
 
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+"'" = "'"
+'`' = '`'
+'<' = '>'

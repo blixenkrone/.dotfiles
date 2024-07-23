@@ -35,3 +35,17 @@ name = "typescript"
 auto-format = true
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
+[[language]]
+name = "toml"
+formatter = { command = "prettier" }
+auto-format = true
+
+[[language]]
+name = "yaml"
+formatter = { command = "prettier" }
+auto-format = true
+
+[[language]]
+name = "dockerfile"
+file-types = ["Dockerfile", "Dockerfile.lambda"]
+auto-format = true
