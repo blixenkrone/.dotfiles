@@ -37,4 +37,6 @@ bindings = [
     { key = "i", mods = "Alt", chars = "|" },
     { key = "'", mods = "Alt", chars = "@" },
     { key = "7", mods = "Alt|Shift", chars = '\' },
+    { key = "Q", mods = "Command", action = "None" },
+    { key = "W", mods = "Command", action = "None" },
 ]

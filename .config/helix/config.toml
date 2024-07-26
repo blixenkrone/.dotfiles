@@ -59,15 +59,16 @@ S-A-f = [":format"]
 S-A-s = [":write"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
+S-x = ["extend_line_up"]
 
 [keys.insert]
 "A-<" = "normal_mode"     # Maps Alt-X to enter normal mode
-j = { k = "normal_mode"} 
+# j = { k = "normal_mode"} 
 
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"
-f = ":sh zellij run -fc -- yy"
-t = ":sh zellij run -f -- go test | $(:sh $filename)"
+f = ":sh zellij run -fc -- y"
+t = ":sh zellij run -f -- go test | $(:sh $PWD)"
 b = ":sh zellij run -f -- just build"
 r = ":sh zellij run -f -- just run"
 c = ":bco"
@@ -80,4 +81,4 @@ h = ":toggle lsp.display-inlay-hints"
 '"' = '"'
 "'" = "'"
 '`' = '`'
-'<' = '>'
+# '<' = '>'
