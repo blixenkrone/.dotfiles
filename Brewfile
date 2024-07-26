@@ -61,6 +61,8 @@ brew "bfg"
 brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
+# New way of working with Protocol Buffers
+brew "buf"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Get a file from an HTTP, HTTPS or FTP server
@@ -239,8 +241,6 @@ brew "sniffnet"
 brew "sops"
 # Generate type safe Go from SQL
 brew "sqlc"
-# Cross-shell prompt for astronauts
-brew "starship"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
 # Open source continuous file synchronization application
@@ -295,8 +295,6 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# The best way of working with Protocol Buffers.
-brew "bufbuild/buf/buf"
 # Software to be used as a service scaffolding tool for Clicks & Mortar engineers
 brew "clicksandmortar/launchpad/launchpad"
 # Cloudflare Tunnel
@@ -364,8 +362,10 @@ cask "kap"
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
-# Open source code editor written in Rust
-cask "lapce"
+# GPU-based terminal emulator
+cask "kitty"
+# Privacy-first, open-source platform for knowledge sharing and management
+cask "logseq"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # Web browser focused on privacy and on minimizing tracking and fingerprinting

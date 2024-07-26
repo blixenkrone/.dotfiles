@@ -94,7 +94,6 @@ if command -v ngrok &>/dev/null; then
 fi
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-# eval "$(fzf --zsh)"
 source <(fzf --zsh)
 . ~/.config/fzf/fzf-git.sh/fzf-git.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
@@ -102,7 +101,7 @@ source <(fzf --zsh)
 # Preferred editor for local and remote sessions
 export EDITOR='helix'
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nano'
 else
   export EDITOR='helix'
 fi
@@ -112,8 +111,8 @@ fi
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 
-source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source ~/.ghprofile
