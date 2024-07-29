@@ -1,0 +1,37 @@
+# Theme
+theme = catppuccin-macchiato
+
+# Font
+font-family = MesloLG Nerd Font Mono
+font-size = 16
+
+# Opacity of split windows
+unfocused-split-opacity = 0.97
+
+# Cursor style
+# cursor-style-blink = true
+
+# Clipboard settings
+clipboard-read = allow
+clipboard-write = allow
+
+# MacOS specifics
+macos-option-as-alt = true
+window-decoration = false
+window-theme = "dark"
+
+# Always show ghostty as the title
+# title = 👻 Ghostty
+
+# Window size
+window-width = 90
+window-height = 30
+
+keybind = shift+left=text:\x01
+# keybind = super+left=esc:b
+# keybind = super+right=esc:f
+# keybind = alt+left=esc:b
+# keybind = alt+right=esc:f
+# keybind = super+shift+right=text:\x05
+
+mouse-hide-while-typing = true

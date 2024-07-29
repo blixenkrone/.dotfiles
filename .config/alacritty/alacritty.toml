@@ -25,8 +25,8 @@ option_as_alt = "both"
 startup_mode = "Windowed"
 
 [window.padding]
-x = 2
-y = 2
+x = 1
+y = 1
 
 [keyboard]
 bindings = [
