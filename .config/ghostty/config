@@ -17,7 +17,7 @@ clipboard-write = allow
 
 # MacOS specifics
 macos-option-as-alt = true
-window-decoration = false
+# window-decoration = false
 window-theme = "dark"
 
 # Always show ghostty as the title
