@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -68,12 +68,12 @@ COMPLETION_WAITING_DOTS="true"
 # User configuration
 plugins=(
   git
-  brew
+  # brew
   fzf
-  golang
+  # golang
   docker
-  thefuck
-  zoxide
+  # thefuck
+  # zoxide
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -88,9 +88,6 @@ eval $(/opt/homebrew/bin/brew shellenv)
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-if command -v ngrok &>/dev/null; then
-  eval "$(ngrok completion)"
-fi
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 source <(fzf --zsh)
@@ -99,11 +96,11 @@ source <(fzf --zsh)
 
 # Preferred editor for local and remote sessions
 export EDITOR='helix'
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='nano'
-else
-  export EDITOR='helix'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+#   export EDITOR='nano'
+# else
+#   export EDITOR='helix'
+# fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -117,6 +114,6 @@ source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
 source ~/.ghprofile
 source ~/.zprofile
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

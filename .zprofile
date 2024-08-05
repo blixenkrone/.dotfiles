@@ -18,7 +18,6 @@ alias zj='zellij -l welcome'
 alias zjc='zellij -l compact'
 alias lg='lazygit'
 alias lzd='lazydocker'
-# alias y='yazi'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -29,6 +28,10 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+function zji() {
+  # go test ./lox/scanner_test.go
+  zellij run -i -- "$@"
+}
 # DEV PATH
 export EDITOR="hx"
 export DEV=$HOME/dev
@@ -89,9 +92,6 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
-# BAT
-# export BAT_THEME=tokyonight_night
-
 export PATH=~/.local/bin/:$PATH
 
 gitall() {
@@ -104,8 +104,4 @@ gitall() {
     git push
 }
 
-cover() {
-    t="/tmp/go-cover.$$.tmp"
-    go test -coverprofile=$t $@ && go tool cover -html=$t && unlink $t
-}
 
