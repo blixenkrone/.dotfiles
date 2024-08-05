@@ -46,7 +46,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
-DISABLE_UNTRACKED_FILES_DIRTY="true"
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
@@ -68,11 +68,9 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # User configuration
 plugins=(
   git
-  # brew
   fzf
-  # golang
   docker
-  # thefuck
+  ripgrep
   # zoxide
 )
 
@@ -96,11 +94,6 @@ source <(fzf --zsh)
 
 # Preferred editor for local and remote sessions
 export EDITOR='helix'
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='nano'
-# else
-#   export EDITOR='helix'
-# fi
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
