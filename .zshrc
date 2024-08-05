@@ -70,7 +70,6 @@ plugins=(
   git
   fzf
   docker
-  ripgrep
   # zoxide
 )
 
