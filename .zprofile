@@ -32,6 +32,7 @@ function zji() {
   # go test ./lox/scanner_test.go
   zellij run -i -- "$@"
 }
+
 # DEV PATH
 export EDITOR="hx"
 export DEV=$HOME/dev
