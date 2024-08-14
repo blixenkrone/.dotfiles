@@ -9,4 +9,4 @@ edit = [
 ]
 
 [flavor]
-use = "catppuccin-mocha"
+use = "catppuccin-macchiato"
