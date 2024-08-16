@@ -12,8 +12,12 @@ formatter = {command = "goimports"}
 
 [[language]]
 name = "hcl"
+injection-regex = "(hcl|tf|nomad)"
+language-id = "terraform"
+file-types = ["hcl", "tf", "nomad"]
+comment-token = "#"
+language-servers = [ "terraform-ls" ]
 auto-format = true
-formatter = { command = "terraform-ls" }
 
 [[language]]
 name = "nix"
