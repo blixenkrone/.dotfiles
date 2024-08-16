@@ -3,13 +3,13 @@ theme = catppuccin-macchiato
 
 # Font
 font-family = MesloLG Nerd Font Mono
-font-size = 14
+font-size = 16
 
 # Opacity of split windows
-unfocused-split-opacity = 0.97
+unfocused-split-opacity = 0.90
 
 # Cursor style
-cursor-style-blink = true
+# cursor-style-blink = true
 
 # Clipboard settings
 clipboard-read = allow
@@ -24,10 +24,10 @@ window-theme = "dark"
 # title = 👻 Ghostty
 
 # Window size
-# window-width = 90
-# window-height = 30
+window-width = 100
+window-height = 10
 
-keybind = shift+left=text:\x01
+# keybind = shift+left=text:\x01
 # keybind = super+left=esc:b
 # keybind = super+right=esc:f
 # keybind = alt+left=esc:b
