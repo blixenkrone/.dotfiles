@@ -1,6 +1,7 @@
 tap "bufbuild/buf"
 tap "clicksandmortar/launchpad"
 tap "cloudflare/cloudflare"
+tap "codecrafters-io/tap"
 tap "derailed/k9s"
 tap "garden-io/garden"
 tap "goreleaser/tap"
@@ -12,9 +13,11 @@ tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "nao1215/tap"
+tap "nikitabobko/tap"
 tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
 tap "romkatv/powerlevel10k"
+tap "siderolabs/tap"
 tap "stripe/stripe-cli"
 tap "tabbyml/tabby"
 # Run your GitHub Actions locally
@@ -47,6 +50,10 @@ brew "python@3.11"
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
 brew "bash"
+# Platform built on V8 to build network applications
+brew "node"
+# Language Server for Bash
+brew "bash-language-server"
 # C library of Git core methods that is re-entrant and linkable
 brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -103,8 +110,6 @@ brew "pango"
 brew "ffmpegthumbnailer"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
-# Platform built on V8 to build network applications
-brew "node"
 # Terminal JSON viewer
 brew "fx"
 # Command-line fuzzy finder written in Go
@@ -189,6 +194,8 @@ brew "nss"
 brew "nvm"
 # Create, run, and share large language models (LLMs)
 brew "ollama"
+# Drop-in replacement for Terraform. Infrastructure as Code Tool
+brew "opentofu"
 # Display the PID number for a given process name
 brew "pidof"
 # Open source backend for your next project in 1 file
@@ -249,6 +256,8 @@ brew "syncthing"
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
 brew "terraform"
+# Terraform Language Server
+brew "terraform-ls"
 # Powerful free data recovery utility
 brew "testdisk"
 # Programmatically correct mistyped console commands
@@ -273,6 +282,8 @@ brew "unar"
 brew "vim"
 # Tool for creating isolated virtual python environments
 brew "virtualenv"
+# Executes a program periodically, showing output fullscreen
+brew "watch"
 # WebSockets the Unix way
 brew "websocketd"
 # Personal information dashboard for your terminal
@@ -299,6 +310,8 @@ brew "zsh-syntax-highlighting"
 brew "clicksandmortar/launchpad/launchpad"
 # Cloudflare Tunnel
 brew "cloudflare/cloudflare/cloudflared"
+# CodeCrafters CLI
+brew "codecrafters-io/tap/codecrafters"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Development engine for Kubernetes
@@ -307,8 +320,12 @@ brew "garden-io/garden/garden-cli"
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
+# CLI for out-of-band management of Kubernetes nodes created by Talos
+brew "siderolabs/tap/talosctl"
 # Tabby: AI Coding Assistant
 brew "tabbyml/tabby/tabby"
+# AeroSpace is an i3-like tiling window manager for macOS
+cask "aerospace"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Application uninstaller
@@ -362,8 +379,12 @@ cask "kap"
 cask "karabiner-elements"
 # Tool to prevent the system from going into sleep mode
 cask "keepingyouawake"
+# Open-source keystroke visualiser
+cask "keycastr"
 # GPU-based terminal emulator
 cask "kitty"
+# Kubernetes IDE
+cask "lens"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
 # Shows the next meeting in the menu bar
@@ -406,6 +427,8 @@ cask "teamviewer"
 cask "the-unarchiver"
 # To-do list
 cask "todoist"
+# Web browser focusing on security
+cask "tor-browser"
 # Open-source BitTorrent client
 cask "transmission"
 # Open-source code editor
