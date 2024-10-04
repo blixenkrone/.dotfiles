@@ -1,7 +1,6 @@
-# [language-server.gopls]
-# command = "gopls"
-# config = { "gofumpt" = true, "local" = "goimports", "semanticTokens" = true, "staticcheck" = true, "verboseOutput" = true, "analyses" = { "fieldalignment" = true, "nilness" = true, unusedparams = true, unusedwrite = true, useany = true }, usePlaceholders = true, completeUnimported = true, hints = { "assignVariableType" = true, "compositeLiteralFields" = true, "compositeLiteralTypes" = true, "constantValues" = true, "functionTypeParameters" = true, "parameterNames" = true, "rangeVariableTypes" = true } }
-
+[language-server.gopls]
+command = "gopls"
+config = { "gofumpt" = true, "local" = "goimports", "semanticTokens" = true, "staticcheck" = true, "verboseOutput" = true, "analyses" = { "fieldalignment" = true, "nilness" = true, unusedparams = true, unusedwrite = true, useany = true }, usePlaceholders = true, completeUnimported = true, hints = { "assignVariableType" = true, "compositeLiteralFields" = true, "compositeLiteralTypes" = true, "constantValues" = true, "functionTypeParameters" = true, "parameterNames" = true, "rangeVariableTypes" = true } }
 [[language]]
 name = "go"
 roots = ["go.work", "go.mod"]
@@ -26,6 +25,8 @@ formatter = { command = "terraform-ls" }
 
 [[language]]
 name = "html"
+file-types = ["html", "templ", "tmpl"]
+language-servers = ["vscode-html-language-server"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 

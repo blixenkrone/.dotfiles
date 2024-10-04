@@ -1,5 +1,9 @@
 import = [
-   "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+   # "~/.config/alacritty/themes/themes/tokyo-night-storm.toml"
+   # "~/.config/alacritty/themes/themes/rose-pine.toml"
+   # "~/.config/alacritty/themes/themes/alabaster_dark.toml"
+   # "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+   "~/.config/alacritty/themes/themes/deep_space.toml"
 ]
 
 [shell]
@@ -14,12 +18,13 @@ args = ["-l"]
 family = "MesloLGS Nerd Font Mono"
 
 [font]
-size = 16
+size = 14
 
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.9
+# opacity = 0.9
+opacity = 1
 blur = true
 option_as_alt = "both"
 startup_mode = "Windowed"
