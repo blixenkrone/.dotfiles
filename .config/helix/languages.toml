@@ -25,7 +25,7 @@ formatter = { command = "terraform-ls" }
 
 [[language]]
 name = "html"
-file-types = ["html", "templ", "tmpl"]
+file-types = ["html"]
 language-servers = ["vscode-html-language-server"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true

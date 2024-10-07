@@ -3,7 +3,8 @@ import = [
    # "~/.config/alacritty/themes/themes/rose-pine.toml"
    # "~/.config/alacritty/themes/themes/alabaster_dark.toml"
    # "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
-   "~/.config/alacritty/themes/themes/deep_space.toml"
+   # "~/.config/alacritty/themes/themes/deep_space.toml"
+   "~/.config/alacritty/themes/themes/horizon-dark.toml"
 ]
 
 [shell]
@@ -13,6 +14,9 @@ args = ["-l"]
 [colors.cursor]
 # cursor = "0xc5c8c6"
 # text = "0x1d1f21"
+
+[mouse]
+hide_when_typing = true
 
 [font.normal]
 family = "MesloLGS Nerd Font Mono"
