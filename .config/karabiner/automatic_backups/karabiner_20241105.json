@@ -4,68 +4,6 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Accent circumflex one keystroke.",
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "open_bracket" },
-                                "to": [
-                                    {
-                                        "key_code": "open_bracket",
-                                        "repeat": false
-                                    },
-                                    {
-                                        "key_code": "right_arrow",
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Tilde one keystroke.",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "n",
-                                    "modifiers": { "mandatory": ["left_alt"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "n",
-                                        "modifiers": ["left_alt"],
-                                        "repeat": false
-                                    },
-                                    {
-                                        "key_code": "right_arrow",
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Backtick one keystroke.",
-                        "enabled": false,
-                        "manipulators": [
-                            {
-                                "from": { "key_code": "backslash" },
-                                "to": [
-                                    {
-                                        "key_code": "backslash",
-                                        "repeat": false
-                                    },
-                                    {
-                                        "key_code": "right_arrow",
-                                        "repeat": false
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change right_command+hjkl to arrow keys",
                         "manipulators": [
                             {
