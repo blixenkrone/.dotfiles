@@ -92,7 +92,7 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 source <(fzf --zsh)
-. ~/.config/fzf/fzf-git.sh/fzf-git.sh
+# . ~/.config/fzf/fzf-git.sh/fzf-git.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Preferred editor for local and remote sessions
