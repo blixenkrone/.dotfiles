@@ -1,11 +1,12 @@
 [general]
 import = [
-   # "~/.config/alacritty/themes/themes/tokyo-night-storm.toml"
-   # "~/.config/alacritty/themes/themes/rose-pine.toml"
-   # "~/.config/alacritty/themes/themes/alabaster_dark.toml"
-   # "~/.config/alacritty/themes/themes/catppuccin_mocha.toml"
-   # "~/.config/alacritty/themes/themes/deep_space.toml"
-   "~/.config/alacritty/themes/themes/horizon-dark.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/tokyo_night_storm.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/rose_pine.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/alabaster_dark.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/catppuccin_mocha.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/deep_space.toml"
+   # "~/.config/alacritty/themes/alacritty-theme/themes/horizon_dark.toml"
+   "~/.config/alacritty/themes/alacritty-theme/themes/gruvbox_hard_dark.toml"
 ]
 
 [terminal.shell]
@@ -46,6 +47,8 @@ bindings = [
     { key = "9", mods = "Alt", chars = "]" },
     { key = "i", mods = "Alt", chars = "|" },
     { key = "'", mods = "Alt", chars = "@" },
+    { key = "$", mods = "Alt", chars = "~" },
+    # { key = "`", mods = "Alt", chars = "~" },
     { key = "7", mods = "Alt|Shift", chars = '\' },
     { key = "Q", mods = "Command", action = "None" },
     { key = "W", mods = "Command", action = "None" },
