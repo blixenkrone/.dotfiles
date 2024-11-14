@@ -1,25 +1,36 @@
+## KEYBINDS ##
+# Keybinds can also have super keys ie. \x02 == ctrl+b
+keybind = shift+alt+8=text:{
+keybind = shift+alt+9=text:}
+keybind = alt+8=text:[
+keybind = alt+9=text:]
+keybind = alt+¨=text:~
+keybind = ctrl+¨=text:\~
+keybind = alt+i=text:|
+keybind = shift+alt+7=text:\\
+
 ## GENERAL ##
 quit-after-last-window-closed = true
 
 ## UI ##
-
-# MACOS SPECIFICS
-macos-option-as-alt = true
-# window-decoration = false
+# title = 👻 Ghostty
 window-theme = "dark"
 window-padding-balance = true
 window-padding-color = background
+
+# MACOS SPECIFICS
+macos-option-as-alt = true
 macos-titlebar-style = hidden
+macos-non-native-fullscreen = true
+macos-window-shadow = true
 shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
-# MISC
-title = 👻 Ghostty
-theme = catppuccin-macchiato
+# THEME
+theme = Brogrammer
 font-family = MesloLG Nerd Font Mono
 font-size = 14
 unfocused-split-opacity = 0.90
-
 mouse-hide-while-typing = true
 background-opacity = 0.95
 background-blur-radius = 5
@@ -35,15 +46,3 @@ clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
 
 
-## KEYBINDS ##
-# Keybinds can also have super keys ie. \x02 == ctrl+b
-keybind = shift+alt+8=text:{
-keybind = shift+alt+9=text:}
-keybind = alt+8=text:[
-keybind = alt+9=text:]
-keybind = alt+¨=text:~
-keybind = ctrl+¨=text:~
-
-
-macos-non-native-fullscreen = false
-macos-window-shadow = true
