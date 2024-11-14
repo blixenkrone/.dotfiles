@@ -29,7 +29,7 @@ shell-integration-features = cursor,sudo,title
 # THEME
 # theme = Brogrammer
 theme = Nocturnal Winter
-font-family = MesloLG Nerd Font Mono
+font-family = MesloLGS Nerd Font Mono
 font-size = 14
 unfocused-split-opacity = 0.90
 mouse-hide-while-typing = true
