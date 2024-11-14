@@ -1,1 +1,49 @@
+## GENERAL ##
+quit-after-last-window-closed = true
+
+## UI ##
+
+# MACOS SPECIFICS
 macos-option-as-alt = true
+# window-decoration = false
+window-theme = "dark"
+window-padding-balance = true
+window-padding-color = background
+macos-titlebar-style = hidden
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# MISC
+title = 👻 Ghostty
+theme = catppuccin-macchiato
+font-family = MesloLG Nerd Font Mono
+font-size = 14
+unfocused-split-opacity = 0.90
+
+mouse-hide-while-typing = true
+background-opacity = 0.95
+background-blur-radius = 5
+
+# CURSOR
+cursor-style-blink = false
+cursor-style = block
+
+# CLIPBOARD SETTINGS
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = false
+
+
+## KEYBINDS ##
+# Keybinds can also have super keys ie. \x02 == ctrl+b
+keybind = shift+alt+8=text:{
+keybind = shift+alt+9=text:}
+keybind = alt+8=text:[
+keybind = alt+9=text:]
+keybind = alt+¨=text:~
+keybind = ctrl+¨=text:~
+
+
+macos-non-native-fullscreen = false
+macos-window-shadow = true
