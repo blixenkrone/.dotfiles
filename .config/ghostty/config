@@ -8,12 +8,12 @@ keybind = alt+¨=text:~
 keybind = ctrl+¨=text:\~
 keybind = alt+i=text:|
 keybind = shift+alt+7=text:\\
+keybind = alt+'=text:@
 
 ## GENERAL ##
 quit-after-last-window-closed = true
 
 ## UI ##
-# title = 👻 Ghostty
 window-theme = "dark"
 window-padding-balance = true
 window-padding-color = background
@@ -27,18 +27,16 @@ shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
 # THEME
-# theme = Brogrammer
-theme = Nocturnal Winter
+theme = catppuccin-mocha
 font-family = MesloLGS Nerd Font Mono
 font-size = 14
-unfocused-split-opacity = 0.90
 mouse-hide-while-typing = true
 background-opacity = 0.95
-background-blur-radius = 5
+background-blur-radius = 10
 
 # CURSOR
-cursor-style-blink = false
 cursor-style = block
+cursor-style-blink = false
 
 # CLIPBOARD SETTINGS
 clipboard-read = allow
@@ -46,4 +44,10 @@ clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
 
+# COLORS
+# background = #111111
+# foreground = #f4f4ff
+# cursor-color = #ffffff
+# selection-background = 1d3c3b
+# selection-foreground = eeeeee
 

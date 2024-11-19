@@ -1,7 +1,5 @@
-# theme = "gruvbox_dark_hard"
-# theme = "nightfox"
-# theme = "tokyonight_moon"
-theme = "kanagawa"
+theme = "tokyonight_moon"
+# theme = "zed_onedark"
 
 [editor]
 line-number = "relative"
