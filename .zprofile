@@ -15,6 +15,7 @@ alias ls='eza -lah --icons'
 alias brewbundle='brew bundle dump --describe --force'
 alias ncdu='gdu-go'
 alias zj='zellij -l welcome'
+# alias zj='$HOME/.cargo/bin/zellij -l welcome'
 alias zjc='zellij -l compact'
 alias lg='lazygit'
 alias lzd='lazydocker'
@@ -66,6 +67,7 @@ export goland=$BREW_DIR/bin/goland
 export RESTIC_REPOSITORY=s3:s3.amazonaws.com/mac-backup-restic
 
 # RUST
+export PATH=$PATH:$HOME/.cargo/bin
 
 # ZIG
 export PATH=$PATH:$BREW_DIR/bin/zig

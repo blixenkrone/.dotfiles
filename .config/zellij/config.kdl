@@ -1,3 +1,5 @@
+support_kitty_keyboard_protocol false
+
 // If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defaults=true"
 keybinds clear-defaults=true{
 // keybinds {
@@ -14,7 +16,7 @@ keybinds clear-defaults=true{
         bind "Alt f" { ToggleFloatingPanes; SwitchToMode "Normal"; }
     }
     locked {
-        bind "Ctrl l" { SwitchToMode "Normal"; }
+        bind "Ctrl '" { SwitchToMode "Normal"; }
     }
     resize {
         bind "Ctrl r" { SwitchToMode "Normal"; }
@@ -155,7 +157,7 @@ keybinds clear-defaults=true{
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared_except "locked" {
-        bind "Ctrl l" { SwitchToMode "Locked"; }
+        bind "Ctrl '" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }

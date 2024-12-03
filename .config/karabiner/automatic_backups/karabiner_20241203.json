@@ -47,6 +47,7 @@
                     },
                     {
                         "description": "Backtick one keystroke.",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "backslash" },
