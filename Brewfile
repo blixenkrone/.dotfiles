@@ -4,18 +4,19 @@ tap "cloudflare/cloudflare"
 tap "codecrafters-io/tap"
 tap "derailed/k9s"
 tap "garden-io/garden"
+tap "garethgeorge/backrest-tap"
 tap "goreleaser/tap"
 tap "grishka/grishka"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
-tap "homebrew/core"
+tap "homebrew/services"
 tap "nao1215/tap"
 tap "nikitabobko/tap"
+tap "osx-cross/arm"
+tap "osx-cross/avr"
 tap "pact-foundation/pact-ruby-standalone"
 tap "pulumi/tap"
+tap "qmk/qmk"
 tap "romkatv/powerlevel10k"
 tap "siderolabs/tap"
 tap "stripe/stripe-cli"
@@ -28,8 +29,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Core application library for C
 brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
@@ -45,7 +44,7 @@ brew "cffi"
 # Cryptographic recipes and primitives for Python
 brew "cryptography"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
+brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -72,6 +71,8 @@ brew "brew-cask-completion"
 brew "buf"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
+# Cloudflare Tunnel client (formerly Argo Tunnel)
+brew "cloudflared"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Library for encoding and decoding .avif files
@@ -92,8 +93,8 @@ brew "docker-compose"
 brew "docutils"
 # CLI tool for running SQL queries against JSON, CSV, Excel, Parquet, and more
 brew "dsq"
-# Modern replacement for 'ls'
-brew "exa"
+# Modern, maintained replacement for ls
+brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Library to load and enumerate PKCS#11 modules
@@ -134,6 +135,8 @@ brew "gitup"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Database migrations CLI tool
@@ -170,6 +173,8 @@ brew "lazydocker"
 brew "lazygit"
 # General purpose TCP-IP emulator
 brew "libslirp"
+# High-performance, extensible alternative to ls
+brew "lla"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Fully functional local AWS cloud stack
@@ -218,12 +223,12 @@ brew "protobuf-c"
 brew "protobuf@3"
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
-# Your Swiss Army Knife for Protocol Buffers
-brew "prototool"
 # Cloud native development platform
 brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Generic machine emulator and virtualizer
@@ -306,20 +311,20 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-# Software to be used as a service scaffolding tool for Clicks & Mortar engineers
-brew "clicksandmortar/launchpad/launchpad"
-# Cloudflare Tunnel
-brew "cloudflare/cloudflare/cloudflared"
 # CodeCrafters CLI
 brew "codecrafters-io/tap/codecrafters"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
 # Development engine for Kubernetes
 brew "garden-io/garden/garden-cli"
-# Deliver Go binaries as fast and easily as possible
+# Backrest is a web UI and orchestrator for restic backup.
+brew "garethgeorge/backrest-tap/backrest"
+# Release engineering, simplified
 brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
+# Quantum Mechanical Keyboard (QMK) Firmware
+brew "qmk/qmk/qmk"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
 brew "siderolabs/tap/talosctl"
 # Tabby: AI Coding Assistant
@@ -354,6 +359,8 @@ cask "firefox"
 cask "firefox@developer-edition"
 # Clipboard manager for developers
 cask "flycut"
+# Unofficial native application for Fastmail
+cask "fmail2"
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
@@ -421,8 +428,6 @@ cask "spotify"
 cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
-# Remote access and connectivity software focused on security
-cask "teamviewer"
 # Unpacks archive files
 cask "the-unarchiver"
 # To-do list
@@ -459,10 +464,9 @@ vscode "dotiful.dotfiles-syntax-highlighting"
 vscode "dsznajder.es7-react-js-snippets"
 vscode "eamodio.gitlens"
 vscode "enkia.tokyo-night"
-vscode "fill-labs.dependi"
 vscode "firsttris.vscode-jest-runner"
 vscode "foxundermoon.shell-format"
-vscode "golang.go-nightly"
+vscode "golang.go"
 vscode "jasew.vscode-helix-emulation"
 vscode "mechatroner.rainbow-csv"
 vscode "mikestead.dotenv"
@@ -473,7 +477,6 @@ vscode "ms-vscode-remote.remote-containers"
 vscode "ms-vscode.atom-keybindings"
 vscode "ms-vscode.vscode-typescript-next"
 vscode "ms-vsliveshare.vsliveshare"
-vscode "mvllow.rose-pine"
 vscode "pbkit.vscode-pbkit"
 vscode "qinjia.seti-icons"
 vscode "redhat.vscode-xml"
