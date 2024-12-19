@@ -1,6 +1,5 @@
 [manager]
 show_hidden = true
-sort_by = "modified"
 show_symlink = true
 
 [opener]

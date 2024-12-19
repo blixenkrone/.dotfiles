@@ -1,4 +1,5 @@
-## KEYBINDS ##
+#
+# KEYBINDS ##
 # Keybinds can also have super keys ie. \x02 == ctrl+b
 keybind = shift+alt+8=text:{
 keybind = shift+alt+9=text:}

@@ -4,6 +4,25 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Accent circumflex one keystroke.",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "open_bracket" },
+                                "to": [
+                                    {
+                                        "key_code": "open_bracket",
+                                        "repeat": false
+                                    },
+                                    {
+                                        "key_code": "right_arrow",
+                                        "repeat": false
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Tilde one keystroke.",
                         "manipulators": [
                             {
