@@ -19,6 +19,7 @@ alias zj='zellij -l welcome'
 alias zjc='zellij -l compact'
 alias lg='lazygit'
 alias lzd='lazydocker'
+alias ping='gping'
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

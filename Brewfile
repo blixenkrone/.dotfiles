@@ -143,6 +143,8 @@ brew "gobject-introspection"
 brew "golang-migrate"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Ping, but with a graph
+brew "gping"
 # Image manipulation
 brew "netpbm"
 # GNU triangulated surface library
@@ -364,6 +366,8 @@ cask "fmail2"
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
 # Web browser
@@ -374,6 +378,8 @@ cask "google-chrome@canary"
 cask "hex-fiend"
 # Access the HEY email service
 cask "hey"
+# Dedicated scratchpad for developers
+cask "heynote"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # HTTP and GraphQL Client
