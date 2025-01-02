@@ -1,3 +1,4 @@
 .DS_Store
 .config/gh/hosts.yml
 .config/backrest/*.json
+.config/joplin-desktop/**

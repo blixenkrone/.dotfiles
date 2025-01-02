@@ -3189,3 +3189,104 @@ Error: No release was found
 2025-01-02 17:09:50: SearchEngine: Updating FTS table...
 2025-01-02 17:09:51: Updating items_normalized from {"updated_time":0,"id":""}
 2025-01-02 17:09:51: SearchEngine: Updated FTS table in 2ms. Inserted: 0. Deleted: 0
+2025-01-02 21:35:03: App: Profile directory: /Users/blix/.config/joplin-desktop
+2025-01-02 21:35:03: App: Root profile directory: /Users/blix/.config/joplin-desktop
+2025-01-02 21:35:03: Database was open successfully
+2025-01-02 21:35:03: Checking for database schema update...
+2025-01-02 21:35:03: Current database version {"version":47,"table_fields_version":47}
+2025-01-02 21:35:03: Upgrading database from version 47
+2025-01-02 21:35:03: New version: 47. Previously recorded version: 47
+2025-01-02 21:35:03: KeychainService: checking if keychain supported
+2025-01-02 21:35:03: KeychainService: check was already done - skipping. Supported: 1
+2025-01-02 21:35:03: e2ee/utils: Master password is not set - trying to get it from the active master key...
+2025-01-02 21:35:03: handleSyncStartupOperation: Processing operation: 0
+2025-01-02 21:35:03: App: Client ID: 133cc53ff58040d2abcf6f00e7065d85
+2025-01-02 21:35:03: models/Setting: Applying default migrations...
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: ResourceFetcher: Auto-add resources: Mode: always
+2025-01-02 21:35:03: permanentlyDeleteOldData: Processing items older than 7776000000ms...
+2025-01-02 21:35:03: ResourceFetcher: Auto-added resources: 0
+2025-01-02 21:35:03: permanentlyDeleteOldData: Items to permanently delete: {"noteIds":[],"folderIds":[]}
+2025-01-02 21:35:03: checkDisabledSyncItemsNotification: No errors: Hiding notification
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: app.start: doing regular boot
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: App: "syncInfoCache" was changed - setting up encryption related code
+2025-01-02 21:35:03: e2ee/utils: Trying to load 0 master keys...
+2025-01-02 21:35:03: e2ee/utils: Loaded master keys: 0
+2025-01-02 21:35:03: RevisionService: runInBackground: Starting background service with revision collection interval 600000
+2025-01-02 21:35:03: PluginService: Loading plugin from /Users/blix/.config/joplin-desktop/cache/io.github.jackgruber.copytags
+2025-01-02 21:35:03: PluginService: Loading plugin from /Users/blix/.config/joplin-desktop/cache/joplin.plugin.benji.favorites
+2025-01-02 21:35:03: PluginService: Loading plugin from /Users/blix/.config/joplin-desktop/cache/plugin.calebjohn.rich-markdown
+2025-01-02 21:35:03: PluginService: Loading plugin from /Users/blix/.config/joplin-desktop/cache/io.github.jackgruber.backup
+2025-01-02 21:35:03: SpellCheckerServiceDriverNative: Set effective languages to "en-US"
+2025-01-02 21:35:03: joplin.plugins: Starting plugin: io.github.jackgruber.copytags
+2025-01-02 21:35:03: joplin.plugins: Starting plugin: joplin.plugin.benji.favorites
+2025-01-02 21:35:03: joplin.plugins: Starting plugin: plugin.calebjohn.rich-markdown
+2025-01-02 21:35:03: joplin.plugins: Starting plugin: io.github.jackgruber.backup
+2025-01-02 21:35:04: joplin.plugins: Finished running onStart handler: io.github.jackgruber.copytags (Took 346ms)
+2025-01-02 21:35:04: DecryptionWorker: cannot start because no master key is currently loaded.
+2025-01-02 21:35:04: Preparing scheduled sync
+2025-01-02 21:35:04: Starting scheduled sync
+2025-01-02 21:35:04: Synchronizer: Sync: starting: Starting synchronisation to target 2... supportsAccurateTimestamp = false; supportsMultiPut = false} [1735850104415]
+2025-01-02 21:35:04: Synchronizer: Indexing resources...
+2025-01-02 21:35:04: ResourceService::indexNoteResources: Start
+2025-01-02 21:35:04: joplin.plugins: Finished running onStart handler: plugin.calebjohn.rich-markdown (Took 481ms)
+2025-01-02 21:35:04: ResourceService::indexNoteResources: Completed
+2025-01-02 21:35:04: Synchronizer: Sync target remote info: {"version":3,"e2ee":{"value":false,"updatedTime":0},"activeMasterKeyId":{"value":"","updatedTime":0},"masterKeys":[],"ppk":{"value":null,"updatedTime":0},"appMinVersion":"3.0.0"}
+2025-01-02 21:35:04: Synchronizer: Sync target is already setup - checking it...
+2025-01-02 21:35:04: Synchronizer: Sync target local info: {"version":3,"e2ee":{"value":false,"updatedTime":0},"activeMasterKeyId":{"value":"","updatedTime":0},"masterKeys":[],"ppk":{"value":null,"updatedTime":0},"appMinVersion":"3.0.0"}
+2025-01-02 21:35:04: Synchronizer: BasicDelta: Report: {"timestamp":1735561634211,"older":42,"newer":0,"equal":1}
+2025-01-02 21:35:04: Synchronizer: supportsDeltaWithItems =  <false>
+2025-01-02 21:35:04: Synchronizer: Sync: fetchingTotal: Fetching delta items from sync target
+2025-01-02 21:35:04: joplin.plugins: Finished running onStart handler: joplin.plugin.benji.favorites (Took 705ms)
+2025-01-02 21:35:04: Synchronizer: Sync: finished: Synchronisation finished [1735850104415]
+2025-01-02 21:35:04: Synchronizer: Operations completed: 
+2025-01-02 21:35:04: Synchronizer: fetchingTotal: -
+2025-01-02 21:35:04: Synchronizer: Total folders: 4
+2025-01-02 21:35:04: Synchronizer: Total notes: 26
+2025-01-02 21:35:04: Synchronizer: Total resources: 6
+2025-01-02 21:35:04: checkDisabledSyncItemsNotification: No errors: Hiding notification
+2025-01-02 21:35:04: Updating all notifications...
+2025-01-02 21:35:04: Garbage collecting alarms...
+2025-01-02 21:35:04: useFormNote: Sync has finished and note has never been changed - reloading it
+2025-01-02 21:35:04: joplin.plugins: Finished running onStart handler: io.github.jackgruber.backup (Took 731ms)
+2025-01-02 21:35:05: RepositoryApi: findWorkingMirror: Using: https://raw.githubusercontent.com/joplin/plugins/master
+2025-01-02 21:35:05: DecryptionWorker: cannot start because no master key is currently loaded.
+2025-01-02 21:35:07: RevisionService: maintenance: Starting...
+2025-01-02 21:35:07: RevisionService: maintenance: Service is enabled
+2025-01-02 21:35:07: RevisionService: collectRevisions: Created revisions for 0 notes
+2025-01-02 21:35:07: RevisionService: maintenance: Done in 112ms
+2025-01-02 21:35:08: checkForUpdates: Starting...
+2025-01-02 21:35:08: checkForUpdates: Checking with options {"includePreReleases":false}
+2025-01-02 21:35:08: RepositoryApi: findWorkingMirror: Using: https://raw.githubusercontent.com/joplin/plugins/master
+2025-01-02 21:35:10: checkForUpdates: Current version: 3.1.24
+2025-01-02 21:35:10: checkForUpdates: Latest version: 3.1.24
+2025-01-02 21:35:10: checkForUpdates: Is Pre-release: <false>
+2025-01-02 21:35:10: checkForUpdates: Done.
+2025-01-02 21:35:12: RepositoryApi: findWorkingMirror: Using: https://raw.githubusercontent.com/joplin/plugins/master
+2025-01-02 21:35:13: SearchEngine: Updating FTS table...
+2025-01-02 21:35:13: Updating items_normalized from {"updated_time":0,"id":""}
+2025-01-02 21:35:13: SearchEngine: Updated FTS table in 3ms. Inserted: 0. Deleted: 0
+2025-01-02 21:35:15: RepositoryApi: findWorkingMirror: Using: https://raw.githubusercontent.com/joplin/plugins/master
+2025-01-02 21:35:19: RepositoryApi: findWorkingMirror: Using: https://raw.githubusercontent.com/joplin/plugins/master
+2025-01-02 21:35:33: ResourceService::indexNoteResources: Start
+2025-01-02 21:35:33: ResourceService::indexNoteResources: Completed
+2025-01-02 21:35:33: ResourceService::deleteOrphanResources: []
+2025-01-02 21:35:43: SearchEngine: Updating FTS table...
+2025-01-02 21:35:43: Updating items_normalized from {"updated_time":0,"id":""}
+2025-01-02 21:35:43: SearchEngine: Updated FTS table in 3ms. Inserted: 0. Deleted: 0
