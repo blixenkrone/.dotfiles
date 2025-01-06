@@ -8,7 +8,8 @@ keybind = alt+9=text:]
 keybind = alt+¨=text:~
 keybind = ctrl+¨=text:\~
 keybind = alt+i=text:|
-keybind = shift+alt+7=text:\\
+keybind = alt+shift+7=text:\\
+keybind = alt+æ=text:\\
 keybind = alt+'=text:@
 
 ## GENERAL ##

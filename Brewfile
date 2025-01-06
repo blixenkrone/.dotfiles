@@ -53,8 +53,6 @@ brew "bash"
 brew "node"
 # Language Server for Bash
 brew "bash-language-server"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # OpenType text shaping engine
@@ -83,10 +81,16 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Next-gen compiler infrastructure
+brew "llvm"
+# Package compiler and linker metadata toolkit
+brew "pkgconf"
+# Fast and statically typed, compiled language with Ruby-like syntax
+brew "crystal"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
-brew "docker-completion", link: false
+brew "docker-completion"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Text processing system for reStructuredText
@@ -135,14 +139,14 @@ brew "gitup"
 brew "glow"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
-# Package compiler and linker metadata toolkit
-brew "pkgconf"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Database migrations CLI tool
 brew "golang-migrate"
 # Fast linters runner for Go
 brew "golangci-lint"
+# Language server for the Go language
+brew "gopls"
 # Ping, but with a graph
 brew "gping"
 # Image manipulation
@@ -173,12 +177,12 @@ brew "lastpass-cli"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # High-performance, extensible alternative to ls
 brew "lla"
-# Next-gen compiler infrastructure
-brew "llvm"
 # Fully functional local AWS cloud stack
 brew "localstack"
 # Mac App Store command-line interface
@@ -265,8 +269,6 @@ brew "tcl-tk"
 brew "terraform"
 # Terraform Language Server
 brew "terraform-ls"
-# Powerful free data recovery utility
-brew "testdisk"
 # Programmatically correct mistyped console commands
 brew "thefuck"
 # Text interface for Git repositories
@@ -349,8 +351,6 @@ cask "bruno"
 cask "cyberduck"
 # Voice and text chat software
 cask "discord"
-# Data recovery software
-cask "disk-drill"
 # App to build and share containerised applications and microservices
 cask "docker"
 # Online diagram software
@@ -376,8 +376,6 @@ cask "google-chrome"
 cask "google-chrome@canary"
 # Hex editor focussing on speed
 cask "hex-fiend"
-# Access the HEY email service
-cask "hey"
 # Dedicated scratchpad for developers
 cask "heynote"
 # Utility to hide menu bar items
@@ -386,6 +384,8 @@ cask "hiddenbar"
 cask "insomnia"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Note taking and to-do application with synchronisation capabilities
+cask "joplin"
 # Open-source screen recorder built with web technology
 cask "kap"
 # Keyboard customiser
@@ -394,26 +394,18 @@ cask "karabiner-elements"
 cask "keepingyouawake"
 # Open-source keystroke visualiser
 cask "keycastr"
-# GPU-based terminal emulator
-cask "kitty"
 # Kubernetes IDE
 cask "lens"
 # Privacy-first, open-source platform for knowledge sharing and management
 cask "logseq"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
-# Web browser focused on privacy and on minimizing tracking and fingerprinting
-cask "mullvad-browser"
-# Unofficial Google Nearby Share app
-cask "neardrop"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # VPN client for secure internet access and private browsing
 cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
-# Verify system files structure, run miscellaneous maintenance and more
-cask "onyx"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
 # Free and Open Source messaging and emailing app
@@ -424,8 +416,6 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
-# PDF reader and note-taking application
-cask "skim"
 # Team communication and collaboration software
 cask "slack"
 # Music streaming service
@@ -434,6 +424,8 @@ cask "spotify"
 cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
+# Real time file synchronisation software
+cask "syncthing"
 # Unpacks archive files
 cask "the-unarchiver"
 # To-do list
@@ -446,10 +438,6 @@ cask "transmission"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
-# Rust-based terminal
-cask "warp"
-# GPU-accelerated cross-platform terminal emulator and multiplexer
-cask "wezterm"
 # Network protocol analyzer
 cask "wireshark"
 # Multiplayer code editor
