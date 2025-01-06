@@ -1,0 +1,37 @@
+[[sources]] # list of sources to load
+name = "friendly-snippets"  # optional name shown on snippet description
+git = "https://github.com/rafamadriz/friendly-snippets.git" # git repo with snippets collections
+
+[[sources.paths]]
+scope = ["go"] 
+path = "snippets/go.json" 
+[[sources.paths]]
+scope = ["python"] 
+path = "snippets/python/python.json" 
+[[sources.paths]]
+scope = ["docker"] 
+path = "snippets/docker/docker_file.json" 
+[[sources.paths]]
+scope = ["docker-compose"] 
+path = "snippets/docker/docker-compose.json" 
+[[sources.paths]]
+scope = ["javascript"] 
+path = "snippets/javascript/javascript.json" 
+[[sources.paths]]
+scope = ["typescript"] 
+path = "snippets/javascript/typescript.json" 
+[[sources.paths]]
+scope = ["html"] 
+path = "snippets/html.json" 
+[[sources.paths]]
+scope = ["kubernetes"] 
+path = "snippets/kubernetes.json" 
+[[sources.paths]]
+scope = ["markdown"] 
+path = "snippets/markdown.json" 
+[[sources.paths]]
+scope = ["sql"] 
+path = "snippets/sql.json" 
+[[sources.paths]]
+scope = ["terraform"] 
+path = "snippets/terraform.json" 

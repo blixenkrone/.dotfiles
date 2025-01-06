@@ -19,7 +19,7 @@ cursor-line = "error"
 # other-lines = "error"
 
 [editor.smart-tab]
-enabled = false
+enabled = true
 
 [editor.soft-wrap]
 enable = true
