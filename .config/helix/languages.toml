@@ -6,7 +6,7 @@ name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
-# language-servers = [ "gopls"]
+language-servers = ["gopls"]
 formatter = { command = "goimports" }
 
 [[language]]
