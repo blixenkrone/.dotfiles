@@ -72,9 +72,8 @@ plugins=(
   fzf
   docker
   kubectl
-
-  #tests
-  # cp
+  dotenv
+  nvm
 )
 
 source $ZSH/oh-my-zsh.sh

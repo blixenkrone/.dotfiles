@@ -24,7 +24,7 @@ roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
 language-servers = [ "gopls", "scls"]
-formatter = { command = "goimports" }
+formatter = { command = "gofmt" }
 
 [[language]]
 name = "hcl"
@@ -81,3 +81,9 @@ auto-format = true
 name = "dockerfile"
 file-types = ["Dockerfile", "Dockerfile.lambda"]
 auto-format = true
+
+[[language]]
+name = "python"
+language-server = { command = "pyright-langserver", args = ["--stdio"] }
+auto-format = true
+formatter = {command = 'black', args = ["--quiet", "-"]}
