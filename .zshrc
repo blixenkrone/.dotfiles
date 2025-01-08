@@ -95,7 +95,7 @@ source <(fzf --zsh)
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Preferred editor for local and remote sessions
-export EDITOR='helix'
+export EDITOR='hx'
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

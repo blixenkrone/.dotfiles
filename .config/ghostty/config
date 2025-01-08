@@ -10,6 +10,7 @@ keybind = ctrl+¨=text:\~
 keybind = alt+i=text:|
 keybind = alt+shift+7=text:\\
 keybind = alt+æ=text:\\
+keybind = alt+å=text:\\
 keybind = alt+'=text:@
 
 ## GENERAL ##
