@@ -1,3 +1,6 @@
+# Docs: ghostty +show-config --default --docs | hx
+
+
 #
 # KEYBINDS ##
 # Keybinds can also have super keys ie. \x02 == ctrl+b
@@ -8,9 +11,14 @@ keybind = alt+9=text:]
 keybind = alt+¨=text:~
 keybind = ctrl+¨=text:\~
 keybind = alt+i=text:|
-keybind = alt+shift+7=text:\\
+keybind = shift+alt+7=text:\\
+keybind = alt+7=text:\\
 keybind = alt+æ=text:\\
 keybind = alt+å=text:\\
+keybind = alt+ø=text:\\
+keybind = alt+shift+æ=text:\\
+keybind = alt+shift+ø=text:\\
+keybind = alt+shift+å=text:\\
 keybind = alt+'=text:@
 
 ## GENERAL ##
@@ -20,6 +28,8 @@ quit-after-last-window-closed = false
 window-theme = "dark"
 window-padding-balance = true
 window-padding-color = background
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
 
 # MACOS SPECIFICS
 macos-option-as-alt = true
@@ -33,7 +43,6 @@ shell-integration-features = cursor,sudo,title
 theme = catppuccin-mocha
 font-family = MesloLGS Nerd Font Mono
 font-size = 14
-mouse-hide-while-typing = true
 background-opacity = 0.95
 background-blur-radius = 10
 
@@ -46,6 +55,7 @@ clipboard-read = allow
 clipboard-write = allow
 clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
+copy-on-select = clipboard
 
 # COLORS
 # background = #111111

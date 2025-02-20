@@ -69,15 +69,19 @@ keybinds clear-defaults=true{
         bind "b" { BreakPane; SwitchToMode "Normal"; }
         bind "]" { BreakPaneRight; SwitchToMode "Normal"; }
         bind "[" { BreakPaneLeft; SwitchToMode "Normal"; }
-        bind "1" { GoToTab 1; SwitchToMode "Normal"; }
-        bind "2" { GoToTab 2; SwitchToMode "Normal"; }
-        bind "3" { GoToTab 3; SwitchToMode "Normal"; }
-        bind "4" { GoToTab 4; SwitchToMode "Normal"; }
-        bind "5" { GoToTab 5; SwitchToMode "Normal"; }
-        bind "6" { GoToTab 6; SwitchToMode "Normal"; }
-        bind "7" { GoToTab 7; SwitchToMode "Normal"; }
-        bind "8" { GoToTab 8; SwitchToMode "Normal"; }
-        bind "9" { GoToTab 9; SwitchToMode "Normal"; }
+        bind "]" { BreakPaneRight; SwitchToMode "Normal"; }
+        bind "[" { BreakPaneLeft; SwitchToMode "Normal"; }
+        bind "1" { MoveTab "Left"; }
+        bind "2" { MoveTab "Right"; }
+        // bind "1" { GoToTab 1; SwitchToMode "Normal"; }
+        // bind "2" { GoToTab 2; SwitchToMode "Normal"; }
+        // bind "3" { GoToTab 3; SwitchToMode "Normal"; }
+        // bind "4" { GoToTab 4; SwitchToMode "Normal"; }
+        // bind "5" { GoToTab 5; SwitchToMode "Normal"; }
+        // bind "6" { GoToTab 6; SwitchToMode "Normal"; }
+        // bind "7" { GoToTab 7; SwitchToMode "Normal"; }
+        // bind "8" { GoToTab 8; SwitchToMode "Normal"; }
+        // bind "9" { GoToTab 9; SwitchToMode "Normal"; }
         bind "Tab" { ToggleTab; }
     }
     scroll {
@@ -161,8 +165,8 @@ keybinds clear-defaults=true{
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }
-        bind "Alt i" { MoveTab "Left"; }
-        bind "Alt o" { MoveTab "Right"; }
+        // bind "Alt i" { MoveTab "Left"; }
+        // bind "Alt o" { MoveTab "Right"; }
         bind "Alt h" "Alt Left" { MoveFocus "Left"; }
         bind "Alt l" "Alt Right" { MoveFocus "Right"; }
         bind "Alt j" "Alt Down" { MoveFocus "Down"; }

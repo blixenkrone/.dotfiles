@@ -29,6 +29,8 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Core application library for C
 brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
@@ -61,6 +63,8 @@ brew "harfbuzz"
 brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
+# Python code formatter
+brew "black"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Fish completion for brew-cask
@@ -71,6 +75,8 @@ brew "buf"
 brew "cheat"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
+# Container runtimes on MacOS (and Linux) with minimal setup
+brew "colima"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Library for encoding and decoding .avif files
@@ -90,7 +96,7 @@ brew "crystal"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
-brew "docker-completion"
+brew "docker-completion", link: false
 # Isolated development environments using Docker
 brew "docker-compose"
 # Text processing system for reStructuredText
@@ -209,6 +215,10 @@ brew "ollama"
 brew "opentofu"
 # Display the PID number for a given process name
 brew "pidof"
+# Execute binaries from Python packages in isolated environments
+brew "pipx"
+# Fast, disk space efficient package manager
+brew "pnpm"
 # Open source backend for your next project in 1 file
 brew "pocketbase"
 # Tool for managing OCI containers and pods
@@ -221,6 +231,8 @@ brew "postgresql@14"
 brew "powerlevel10k"
 # Framework for managing multi-language pre-commit hooks
 brew "pre-commit"
+# Code formatter for JavaScript, CSS, JSON, GraphQL, Markdown, YAML
+brew "prettier"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
 # Protocol buffers library
@@ -283,6 +295,8 @@ brew "transmission-cli"
 brew "tree"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
+# Language Server Protocol implementation for TypeScript wrapping tsserver
+brew "typescript-language-server"
 # Undo git commands. Your damage control git buddy
 brew "ugit"
 # Command-line unarchiving tools supporting multiple formats
@@ -291,6 +305,8 @@ brew "unar"
 brew "vim"
 # Tool for creating isolated virtual python environments
 brew "virtualenv"
+# Language servers for HTML, CSS, JavaScript, and JSON extracted from vscode
+brew "vscode-langservers-extracted"
 # Executes a program periodically, showing output fullscreen
 brew "watch"
 # WebSockets the Unix way
@@ -347,6 +363,8 @@ cask "balenaetcher"
 cask "beekeeper-studio"
 # Opensource IDE for exploring and testing api's
 cask "bruno"
+# Write, edit, and chat about your code with AI
+cask "cursor"
 # Server and cloud storage browser
 cask "cyberduck"
 # Voice and text chat software
@@ -370,8 +388,6 @@ cask "font-symbols-only-nerd-font"
 cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
-# Web browser
-cask "google-chrome"
 # Web browser
 cask "google-chrome@canary"
 # Hex editor focussing on speed
@@ -406,6 +422,8 @@ cask "ngrok"
 cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
+# OpenVPN client
+cask "pritunl"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
 # Free and Open Source messaging and emailing app
@@ -416,14 +434,14 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
-# Team communication and collaboration software
-cask "slack"
 # Music streaming service
 cask "spotify"
 # Free, open-source, and completely encrypted notes app
 cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
+# Replacement for RCDefaultApps, written in Swift
+cask "swiftdefaultappsprefpane"
 # Real time file synchronisation software
 cask "syncthing"
 # Unpacks archive files
@@ -442,8 +460,6 @@ cask "vlc"
 cask "wireshark"
 # Multiplayer code editor
 cask "zed"
-mas "TestFlight", id: 899247664
-mas "Xcode", id: 497799835
 vscode "4ops.terraform"
 vscode "a-h.templ"
 vscode "aaron-bond.better-comments"
