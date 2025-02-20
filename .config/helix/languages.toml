@@ -24,7 +24,7 @@ roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
 language-servers = [ "gopls", "scls"]
-formatter = { command = "gofmt" }
+formatter = { command = "goimports" }
 
 [[language]]
 name = "hcl"
@@ -60,7 +60,7 @@ auto-format = true
 [[language]]
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "javascript"] }
-auto-format = true
+# auto-format = true
 
 [[language]]
 name = "typescript"
@@ -79,7 +79,12 @@ auto-format = true
 
 [[language]]
 name = "dockerfile"
-file-types = ["Dockerfile", "Dockerfile.lambda"]
+language-servers = ["docker-langserver"]
+auto-format = true
+
+[[language]]
+name = "docker-compose"
+language-servers = ["yaml-language-server"]
 auto-format = true
 
 [[language]]
@@ -87,3 +92,8 @@ name = "python"
 language-servers = ["pylsp"]
 auto-format = true
 formatter = {command = 'black', args = ["--quiet", "-"]}
+
+[[language]]
+name = "prisma"
+language-servers = ["prisma-language-server"]
+auto-format = true

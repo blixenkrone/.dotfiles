@@ -72,7 +72,6 @@ plugins=(
   fzf
   docker
   kubectl
-  dotenv
   nvm
 )
 
