@@ -164,7 +164,7 @@ keybinds clear-defaults=true{
         bind "Ctrl '" { SwitchToMode "Locked"; }
         bind "Ctrl q" { Quit; }
         bind "Alt n" { NewPane; }
-        bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }
+        // bind "Alt x" { CloseFocus; SwitchToMode "Normal"; }
         // bind "Alt i" { MoveTab "Left"; }
         // bind "Alt o" { MoveTab "Right"; }
         bind "Alt h" "Alt Left" { MoveFocus "Left"; }

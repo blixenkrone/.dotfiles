@@ -299,5 +299,9 @@
   "context interface": {
     "prefix": "ctxxx",
     "body": "ctx context.Context"
+  },
+  "generic options": {
+    "prefix": "options",
+    "body": "type Option[T any] func(*T) \ntype ${1:}Options struct{${2:}}\n\nfunc SomeOpt() Option[${1:}Options] {\n\treturn func(o *${1:}Options) {} \n}\n\nfunc (c ${1:}Options) OptValue() error { \n\treturn nil \n}"
   }
 }
