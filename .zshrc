@@ -90,6 +90,7 @@ source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
 source <(fzf --zsh)
+eval $(thefuck --alias)
 # . ~/.config/fzf/fzf-git.sh/fzf-git.sh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
