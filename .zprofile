@@ -20,6 +20,10 @@ alias zjc='zellij -l compact'
 alias lg='lazygit'
 alias lzd='lazydocker'
 alias ping='gping'
+alias sc='scooter'
+
+# CONFIG
+export CONFIG_PATH=$HOME/.config
 
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"

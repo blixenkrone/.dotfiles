@@ -16,8 +16,17 @@ feature_unicode_input = false        # enable "unicode input"
 feature_paths = false                # enable path completion
 feature_citations = false            # enable citation completion (only on `citation` feature enabled)[[language]]
 
-# Languages
 
+[language-server.sqls]
+command = "sqls"
+# [language-server.sqls.config]
+# lowercaseKeywords = false
+# alias = "psql"
+# driver = "postgresql"
+# dataSourceName = 'host=127.0.0.1 port=5432 user=postgres password=secret dbname=testdb sslmode=disable'
+
+
+# Languages
 [[language]]
 name = "go"
 roots = ["go.work", "go.mod"]
@@ -97,3 +106,9 @@ formatter = {command = 'black', args = ["--quiet", "-"]}
 name = "prisma"
 language-servers = ["prisma-language-server"]
 auto-format = true
+
+[[language]]
+name = "sql"
+# auto-format = true
+comment-token = "--"
+# language-servers = ["sqls"]
