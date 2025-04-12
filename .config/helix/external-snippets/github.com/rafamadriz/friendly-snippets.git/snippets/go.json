@@ -280,7 +280,7 @@
     "description": "Snippet for a custom sort.Sort interface implementation, for a given slice type."
   },
   "json tag": {
-    "prefix": "json",
+    "prefix": "jsontag",
     "body": "`json:\"$1\"`",
     "description": "Snippet for struct json tag"
   },

@@ -36,6 +36,12 @@ language-servers = [ "gopls", "scls"]
 formatter = { command = "goimports" }
 
 [[language]]
+name = "go"
+roots = ["Cargo.toml"]
+auto-format = true
+comment-token = "//"
+
+[[language]]
 name = "hcl"
 injection-regex = "(hcl|tf|nomad)"
 language-id = "terraform"
