@@ -3,4 +3,4 @@
 .config/backrest/*.json
 .config/joplin-desktop/**
 .config/thefuck/__pycache__/**
-.config/backrest/*.bak.*
+.config/backrest/*.bak
