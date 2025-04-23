@@ -1,6 +1,7 @@
 # theme = "tokyonight_moon"
 # theme = "zed_onedark"
-theme = "catppuccin_mocha"
+# theme = "catppuccin_mocha"
+theme = "ashen-dev"
 
 [editor]
 line-number = "relative"
@@ -8,7 +9,9 @@ mouse = false
 bufferline = "always"
 auto-save = true
 color-modes = true
+cursorline = true
 true-color = true
+undercurl = true
 # Minimum severity to show a diagnostic after the end of a line:
 end-of-line-diagnostics = "hint"
 
@@ -52,6 +55,7 @@ newline = "⏎"
 
 [editor.indent-guides]
 render = true
+skip-levels = 0
 
 [editor.lsp]
 display-messages = true

@@ -1,6 +1,5 @@
 # Docs: ghostty +show-config --default --docs | hx
 
-
 #
 # KEYBINDS ##
 # Keybinds can also have super keys ie. \x02 == ctrl+b
@@ -40,11 +39,15 @@ shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
 # THEME
-theme = catppuccin-mocha
+# theme = catppuccin-mocha
+# theme = ayu mirage
+# theme = tokyonight
+# theme = tomorrow night burns
+theme = catppuccin-macchiato
 font-family = MesloLGS Nerd Font Mono
-font-size = 14
+font-size = 12
 background-opacity = 0.95
-background-blur-radius = 10
+background-blur-radius = 5
 
 # CURSOR
 cursor-style = block
