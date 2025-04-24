@@ -1,7 +1,8 @@
 # theme = "tokyonight_moon"
 # theme = "zed_onedark"
 # theme = "catppuccin_mocha"
-theme = "ashen-dev"
+# theme = "ashen-dev"
+theme = "kanagawa"
 
 [editor]
 line-number = "relative"
