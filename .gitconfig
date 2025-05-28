@@ -13,7 +13,8 @@
     navigate = true
 
 [merge]
-    conflictstyle = diff3
+hyperlinks = true
+    conflictstyle = zdiff3
 
 [diff]
     colorMoved = default
