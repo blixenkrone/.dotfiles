@@ -3,6 +3,12 @@
 [language-server.gopls]
 command = "gopls"
 
+[language-server.golangci-lint-lsp]
+command = "golangci-lint-langserver"
+
+[language-server.golangci-lint-lsp.config]
+command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]
+
 [language-server.scls]
 command = "simple-completion-language-server"
 
@@ -16,15 +22,8 @@ feature_unicode_input = false        # enable "unicode input"
 feature_paths = false                # enable path completion
 feature_citations = false            # enable citation completion (only on `citation` feature enabled)[[language]]
 
-
 [language-server.sqls]
 command = "sqls"
-# [language-server.sqls.config]
-# lowercaseKeywords = false
-# alias = "psql"
-# driver = "postgresql"
-# dataSourceName = 'host=127.0.0.1 port=5432 user=postgres password=secret dbname=testdb sslmode=disable'
-
 
 # Languages
 [[language]]
@@ -32,14 +31,8 @@ name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
-language-servers = [ "gopls", "scls"]
+language-servers = [ "gopls", "golangci-lint-lsp", "scls"]
 formatter = { command = "goimports" }
-
-[[language]]
-name = "go"
-roots = ["Cargo.toml"]
-auto-format = true
-comment-token = "//"
 
 [[language]]
 name = "hcl"
