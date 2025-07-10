@@ -21,6 +21,7 @@ alias lg='lazygit'
 alias lzd='lazydocker'
 alias ping='gping'
 alias sc='scooter'
+alias tf='terraform'
 
 # CONFIG
 export CONFIG_PATH=$HOME/.config
