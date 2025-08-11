@@ -3,11 +3,11 @@
 [language-server.gopls]
 command = "gopls"
 
-[language-server.golangci-lint-lsp]
-command = "golangci-lint-langserver"
+# [language-server.golangci-lint-lsp]
+# command = "golangci-lint-langserver"
 
-[language-server.golangci-lint-lsp.config]
-command = ["golangci-lint", "run", "--out-format", "json", "--issues-exit-code=1"]
+# [language-server.golangci-lint-lsp.config]
+# command = ["golangci-lint", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
 
 [language-server.scls]
 command = "simple-completion-language-server"
@@ -31,7 +31,7 @@ name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
 comment-token = "//"
-language-servers = [ "gopls", "golangci-lint-lsp", "scls"]
+language-servers = [ "gopls", "scls" ] # "golangci-lint-lsp"
 formatter = { command = "goimports" }
 
 [[language]]

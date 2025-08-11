@@ -1,0 +1,11 @@
+layout {
+    pane {
+        pane
+        pane split_direction="vertical" {
+            pane {
+                // args "test"
+                // start_suspended true
+            }
+        }
+    }
+}
