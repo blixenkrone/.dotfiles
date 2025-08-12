@@ -83,6 +83,7 @@ y = [":clipboard-yank", "yank"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 S-x = ["extend_line_up"]
+# space.F = ["file_picker_in_current_buffer_directory"]
 
 # Macros
 space.p = ":pipe sed 's/\\([a-z0-9]\\)\\([A-Z]\\)/\\1_\\2/g' | tr '[:upper:]' '[:lower:]'"
@@ -90,6 +91,8 @@ space.x = "@i- <esc>"
 
 # Expansions
 space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+space.c = { l = ":sh %sh{echo $PWD | pbcopy}" }
+
 
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"

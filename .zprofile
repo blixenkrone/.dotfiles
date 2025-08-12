@@ -22,6 +22,9 @@ alias lzd='lazydocker'
 alias ping='gping'
 alias sc='scooter'
 alias tf='terraform'
+alias ghpr='gh pr create --title $(git branch --show-current)'
+alias ghvw='gh pr view -w'
+alias cbranch='echo $(gh pr view --json url | jq -r .url) | pbcopy'
 
 # CONFIG
 export CONFIG_PATH=$HOME/.config
