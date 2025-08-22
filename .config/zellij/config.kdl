@@ -112,6 +112,13 @@ keybinds clear-defaults=true {
         bind "Ctrl w" { SwitchToMode "normal"; }
     }
     shared_except "locked" {
+        bind "Alt 1" { GoToTab 1; SwitchToMode "normal"; }
+        bind "Alt 2" { GoToTab 2; SwitchToMode "normal"; }
+        bind "Alt 3" { GoToTab 3; SwitchToMode "normal"; }
+        bind "Alt 4" { GoToTab 4; SwitchToMode "normal"; }
+        bind "Alt 5" { GoToTab 5; SwitchToMode "normal"; }
+        bind "Alt 6" { GoToTab 6; SwitchToMode "normal"; }
+        bind "Alt 7" { GoToTab 7; SwitchToMode "normal"; }
         bind "Alt left" { MoveFocus "left"; }
         bind "Alt down" { MoveFocus "down"; }
         bind "Alt up" { MoveFocus "up"; }
@@ -244,20 +251,14 @@ load_plugins {
 }
  
 // Use a simplified UI without special fonts (arrow glyphs)
-// Options:
-//   - true
-//   - false (Default)
-// 
 // simplified_ui true
  
 // Choose the theme that is specified in the themes section.
 // Default: default
-// 
-// theme "dracula"
+theme "catppuccin-frappe"
  
 // Choose the base input mode of zellij.
 // Default: normal
-// 
 // default_mode "locked"
  
 // Choose the path to the default shell that zellij will use for opening new panes
@@ -265,14 +266,10 @@ load_plugins {
 // 
 default_shell "zsh"
  
-// Choose the path to override cwd that zellij will use for opening new panes
-// 
-// default_cwd "/tmp"
- 
 // The name of the default layout to load on startup
 // Default: "default"
 // 
-default_layout "compact"
+default_layout "$CONFIG_PATH/zellij/layout/dev.kdl"
  
 // The folder in which Zellij will look for layouts
 // (Requires restart)
@@ -285,12 +282,7 @@ default_layout "compact"
 // theme_dir "/tmp"
  
 // Toggle enabling the mouse mode.
-// On certain configurations, or terminals this could
-// potentially interfere with copying text.
-// Options:
-//   - true (default)
-//   - false
-// 
+// On certain configurations, or terminals this could potentially interfere with copying text.
 mouse_mode true
  
 // Toggle having pane frames around the panes
@@ -309,13 +301,12 @@ mouse_mode true
 // mirror_session true
  
 // Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP
-// eg. when terminal window with an active zellij session is closed
-// (Requires restart)
+// eg. when terminal window with an active zellij session is closed (Requires restart)
 // Options:
 //   - detach (Default)
 //   - quit
 // 
-// on_force_close "quit"
+on_force_close "quit"
  
 // Configure the scroll back buffer size
 // This is the number of lines zellij stores for each pane in the scroll back
@@ -335,8 +326,7 @@ mouse_mode true
 // copy_command "xclip -selection clipboard" // x11
 // copy_command "wl-copy"                    // wayland
 // copy_command "pbcopy"                     // osx
-// 
-// copy_command "pbcopy"
+copy_command "pbcopy"
  
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -381,7 +371,7 @@ mouse_mode true
 //   - true (default)
 //   - false
 // 
-// session_serialization false
+session_serialization false
  
 // Whether pane viewports are serialized along with the session, default is false
 // Options:
