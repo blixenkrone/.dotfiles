@@ -1,4 +1,5 @@
 tap "bufbuild/buf"
+tap "buo/cask-upgrade"
 tap "clicksandmortar/launchpad"
 tap "cloudflare/cloudflare"
 tap "codecrafters-io/tap"
@@ -29,8 +30,6 @@ brew "webp"
 brew "jpeg-xl"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Core application library for C
 brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
@@ -39,14 +38,6 @@ brew "at-spi2-core"
 brew "atuin"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Cryptographic recipes and primitives for Python
-brew "cryptography"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -55,6 +46,8 @@ brew "bash"
 brew "node"
 # Language Server for Bash
 brew "bash-language-server"
+# C library of Git core methods that is re-entrant and linkable
+brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # OpenType text shaping engine
@@ -63,20 +56,20 @@ brew "harfbuzz"
 brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
-# Python code formatter
-brew "black"
 # Yet another cross-platform graphical process/system monitor
 brew "bottom"
 # Fish completion for brew-cask
 brew "brew-cask-completion"
 # New way of working with Protocol Buffers
 brew "buf"
+# C parser in Python
+brew "pycparser"
+# C Foreign Function Interface for Python
+brew "cffi"
 # Create and view interactive cheat sheets for *nix commands
 brew "cheat"
 # Cloudflare Tunnel client (formerly Argo Tunnel)
 brew "cloudflared"
-# Container runtimes on MacOS (and Linux) with minimal setup
-brew "colima"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Library for encoding and decoding .avif files
@@ -87,6 +80,8 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
+# Cryptographic recipes and primitives for Python
+brew "cryptography"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Package compiler and linker metadata toolkit
@@ -96,7 +91,7 @@ brew "crystal"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
-brew "docker-completion", link: false
+brew "docker-completion"
 # Isolated development environments using Docker
 brew "docker-compose"
 # Text processing system for reStructuredText
@@ -153,6 +148,8 @@ brew "golang-migrate"
 brew "golangci-lint"
 # Language server for the Go language
 brew "gopls"
+# Deliver Go binaries as fast and easily as possible
+brew "goreleaser"
 # Ping, but with a graph
 brew "gping"
 # Image manipulation
@@ -183,8 +180,6 @@ brew "lastpass-cli"
 brew "lazydocker"
 # Simple terminal UI for git commands
 brew "lazygit"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # General purpose TCP-IP emulator
 brew "libslirp"
 # High-performance, extensible alternative to ls
@@ -248,6 +243,8 @@ brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Interpreted, interactive, object-oriented programming language
+brew "python@3.12"
+# Interpreted, interactive, object-oriented programming language
 brew "python@3.9"
 # Generic machine emulator and virtualizer
 brew "qemu"
@@ -263,6 +260,8 @@ brew "rsync"
 brew "ruby"
 # Safe, concurrent, practical language
 brew "rust"
+# Display and control your Android device
+brew "scrcpy"
 # Static analysis and lint tool, for (ba)sh scripts
 brew "shellcheck"
 # Cross-platform application to monitor your network traffic
@@ -273,8 +272,6 @@ brew "sops"
 brew "sqlc"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
-# Open source continuous file synchronization application
-brew "syncthing"
 # Tool Command Language
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
@@ -289,14 +286,10 @@ brew "tig"
 brew "tlrc"
 # Program that allows you to count code, quickly
 brew "tokei"
-# Lightweight BitTorrent client
-brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
-# Language Server Protocol implementation for TypeScript wrapping tsserver
-brew "typescript-language-server"
 # Undo git commands. Your damage control git buddy
 brew "ugit"
 # Command-line unarchiving tools supporting multiple formats
@@ -339,8 +332,6 @@ brew "derailed/k9s/k9s"
 brew "garden-io/garden/garden-cli"
 # Backrest is a web UI and orchestrator for restic backup.
 brew "garethgeorge/backrest-tap/backrest"
-# Release engineering, simplified
-brew "goreleaser/tap/goreleaser"
 # Standalone pact CLI executable using the Ruby Pact impl and Travelling Ruby
 brew "pact-foundation/pact-ruby-standalone/pact-ruby-standalone"
 # Quantum Mechanical Keyboard (QMK) Firmware
@@ -353,15 +344,17 @@ brew "tabbyml/tabby/tabby"
 cask "aerospace"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Android SDK component
+cask "android-platform-tools"
 # Application uninstaller
 cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
-cask "aws-vault"
+cask "aws-vault-binary"
 # Tool to flash OS images to SD cards & USB drives
 cask "balenaetcher"
 # Cross platform SQL editor and database management app
 cask "beekeeper-studio"
-# Opensource IDE for exploring and testing api's
+# Open source IDE for exploring and testing APIs
 cask "bruno"
 # Write, edit, and chat about your code with AI
 cask "cursor"
@@ -370,7 +363,7 @@ cask "cyberduck"
 # Voice and text chat software
 cask "discord"
 # App to build and share containerised applications and microservices
-cask "docker"
+cask "docker-desktop"
 # Online diagram software
 cask "drawio"
 # Web browser
@@ -380,7 +373,7 @@ cask "firefox@developer-edition"
 # Clipboard manager for developers
 cask "flycut"
 # Unofficial native application for Fastmail
-cask "fmail2"
+cask "fmail3"
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
@@ -388,6 +381,8 @@ cask "font-symbols-only-nerd-font"
 cask "ghostty"
 # Free and open-source image editor
 cask "gimp"
+# Web browser
+cask "google-chrome"
 # Web browser
 cask "google-chrome@canary"
 # Hex editor focussing on speed
@@ -418,15 +413,17 @@ cask "logseq"
 cask "meetingbar"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# VPN client for secure internet access and private browsing
-cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # OpenVPN client
 cask "pritunl"
+# VPN client focusing on security
+cask "protonvpn"
+# Peer to peer Bitorrent client
+cask "qbittorrent"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
-# Free and Open Source messaging and emailing app
+# Workspace simplifier - to organize your workspace and boost your productivity
 cask "rambox"
 # Control your tools with a few keystrokes
 cask "raycast"
@@ -434,20 +431,20 @@ cask "raycast"
 cask "rectangle"
 # Instant messaging application focusing on security
 cask "signal"
+# Team communication and collaboration software
+cask "slack"
 # Music streaming service
 cask "spotify"
 # Free, open-source, and completely encrypted notes app
 cask "standard-notes"
 # System monitor for the menu bar
 cask "stats"
-# Replacement for RCDefaultApps, written in Swift
-cask "swiftdefaultappsprefpane"
 # Real time file synchronisation software
-cask "syncthing"
+cask "syncthing-app"
 # Unpacks archive files
 cask "the-unarchiver"
 # To-do list
-cask "todoist"
+cask "todoist-app"
 # Web browser focusing on security
 cask "tor-browser"
 # Open-source BitTorrent client
@@ -457,9 +454,11 @@ cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
 # Network protocol analyzer
-cask "wireshark"
+cask "wireshark-app"
 # Multiplayer code editor
 cask "zed"
+mas "TestFlight", id: 899247664
+mas "Xcode", id: 497799835
 vscode "4ops.terraform"
 vscode "a-h.templ"
 vscode "aaron-bond.better-comments"
