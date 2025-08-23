@@ -6,3 +6,4 @@
 .config/backrest/*.bak
 .config/raycast/extensions/*
 .config/raycast/config.json
+.config/qBittorrent/*
