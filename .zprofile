@@ -1,3 +1,5 @@
+set -o vi
+
 alias c='clear'
 alias d-m='docker-machine'
 alias d-c='docker-compose'
