@@ -24,7 +24,7 @@ alias sc='scooter'
 alias tf='terraform'
 alias ghpr='gh pr create --title $(git branch --show-current)'
 alias ghvw='gh pr view -w'
-alias cbranch='echo $(gh pr view --json url | jq -r .url) | pbcopy'
+alias ghcpr='echo $(gh pr view --json url | jq -r .url) | pbcopy'
 
 # CONFIG
 export CONFIG_PATH=$HOME/.config
@@ -43,11 +43,15 @@ function zji() {
   zellij run -i -- "$@"
 }
 
+export NOTES=$HOME/dev/notes
+
 # DEV PATH
 export EDITOR="hx"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export SYNC=$HOME/Sync
+export SUDO_EDITOR=$(which hx) 
+
 
 # ZELLIJ
 
