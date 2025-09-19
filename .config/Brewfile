@@ -456,8 +456,6 @@ cask "logseq"
 cask "meetingbar"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# VPN client for secure internet access and private browsing
-cask "nordvpn"
 # Knowledge base that works on top of a local folder of plain text Markdown files
 cask "obsidian"
 # Android file transfer
@@ -504,7 +502,7 @@ cask "wireshark-app"
 cask "zed"
 # Gecko based web browser
 cask "zen"
-mas "Slack", id: 803453959
+
 vscode "4ops.terraform"
 vscode "766b.go-outliner"
 vscode "a-h.templ"
