@@ -70,6 +70,7 @@ C-l = "jump_view_right"
 A-e = ["save_selection"]
 A-w = [":write"]
 "A-<" = [":format"] 
+"A->" = [":format"] 
 esc = ["collapse_selection", "keep_primary_selection"]
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
@@ -91,8 +92,14 @@ space.x = "@i- <esc>"
 
 # Expansions
 space.B = ":echo %sh{git blame -L %{cursor_line},+1 %{buffer_name}}"
+# space.L = ":echo %sh{gh repo view --web %{cursor_line},+1 %{buffer_name} | pbcopy}"
+space.L = ":sh gh repo view -w"
 space.c = { l = ":sh %sh{echo $PWD | pbcopy}" }
 
+[keys.insert]
+# "S-<" = "normal_mode"     # Maps Alt-X to enter normal mode
+"<" = { "<" = "normal_mode" }
+j = { k = "normal_mode"} 
 
 [keys.normal.backspace]
 g = ":sh zellij run -fc -- lazygit"
@@ -110,10 +117,6 @@ s = [
     ":redraw",
     ":reload-all"
 ]
-
-[keys.insert]
-"A-<" = "normal_mode"     # Maps Alt-X to enter normal mode
-j = { k = "normal_mode"} 
 
 [editor.auto-pairs]
 '(' = ')'

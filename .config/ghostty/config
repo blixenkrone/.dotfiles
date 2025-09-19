@@ -8,6 +8,8 @@ keybind = shift+alt+9=text:}
 keybind = alt+8=text:[
 keybind = alt+9=text:]
 keybind = alt+¨=text:~
+keybind = alt+`=text:\'
+keybind = alt+´=text:\'
 keybind = ctrl+¨=text:\~
 keybind = alt+i=text:|
 keybind = shift+alt+7=text:\\
@@ -18,7 +20,6 @@ keybind = alt+ø=text:\\
 keybind = alt+shift+æ=text:\\
 keybind = alt+shift+ø=text:\\
 keybind = alt+shift+å=text:\\
-keybind = alt+'=text:@
 keybind = alt+'=text:@
 keybind = ctrl+y=text:y\r
 

@@ -56,6 +56,11 @@ formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 
 [[language]]
+name = "markdown"
+formatter = { command = 'dprint', args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/.dprint.json"] }
+auto-format = true
+
+[[language]]
 name = "json"
 formatter = { command = 'prettier', args = ["--parser", "json"] }
 auto-format = true
