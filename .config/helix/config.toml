@@ -84,6 +84,8 @@ y = [":clipboard-yank", "yank"]
 "{" = ["goto_prev_paragraph", "collapse_selection"]
 "}" = ["goto_next_paragraph", "collapse_selection"]
 S-x = ["extend_line_up"]
+A-S = "merge_selections"
+"`" = "no_op"
 # space.F = ["file_picker_in_current_buffer_directory"]
 
 # Macros
@@ -102,9 +104,9 @@ space.c = { l = ":sh %sh{echo $PWD | pbcopy}" }
 j = { k = "normal_mode"} 
 
 [keys.normal.backspace]
-g = ":sh zellij run -fc -- lazygit"
+g = ":sh zellij run -fc -x 10%% -y 10%% --width 80%% --height 80%% -- lazygit"
 f = ":sh zellij run -fc -- y"
-t = ":sh zellij run -f -- go test | $(:sh $PWD)"
+t = ":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- go test ./..."
 b = ":sh zellij run -f -- just build"
 r = ":sh zellij run -f -- just run"
 c = ":wbc"
@@ -124,5 +126,5 @@ s = [
 '[' = ']'
 '"' = '"'
 "'" = "'"
-'`' = '`'
+# '`' = '`'
 # '<' = '>'

@@ -132,6 +132,6 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 # ZeroNorth
-if test -f ~/.znprofile; then
-  . ~/.znprofile
+if test -f ~/.0north/; then
+  . ~/.0north/.old_znprofile
 fi
