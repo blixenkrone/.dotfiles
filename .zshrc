@@ -71,6 +71,8 @@ plugins=(
   gh
   fzf
   docker
+  golang
+  brew
   kubectl
   nvm
 )
