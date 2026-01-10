@@ -1,0 +1,27 @@
+backends:
+  proxmox:
+    type: rest
+    path: https://backrest.sblixenkrone.com/repo/proxmox
+    key: r2z8VOcGlIYcgObLMuB6W68EfEhKe9shlrZYoDbEjgPjTmz0JiGNp0vYQ61gMjcyDBOa2x0rXGyaFMWVnUtRSQ
+    requirekey: true
+    env: {}
+    rest:
+      user: "proxmox"
+      password: "sbk13"
+    options: {}
+locations:
+  home:
+    from:
+    - /home
+    type: ""
+    to:
+    - proxmox
+    hooks:
+      dir: ""
+      prevalidate: []
+      before: []
+      after: []
+      success: []
+      failure: []
+    cron: ""
+version: 2

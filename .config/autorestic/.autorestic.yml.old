@@ -1,0 +1,14 @@
+
+version: 2
+ 
+locations:
+  home:
+    from: /home
+    to:
+      - proxmox
+
+backends:
+  proxmox:
+    type: rest
+    path: https://proxmox:lLMQv!6DYbEgf58a@backrest.sblixenkrone.com/proxmox
+
