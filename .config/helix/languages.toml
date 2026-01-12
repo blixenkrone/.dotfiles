@@ -1,14 +1,5 @@
 # Language servers
 
-[language-server.gopls]
-command = "gopls"
-
-# [language-server.golangci-lint-lsp]
-# command = "golangci-lint-langserver"
-
-# [language-server.golangci-lint-lsp.config]
-# command = ["golangci-lint", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
-
 [language-server.scls]
 command = "simple-completion-language-server"
 
@@ -25,14 +16,36 @@ feature_citations = false            # enable citation completion (only on `cita
 [language-server.sqls]
 command = "sqls"
 
+[language-server.gopls]
+command = "gopls"
+
+[language-server.golangci-lint-lsp]
+command = "golangci-lint-langserver"
+
+[language-server.gopls.config]
+usePlaceholders = true
+staticcheck = true
+# "ui.diagnostic.staticcheck" = true
+vulncheck = "Imports" # or "All"
+"formatting.gofumpt" = true
+# gofumpt = true
+
+[language-server.gopls.config.analyses]
+unusedfunc = true
+unusedparams = true
+unreachable = true
+unusedvariable = true
+
 # Languages
 [[language]]
 name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
-comment-token = "//"
-language-servers = [ "gopls", "scls" ] # "golangci-lint-lsp"
+# comment-token = "//"
+language-servers = [ "gopls", "scls", "golangci-lint-lsp"]
 formatter = { command = "goimports" }
+# formatter = { command = "gofumpt" }
+# formatter = { command = "gopls" }
 
 [[language]]
 name = "hcl"
