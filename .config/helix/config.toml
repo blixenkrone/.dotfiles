@@ -13,6 +13,7 @@ color-modes = true
 cursorline = true
 true-color = true
 undercurl = true
+gutters = ["diff",  "diagnostics", "line-numbers", "spacer"]
 # Minimum severity to show a diagnostic after the end of a line:
 end-of-line-diagnostics = "hint"
 
@@ -34,6 +35,8 @@ left = ["mode", "spinner", "read-only-indicator", "file-modification-indicator"]
 center = ["file-name", "version-control"]
 right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding", "file-line-ending", "file-type"]
 separator = "'│'"
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
 
 [editor.cursor-shape]
 insert = "bar"
@@ -42,7 +45,7 @@ select = "underline"
 
 [editor.file-picker]
 hidden = false
-git-ignore = false
+git-ignore = true
 
 [editor.whitespace.render]
 space = "all"
@@ -78,7 +81,7 @@ esc = ["collapse_selection", "keep_primary_selection"]
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
 C-e = [":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/scripts/yazi-picker.sh"]
-C-f = [":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/scripts/scooter_replacer.sh"]
+C-y = [":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/scripts/yazi-picker.sh"]
 C-j = ["page_cursor_half_down"]
 C-k = ["page_cursor_half_up"]
 y = [":clipboard-yank", "yank"]
@@ -106,6 +109,7 @@ space.c = { l = ":sh %sh{echo $PWD | pbcopy}" }
 j = { k = "normal_mode"} 
 
 [keys.normal.backspace]
+s = [":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/scripts/scooter_replacer.sh"]
 g = ":sh zellij run -fc -x 10%% -y 10%% --width 80%% --height 80%% -- lazygit"
 f = ":sh zellij run -fc -- y"
 t = ":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- go test ./..."
@@ -115,12 +119,12 @@ c = ":wbc"
 C = ":bc"
 h = ":toggle lsp.display-inlay-hints"
 e = { l = ":lsp-workspace-command" }
-s = [
-    ":write-all",
-    ":insert-output scooter >/dev/tty",
-    ":redraw",
-    ":reload-all"
-]
+# s = [
+#     ":write-all",
+#     ":insert-output scooter >/dev/tty",
+#     ":redraw",
+#     ":reload-all"
+# ]
 
 [editor.auto-pairs]
 '(' = ')'

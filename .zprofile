@@ -1,5 +1,3 @@
-set -o vi
-
 alias c='clear'
 alias d-m='docker-machine'
 alias d-c='docker-compose'
@@ -16,7 +14,8 @@ alias cat='bat'
 alias ls='eza -lah --icons'
 alias brewbundle='brew bundle dump --describe --force'
 alias ncdu='gdu-go'
-alias zj='zellij -l welcome'
+alias zj='zellij'
+alias zjw='zellij -l welcome'
 # alias zj='$HOME/.cargo/bin/zellij -l welcome'
 alias zjc='zellij -l compact'
 alias lg='lazygit'
@@ -26,6 +25,9 @@ alias tf='terraform'
 alias ghpr='gh pr create --title $(git branch --show-current)'
 alias ghvw='gh pr view -w'
 alias ghcpr='echo $(gh pr view --json url | jq -r .url) | pbcopy'
+
+# OMZ
+bindkey '\C-x' edit-command-line
 
 # CONFIG
 export CONFIG_PATH=$HOME/.config
@@ -48,6 +50,7 @@ export NOTES=$HOME/dev/notes
 
 # DEV PATH
 export EDITOR="hx"
+export VISUAL="hx"
 export DEV=$HOME/dev
 export DOTFILES=$HOME/dev/.dotfiles
 export SYNC=$HOME/Sync

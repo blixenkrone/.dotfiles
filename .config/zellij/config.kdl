@@ -632,9 +632,9 @@ theme "catppuccin-frappe"
 //
 default_shell "zsh"
 // The name of the default layout to load on startup
-// Default: "default"
+Default: "compact"
 //
-default_layout "$CONFIG_PATH/zellij/layout/dev.kdl"
+// default_layout "$CONFIG_PATH/zellij/layout/dev.kdl"
 // The folder in which Zellij will look for layouts
 // (Requires restart)
 //
