@@ -7,4 +7,4 @@
 .config/raycast/extensions/*
 .config/raycast/config.json
 .config/qBittorrent/*
-.config/zed/prompts/*
+.config/zed/prompts/*.mdb
