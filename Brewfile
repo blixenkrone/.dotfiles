@@ -1,43 +1,47 @@
+tap "0north/zntacs"
 tap "bufbuild/buf"
 tap "buo/cask-upgrade"
+tap "clicksandmortar/launchpad"
 tap "cloudflare/cloudflare"
 tap "codecrafters-io/tap"
 tap "derailed/k9s"
+tap "dlvhdr/formulae"
 tap "garden-io/garden"
 tap "garethgeorge/backrest-tap"
 tap "goreleaser/tap"
 tap "grishka/grishka"
+tap "gromgit/brewtils"
 tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "hougesen/tap"
 tap "nao1215/tap"
 tap "nats-io/nats-tools"
 tap "nikitabobko/tap"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "pact-foundation/pact-ruby-standalone"
+tap "pulumi/tap"
 tap "qmk/qmk"
 tap "romkatv/powerlevel10k"
 tap "siderolabs/tap"
+tap "stripe/stripe-cli"
+tap "tabbyml/tabby"
 tap "xo/xo"
 # Run your GitHub Actions locally
 brew "act"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
-# New file format for still image compression
-brew "jpeg-xl"
-# Codec library for encoding and decoding AV1 video streams
-brew "aom"
-# Core application library for C
-brew "glib"
-# OpenType text shaping engine
-brew "harfbuzz"
-# Library for encoding and decoding .avif files
-brew "libavif"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.12"
 # AI pair programming in your terminal
 brew "aider"
+# New file format for still image compression
+brew "jpeg-xl"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
+# Core application library for C
+brew "glib"
 # Protocol definitions and daemon for D-Bus at-spi
 brew "at-spi2-core"
 # Improved shell history for zsh, bash, fish and nushell
@@ -48,6 +52,8 @@ brew "restic"
 brew "autorestic"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -60,6 +66,8 @@ brew "bash-language-server"
 brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# OpenType text shaping engine
+brew "harfbuzz"
 # Development kit for the Java programming language
 brew "openjdk"
 # Remove large files or passwords from Git history like git-filter-branch
@@ -82,6 +90,8 @@ brew "cheat"
 brew "cloudflared"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# Library for encoding and decoding .avif files
+brew "libavif"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # General-purpose scripting language
@@ -98,6 +108,8 @@ brew "pkgconf"
 brew "crystal"
 # High performance csv viewer for cli
 brew "csview"
+# Command-line csv viewer
+brew "csvlens"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
@@ -116,16 +128,6 @@ brew "dsq"
 brew "eza"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
-# Library to load and enumerate PKCS#11 modules
-brew "p11-kit"
-# Validating, recursive, caching DNS resolver
-brew "unbound"
-# GNU Transport Layer Security (TLS) Library
-brew "gnutls"
-# C library SSHv1/SSHv2 client and server protocols
-brew "libssh"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -154,10 +156,18 @@ brew "gitleaks"
 brew "gitup"
 # Render markdown on the CLI
 brew "glow"
+# Library to load and enumerate PKCS#11 modules
+brew "p11-kit"
+# Validating, recursive, caching DNS resolver
+brew "unbound"
+# GNU Transport Layer Security (TLS) Library
+brew "gnutls"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
+# Stricter gofmt
+brew "gofumpt"
 # Database migrations CLI tool
 brew "golang-migrate"
 # Fast linters runner for Go
@@ -174,6 +184,8 @@ brew "gping"
 brew "netpbm"
 # GNU triangulated surface library
 brew "gts"
+# Framework for layout and rendering of i18n text
+brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Graph visualization software from AT&T and Bell Labs
@@ -186,6 +198,8 @@ brew "gum"
 brew "helix"
 # Kubernetes package manager
 brew "helm"
+# Improved top (interactive process viewer)
+brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
 # Official CLI for the IPinfo IP Address API
@@ -202,6 +216,8 @@ brew "lazydocker"
 brew "lazygit"
 # General purpose TCP-IP emulator
 brew "libslirp"
+# C library SSHv1/SSHv2 client and server protocols
+brew "libssh"
 # High-performance, extensible alternative to ls
 brew "lla"
 # Fully functional local AWS cloud stack
@@ -260,6 +276,8 @@ brew "protobuf-c"
 brew "protobuf@3"
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
+# Cloud native development platform
+brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
@@ -296,6 +314,8 @@ brew "sops"
 brew "sqlc"
 # SQL linter and auto-formatter for Humans
 brew "sqlfluff"
+# Fast SQL formatter/linter
+brew "sqruff"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
 # Open source continuous file synchronization application
@@ -340,6 +360,8 @@ brew "websocketd"
 brew "wireguard-go"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Why is this running?
+brew "witr"
 # Personal information dashboard for your terminal
 brew "wtfutil"
 # Language Server for Yaml Files
@@ -366,10 +388,16 @@ brew "zsh-syntax-highlighting"
 brew "codecrafters-io/tap/codecrafters"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Git diff pager based on delta but with a file tree, à la GitHub
+brew "dlvhdr/formulae/diffnav"
 # Development engine for Kubernetes
 brew "garden-io/garden/garden-cli"
 # Backrest is a web UI and orchestrator for restic backup.
 brew "garethgeorge/backrest-tap/backrest"
+# Interactive TUI for Homebrew
+brew "gromgit/brewtils/taproom"
+# A code formatter for kdl documents.
+brew "hougesen/tap/kdlfmt"
 # NATS utility
 brew "nats-io/nats-tools/nats"
 # Standalone pact CLI executable using the Ruby Pact impl and Traveling Ruby
@@ -378,10 +406,12 @@ brew "pact-foundation/pact-ruby-standalone/pact-legacy"
 brew "qmk/qmk/qmk"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
 brew "siderolabs/tap/talosctl"
+# Tabby: AI Coding Assistant
+brew "tabbyml/tabby/tabby"
 # universal command-line SQL client interface
 brew "xo/xo/usql"
 # AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Enable Windows-like alt-tab
@@ -429,6 +459,8 @@ cask "gimp"
 cask "google-chrome"
 # Web browser
 cask "google-chrome@canary"
+# Release engineering, simplified
+cask "goreleaser/tap/goreleaser"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Dedicated scratchpad for developers
@@ -513,48 +545,29 @@ cask "wireshark-app"
 cask "zed"
 # Gecko based web browser
 cask "zen"
+# Software to be used as a general purpose and service scaffolding tool for ZeroNorth engineers
+cask "0north/zntacs/zntacs"
+
+mas "Slack", id: 803453959
 mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
-vscode "4ops.terraform"
-vscode "766b.go-outliner"
-vscode "a-h.templ"
-vscode "aaron-bond.better-comments"
-vscode "adpyke.vscode-sql-formatter"
-vscode "azemoh.one-monokai"
-vscode "bmewburn.vscode-intelephense-client"
-vscode "cardinal90.multi-cursor-case-preserve"
-vscode "catppuccin.catppuccin-vsc"
-vscode "christian-kohler.path-intellisense"
-vscode "davidanson.vscode-markdownlint"
-vscode "docker.docker"
-vscode "dotiful.dotfiles-syntax-highlighting"
-vscode "dsznajder.es7-react-js-snippets"
-vscode "eamodio.gitlens"
-vscode "enkia.tokyo-night"
-vscode "firsttris.vscode-jest-runner"
-vscode "foxundermoon.shell-format"
-vscode "golang.go"
-vscode "jasew.vscode-helix-emulation"
-vscode "mechatroner.rainbow-csv"
-vscode "mikestead.dotenv"
-vscode "ms-azuretools.vscode-containers"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.atom-keybindings"
-vscode "ms-vscode.vscode-typescript-next"
-vscode "ms-vsliveshare.vsliveshare"
-vscode "pbkit.vscode-pbkit"
-vscode "premparihar.gotestexplorer"
-vscode "qinjia.seti-icons"
-vscode "redhat.vscode-xml"
-vscode "rust-lang.rust-analyzer"
-vscode "silverquark.dancehelix"
-vscode "vintharas.learn-vim"
-vscode "wayou.vscode-todo-highlight"
-vscode "windmilleng.vscode-go-autotest"
-vscode "zxh404.vscode-proto3"
+go "github.com/go-delve/delve/cmd/dlv"
+go "github.com/766b/go-outliner"
+go "goa.design/goa/v3/cmd/goa"
+go "golang.org/x/tools/cmd/goimports"
+go "github.com/golangci/golangci-lint/cmd/golangci-lint"
+go "github.com/fatih/gomodifytags"
+go "github.com/pressly/goose/v3/cmd/goose"
+go "github.com/haya14busa/goplay/cmd/goplay"
+go "golang.org/x/tools/gopls"
+go "github.com/cweill/gotests/gotests"
+go "golang.org/x/vuln/cmd/govulncheck"
+go "github.com/josharian/impl"
+go "github.com/ogen-go/ogen/cmd/ogen"
+go "github.com/timtatt/sift"
+go "github.com/sqls-server/sqls"
+go "honnef.co/go/tools/cmd/staticcheck"
+go "github.com/swaggo/swag/cmd/swag"
+cargo "helix-driver"
+cargo "simple-completion-language-server"
