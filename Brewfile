@@ -1,7 +1,6 @@
 tap "0north/zntacs"
 tap "bufbuild/buf"
 tap "buo/cask-upgrade"
-tap "clicksandmortar/launchpad"
 tap "cloudflare/cloudflare"
 tap "codecrafters-io/tap"
 tap "derailed/k9s"
@@ -25,8 +24,6 @@ tap "pulumi/tap"
 tap "qmk/qmk"
 tap "romkatv/powerlevel10k"
 tap "siderolabs/tap"
-tap "stripe/stripe-cli"
-tap "tabbyml/tabby"
 tap "xo/xo"
 # Run your GitHub Actions locally
 brew "act"
@@ -406,8 +403,6 @@ brew "pact-foundation/pact-ruby-standalone/pact-legacy"
 brew "qmk/qmk/qmk"
 # CLI for out-of-band management of Kubernetes nodes created by Talos
 brew "siderolabs/tap/talosctl"
-# Tabby: AI Coding Assistant
-brew "tabbyml/tabby/tabby"
 # universal command-line SQL client interface
 brew "xo/xo/usql"
 # AeroSpace is an i3-like tiling window manager for macOS
