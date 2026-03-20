@@ -27,7 +27,7 @@ echo "  › Show the /Volumes folder"
 sudo chflags nohidden /Volumes
 
 echo "  › Set a really fast key repeat"
-defaults write -g InitialKeyRepeat -int 4
+defaults write -g InitialKeyRepeat -int 15
 defaults write -g KeyRepeat -int 3
 
 echo "  › Require password immediately after sleep or screen saver begins"
