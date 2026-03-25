@@ -35,6 +35,10 @@ keybinds clear-defaults=true {
             GoToTab 8
             SwitchToMode "normal"
         }
+        bind "Alt 9" {
+            GoToTab 9
+            SwitchToMode "normal"
+        }
         bind "Alt f" {
             ToggleFloatingPanes
             SwitchToMode "normal"
