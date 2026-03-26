@@ -12,22 +12,19 @@
 
 ## 🎨 Installation
 
-```sh
-ya pkg add yazi-rs/flavors:catppuccin-macchiato
-```
+Download and copy this folder as:
+
+- `~/.config/yazi/flavors/catppuccin-macchiato.yazi` on Linux/macOS
+- `%AppData%\yazi\config\flavors\catppuccin-macchiato.yazi` on Windows
 
 ## ⚙️ Usage
 
-Set the content of your `theme.toml` to enable it as your _dark_ flavor:
+Add these lines to your `theme.toml` configuration file to use it:
 
 ```toml
 [flavor]
-dark = "catppuccin-macchiato"
+use = "catppuccin-macchiato"
 ```
-
-Make sure your `theme.toml` doesn't contain anything other than `[flavor]`, unless you want to override certain styles of this flavor.
-
-See the [Yazi flavor documentation](https://yazi-rs.github.io/docs/flavors/overview) for more details.
 
 ## 📜 License
 
