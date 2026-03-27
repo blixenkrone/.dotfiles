@@ -381,13 +381,20 @@ keybinds clear-defaults=true {
             MoveFocus "right"
         }
         bind "Alt n" {
-            NewPane
+            NewPane "right"; SwitchToMode "normal"
+        }
+        bind "Alt ~" {
+            NewPane "down"; SwitchToMode "normal"
         }
         bind "Ctrl q" {
             Quit
         }
         bind "æ" {
 
+        }
+        bind "Alt #" {
+            ToggleFloatingPanes
+            SwitchToMode "normal"
         }
     }
     shared_except "locked" "move" {
@@ -627,7 +634,8 @@ load_plugins {
 // simplified_ui true
 // Choose the theme that is specified in the themes section.
 // Default: default
-theme "catppuccin-frappe"
+// theme "catppuccin-frappe"
+theme "ayu_dark"
 // Choose the base input mode of zellij.
 // Default: normal
 // default_mode "locked"
@@ -636,7 +644,7 @@ theme "catppuccin-frappe"
 //
 default_shell "zsh"
 // The name of the default layout to load on startup
-Default: "compact"
+default_layout "compact"
 //
 // default_layout "$CONFIG_PATH/zellij/layout/dev.kdl"
 // The folder in which Zellij will look for layouts
@@ -655,7 +663,7 @@ mouse_mode true
 //   - true (default, enabled)
 //   - false
 //
-// pane_frames false
+pane_frames false
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
 // or should each user have their own cursor (false)
@@ -709,12 +717,12 @@ on_force_close "detach"
 // otherwise this will error if such a session exists.
 // Default: <RANDOM>
 //
-// session_name "My singleton session"
+session_name "main"
 // When `session_name` is provided, attaches to that session
 // if it is already running or creates it otherwise.
 // Default: false
 //
-// attach_to_session true
+attach_to_session true
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)
