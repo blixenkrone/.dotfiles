@@ -21,8 +21,8 @@ keybind = alt+shift+æ=text:\\
 keybind = alt+shift+ø=text:\\
 keybind = alt+shift+å=text:\\
 keybind = alt+'=text:@
-keybind = ctrl+y=text:y\r
-keybind = ctrl+e=text:y\r
+# keybind = ctrl+y=text:y\r
+# keybind = ctrl+e=text:y\r
 keybind = æ=text:æ
 
 ## GENERAL ##
