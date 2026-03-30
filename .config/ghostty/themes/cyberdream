@@ -1,0 +1,68 @@
+shell-integration = zsh
+term = xterm-256color
+
+window-decoration = false
+window-height = 80
+window-width = 180
+window-padding-x = 0
+window-padding-y = 0
+quick-terminal-animation-duration = 0.1
+resize-overlay-duration = 2s 500ms
+
+background = #101116
+background-opacity = 0.90
+background-blur-radius = 10
+unfocused-split-opacity = 0.46
+font-family = JetBrainsMono NFM
+font-size = 14.5
+font-style-bold = true
+minimum-contrast = 1
+mouse-hide-while-typing = true
+
+palette = 0=#16181a
+palette = 1=#ff6e5e
+palette = 2=#5eff6c
+palette = 3=#f1ff5e
+palette = 4=#5ea1ff
+palette = 5=#bd5eff
+palette = 6=#5ef1ff
+palette = 7=#ffffff
+palette = 8=#3c4048
+palette = 9=#ff6e5e
+palette = 10=#5eff6c
+palette = 11=#f1ff5e
+palette = 12=#5ea1ff
+palette = 13=#bd5eff
+palette = 14=#5ef1ff
+palette = 15=#ffffff
+
+background = #16181a
+foreground = #ffffff
+cursor-color = #ffffff
+selection-background = #3c4048
+selection-foreground = #ffffff
+
+cursor-color = #ffffff
+cursor-text = #16181a
+
+keybind = alt+1=text:\x011
+keybind = alt+2=text:\x012
+keybind = alt+3=text:\x013
+keybind = alt+4=text:\x014
+keybind = alt+5=text:\x015
+keybind = alt+6=text:\x016
+keybind = alt+7=text:\x017
+keybind = alt+8=text:\x018
+keybind = alt+9=text:\x019
+keybind = alt+t=text:\x01c
+keybind = alt+r=text:\x01,
+keybind = alt+w=text:\x01x
+keybind = alt+-=text:\x01"
+keybind = alt+\=text:\x01%
+keybind = alt+z=text:\x01z
+keybind = alt+h=text:\x01p
+keybind = alt+l=text:\x01n
+keybind = alt+i=text:\x01{
+keybind = alt+o=text:\x01}
+keybind = alt+p=text:\x01f
+confirm-close-surface = false
