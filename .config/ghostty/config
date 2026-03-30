@@ -47,12 +47,12 @@ shell-integration-features = cursor,sudo,title
 # theme = catppuccin-mocha
 # theme = ayu mirage
 # theme = tokyonight
-# theme = tomorrow night burns
-theme = catppuccin-macchiato.conf
+theme = tomorrow night
+# theme = catppuccin-macchiato.conf
 font-family = MesloLGS Nerd Font Mono
 font-size = 14
 background-opacity = 0.95
-background-blur-radius = 5
+background-blur-radius = 30
 
 # CURSOR
 cursor-style = block
@@ -65,10 +65,4 @@ clipboard-trim-trailing-spaces = true
 clipboard-paste-protection = false
 copy-on-select = clipboard
 
-# COLORS
-# background = #111111
-# foreground = #f4f4ff
-# cursor-color = #ffffff
-# selection-background = 1d3c3b
-# selection-foreground = eeeeee
 

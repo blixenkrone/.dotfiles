@@ -13,9 +13,6 @@ feature_unicode_input = false        # enable "unicode input"
 feature_paths = false                # enable path completion
 feature_citations = false            # enable citation completion (only on `citation` feature enabled)[[language]]
 
-[language-server.sqls]
-command = "sqls"
-
 [language-server.gopls]
 command = "gopls"
 

@@ -1,8 +1,9 @@
 # theme = "tokyonight_moon"
 # theme = "zed_onedark"
-# theme = "catppuccin_mocha"
+theme = "catppuccin_mocha"
 # theme = "ashen-dev"
-theme = "kanagawa_t"
+# theme = "kanagawa_t"
+# theme = "kanabox"
 
 [editor]
 line-number = "relative"
@@ -22,7 +23,7 @@ end-of-line-diagnostics = "hint"
 # Note that `cursor-line` diagnostics are hidden in insert mode.
 cursor-line = "hint"
 # Minimum severity to show a diagnostic on other lines:
-other-lines = "disable"
+# other-lines = "disable"
 
 [editor.smart-tab]
 enable = false
@@ -66,7 +67,7 @@ skip-levels = 0
 display-messages = true
 display-progress-messages = true
 snippets = true
-# display-inlay-hints = true
+display-inlay-hints = true
 
 [keys.normal]
 C-h = "jump_view_left"
@@ -75,8 +76,7 @@ A-e = ["save_selection"]
 A-w = [":write"]
 tab = ":buffer-next"
 A-tab = ":buffer-previous"
-"A-<" = [":format"] 
-"A->" = [":format"] 
+"A-<" = [":format"]
 esc = ["collapse_selection", "keep_primary_selection"]
 S-j = ["extend_to_line_bounds", "delete_selection", "paste_after"]
 S-k = ["extend_to_line_bounds", "delete_selection", "move_line_up", "paste_before"]
@@ -121,11 +121,12 @@ g = ":sh zellij run -fc -x 10%% -y 10%% --width 80%% --height 80%% -- lazygit"
 f = ":sh zellij run -fc -- y"
 t = ":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- go test ./..."
 b = ":sh zellij run -f -- just build"
-r = ":sh zellij run -f -- just run"
+# r = ":sh zellij run -f -- just run"
 c = ":wbc"
 C = ":bc"
 h = ":toggle lsp.display-inlay-hints"
 e = { l = ":lsp-workspace-command" }
+r = ":config-reload"
 # s = [
 #     ":write-all",
 #     ":insert-output scooter >/dev/tty",
