@@ -22,7 +22,7 @@ keybind = alt+shift+ø=text:\\
 keybind = alt+shift+å=text:\\
 keybind = alt+'=text:@
 keybind = ctrl+y=text:y\r
-keybind = ctrl+e=text:y\r
+# keybind = ctrl+e=text:y\r
 keybind = æ=text:æ
 
 ## GENERAL ##
@@ -48,8 +48,8 @@ shell-integration-features = cursor,sudo,title
 # theme = ayu mirage
 # theme = tokyonight
 # theme = tomorrow night
-# theme = catppuccin-macchiato.conf
-theme = cyberdream
+theme = catppuccin-macchiato.conf
+# theme = cyberdream
 font-family = MesloLGS Nerd Font Mono
 font-size = 14
 background-opacity = 0.95

@@ -45,24 +45,4 @@ selection-foreground = #ffffff
 cursor-color = #ffffff
 cursor-text = #16181a
 
-keybind = alt+1=text:\x011
-keybind = alt+2=text:\x012
-keybind = alt+3=text:\x013
-keybind = alt+4=text:\x014
-keybind = alt+5=text:\x015
-keybind = alt+6=text:\x016
-keybind = alt+7=text:\x017
-keybind = alt+8=text:\x018
-keybind = alt+9=text:\x019
-keybind = alt+t=text:\x01c
-keybind = alt+r=text:\x01,
-keybind = alt+w=text:\x01x
-keybind = alt+-=text:\x01"
-keybind = alt+\=text:\x01%
-keybind = alt+z=text:\x01z
-keybind = alt+h=text:\x01p
-keybind = alt+l=text:\x01n
-keybind = alt+i=text:\x01{
-keybind = alt+o=text:\x01}
-keybind = alt+p=text:\x01f
 confirm-close-surface = false
