@@ -1,0 +1,76 @@
+capture_source_picklist = "Device"
+import_pcap_path = ""
+last_opened_setting = "General"
+last_opened_page = "Inspect"
+data_repr = "Bytes"
+host_sort_type = "Descending"
+service_sort_type = "Neutral"
+program_sort_type = "Neutral"
+report_sort_type = "Neutral"
+host_favorites_filter = false
+service_favorites_filter = false
+program_favorites_filter = false
+
+[window]
+size = [
+    1294.0,
+    1186.0,
+]
+position = [
+    1100.0,
+    -50.0,
+]
+thumbnail_position = [
+    0.0,
+    40.0,
+]
+
+[device]
+device_name = "en0"
+
+[filters]
+expanded = false
+bpf = ""
+
+[export_pcap]
+enabled = false
+file_name = "sniffnet.pcap"
+directory = "/Users/simonblixenkrone"
+
+[settings]
+color_gradient = "None"
+style_path = ""
+language = "EN"
+scale_factor = 1.0
+mmdb_country = ""
+mmdb_asn = ""
+ip_blacklist = ""
+
+[settings.notifications]
+volume = 50
+
+[settings.notifications.data_notification]
+sound = "Gulp"
+data_repr = "Bytes"
+byte_multiple = "KB"
+previous_threshold = 800000
+
+[settings.notifications.favorite_notification]
+is_active = false
+sound = "Pop"
+
+[settings.notifications.ip_blacklist_notification]
+is_active = false
+sound = "Swhoosh"
+
+[settings.notifications.remote_notifications]
+is_active = false
+url = ""
+
+[settings.style]
+style = "A11yDark"
+
+[favorites]
+hosts = []
+services = []
+programs = []
