@@ -65,6 +65,9 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 
+# Add brew completions to FPATH before OMZ runs compinit
+FPATH="/opt/homebrew/share/zsh-completions:$FPATH"
+
 # User configuration
 plugins=(
   git
@@ -74,27 +77,29 @@ plugins=(
   golang
   brew
   kubectl
-  nvm
 )
 
-source $ZSH/oh-my-zsh.sh
+. $ZSH/oh-my-zsh.sh
 
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
-
-eval $(/opt/homebrew/bin/brew shellenv)
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# Static brew env (avoids slow subprocess call to brew shellenv)
+export HOMEBREW_PREFIX="/opt/homebrew"
+export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
+export HOMEBREW_REPOSITORY="/opt/homebrew"
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin${PATH+:$PATH}"
+export MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:"
+export INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}"
+. /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+. /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(zoxide init zsh)"
 eval "$(atuin init zsh)"
-source <(fzf --zsh)
-eval $(thefuck --alias)
-# . ~/.config/fzf/fzf-git.sh/fzf-git.sh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# Lazy-load thefuck (avoids slow Python subprocess on startup)
+fuck() {
+  unfunction fuck
+  eval $(thefuck --alias)
+  fuck "$@"
+}
 
 # Preferred editor for local and remote sessions
 export EDITOR='hx'
@@ -105,8 +110,8 @@ export EDITOR='hx'
 # For a full list of active aliases, run `alias`.
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-source $BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+. "$BREW_DIR/share/powerlevel10k/powerlevel10k.zsh-theme"
+[[ ! -f ~/.p10k.zsh ]] || . ~/.p10k.zsh
 
-source ~/.ghprofile
-source ~/.zprofile
+. ~/.ghprofile
+. ~/.zprofile

@@ -42,6 +42,7 @@ name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
 language-servers = [ "gopls", "scls", "golangci-lint-lsp"]
+# language-servers = ["gopls"]
 formatter = { command = "goimports" }
 # formatter = { command = "gofumpt" }
 # formatter = { command = "gopls" }

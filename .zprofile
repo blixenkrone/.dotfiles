@@ -131,8 +131,15 @@ cover() {
 }
 
 export NVM_DIR="$HOME/.nvm"
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# Lazy-load nvm — only loads when nvm/node/npm/npx is first called
+_load_nvm() {
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && source "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
+}
+nvm()  { unfunction nvm;  _load_nvm; nvm  "$@" }
+node() { unfunction node; _load_nvm; node "$@" }
+npm()  { unfunction npm;  _load_nvm; npm  "$@" }
+npx()  { unfunction npx;  _load_nvm; npx  "$@" }
 
 
 # OpenAI
