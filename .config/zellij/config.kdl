@@ -39,9 +39,13 @@ keybinds clear-defaults=true {
             GoToTab 9
             SwitchToMode "normal"
         }
-        bind "Alt f" {
-            ToggleFloatingPanes
-            SwitchToMode "normal"
+        // bind "Alt f" { // Conflicts when you're pressing Alt+right arrow
+            // ToggleFloatingPanes
+            // SwitchToMode "normal"
+        // }
+        bind "Alt F" { // Conflicts when you're pressing Alt+right arrow
+         ToggleFloatingPanes
+         SwitchToMode "normal"
         }
     }
     locked {
@@ -376,6 +380,9 @@ keybinds clear-defaults=true {
         }
         bind "Alt k" {
             MoveFocus "up"
+        }
+        bind "Alt right" {
+            // MoveFocus "up"
         }
         bind "Alt l" {
             MoveFocus "right"
