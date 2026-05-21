@@ -68,9 +68,14 @@ language-servers = ["vscode-html-language-server"]
 formatter = { command = 'prettier', args = ["--parser", "html"] }
 auto-format = true
 
+[language-server.iwe]
+command = "iwes"
+
 [[language]]
 name = "markdown"
-formatter = { command = 'dprint', args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/.dprint.json"] }
+# formatter = { command = 'dprint', args = ["fmt", "--stdin", "md", "--config", "~/.config/dprint/.dprint.json"] }
+# language-servers = [ "iwe", "marksman" ]
+language-servers = [ "iwe" ]
 auto-format = true
 
 [[language]]

@@ -44,13 +44,11 @@ shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
 # THEME
-# theme = catppuccin-mocha
-# theme = ayu mirage
-# theme = tokyonight
-# theme = tomorrow night
 theme = catppuccin-macchiato.conf
-# theme = cyberdream
+
+# FONT
 font-family = MesloLGS Nerd Font Mono
+# font-family = ZedMono Nerd Font Mono
 font-size = 14
 background-opacity = 0.95
 background-blur-radius = 30
