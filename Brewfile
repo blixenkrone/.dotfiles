@@ -1,4 +1,5 @@
 tap "0north/zntacs"
+tap "anomalyco/tap"
 tap "bufbuild/buf"
 tap "buo/cask-upgrade"
 tap "cloudflare/cloudflare"
@@ -14,8 +15,10 @@ tap "homebrew/aliases"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "hougesen/tap"
+tap "iwe-org/iwe"
 tap "nao1215/tap"
 tap "nats-io/nats-tools"
+tap "netbirdio/tap"
 tap "nikitabobko/tap"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
@@ -31,10 +34,6 @@ brew "act"
 brew "python@3.12"
 # AI pair programming in your terminal
 brew "aider"
-# New file format for still image compression
-brew "jpeg-xl"
-# Image format providing lossless and lossy compression for web images
-brew "webp"
 # Codec library for encoding and decoding AV1 video streams
 brew "aom"
 # Core application library for C
@@ -49,8 +48,6 @@ brew "restic"
 brew "autorestic"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
 # Official Amazon AWS command-line interface
 brew "awscli"
 # Bourne-Again SHell, a UNIX command interpreter
@@ -67,6 +64,8 @@ brew "bat"
 brew "harfbuzz"
 # Development kit for the Java programming language
 brew "openjdk"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.13"
 # Remove large files or passwords from Git history like git-filter-branch
 brew "bfg"
 # Python code formatter
@@ -87,8 +86,12 @@ brew "cheat"
 brew "cloudflared"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
+# New file format for still image compression
+brew "jpeg-xl"
 # Library for encoding and decoding .avif files
 brew "libavif"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
 # Graphics library to dynamically manipulate images
 brew "gd"
 # General-purpose scripting language
@@ -165,6 +168,8 @@ brew "go"
 brew "gobject-introspection"
 # Stricter gofmt
 brew "gofumpt"
+# Go formatter that additionally inserts import statements
+brew "goimports"
 # Database migrations CLI tool
 brew "golang-migrate"
 # Fast linters runner for Go
@@ -175,6 +180,8 @@ brew "golangci-lint-langserver"
 brew "gopls"
 # Deliver Go binaries as fast and easily as possible
 brew "goreleaser"
+# Database client and tools for the Go vulnerability database
+brew "govulncheck"
 # Ping, but with a graph
 brew "gping"
 # Image manipulation
@@ -203,6 +210,8 @@ brew "httpie"
 brew "ipinfo-cli"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
+# Handy way to save and run project-specific commands
+brew "just"
 # Kubernetes command-line interface
 brew "kubernetes-cli"
 # LastPass command-line interface tool
@@ -273,8 +282,6 @@ brew "protobuf-c"
 brew "protobuf@3"
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
-# Cloud native development platform
-brew "pulumi"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.10"
 # Interpreted, interactive, object-oriented programming language
@@ -311,8 +318,6 @@ brew "sops"
 brew "sqlc"
 # SQL linter and auto-formatter for Humans
 brew "sqlfluff"
-# Fast SQL formatter/linter
-brew "sqruff"
 # Modern and pretty fancy file manager for the terminal
 brew "superfile"
 # Open source continuous file synchronization application
@@ -343,6 +348,8 @@ brew "typescript-language-server"
 brew "ugit"
 # Command-line unarchiving tools supporting multiple formats
 brew "unar"
+# Extremely fast Python package installer and resolver, written in Rust
+brew "uv"
 # Vi 'workalike' with many additional features
 brew "vim"
 # Tool for creating isolated virtual python environments
@@ -395,6 +402,8 @@ brew "garethgeorge/backrest-tap/backrest"
 brew "gromgit/brewtils/taproom"
 # A code formatter for kdl documents.
 brew "hougesen/tap/kdlfmt"
+# Markdown-based personal knowledge management tool for developers
+brew "iwe-org/iwe/iwe"
 # NATS utility
 brew "nats-io/nats-tools/nats"
 # Standalone pact CLI executable using the Ruby Pact impl and Traveling Ruby
@@ -423,6 +432,10 @@ cask "balenaetcher"
 cask "beekeeper-studio"
 # Open source IDE for exploring and testing APIs
 cask "bruno"
+# Terminal-based AI coding assistant
+cask "claude-code"
+# Brings the power of Copilot coding agent directly to your terminal
+cask "copilot-cli"
 # Write, edit, and chat about your code with AI
 cask "cursor"
 # Server and cloud storage browser
@@ -488,6 +501,8 @@ cask "libreoffice"
 cask "logseq"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
+# Netbird UI Client
+cask "netbirdio/tap/netbird-ui"
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
 # Knowledge base that works on top of a local folder of plain text Markdown files
@@ -540,29 +555,9 @@ cask "wireshark-app"
 cask "zed"
 # Gecko based web browser
 cask "zen"
-# Software to be used as a general purpose and service scaffolding tool for ZeroNorth engineers
-cask "0north/zntacs/zntacs"
-
-mas "Slack", id: 803453959
 mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
-go "github.com/go-delve/delve/cmd/dlv"
-go "github.com/766b/go-outliner"
-go "goa.design/goa/v3/cmd/goa"
-go "golang.org/x/tools/cmd/goimports"
-go "github.com/golangci/golangci-lint/cmd/golangci-lint"
-go "github.com/fatih/gomodifytags"
-go "github.com/pressly/goose/v3/cmd/goose"
-go "github.com/haya14busa/goplay/cmd/goplay"
-go "golang.org/x/tools/gopls"
-go "github.com/cweill/gotests/gotests"
-go "golang.org/x/vuln/cmd/govulncheck"
-go "github.com/josharian/impl"
-go "github.com/ogen-go/ogen/cmd/ogen"
-go "github.com/timtatt/sift"
-go "github.com/sqls-server/sqls"
-go "honnef.co/go/tools/cmd/staticcheck"
 go "github.com/swaggo/swag/cmd/swag"
 cargo "helix-driver"
 cargo "simple-completion-language-server"
