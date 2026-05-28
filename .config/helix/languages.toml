@@ -57,6 +57,19 @@ language-servers = [ "terraform-ls" ]
 auto-format = true
 
 [[language]]
+name = "ansible"
+scope = "source.ansible"
+file-types = ["yaml", "yml"]
+roots = ["ansible.cfg", "roles", "group_vars"]
+language-servers = [ "ansible-ls" ]
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+
+[language-server.ansible-ls]
+command = "ansible-language-server"
+args = ["--stdio"]
+
+[[language]]
 name = "nix"
 auto-format = true
 formatter = { command = "terraform-ls" }
