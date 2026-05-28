@@ -204,8 +204,6 @@ brew "helm"
 brew "htop"
 # User-friendly cURL replacement (command-line HTTP client)
 brew "httpie"
-# Alternative to the official immich-CLI command written in Go
-brew "immich-go"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
 # Lightweight and flexible command-line JSON processor
