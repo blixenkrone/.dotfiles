@@ -380,6 +380,8 @@ brew "zls"
 brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
+# Command-line interface for qBittorrent written in Go
+brew "qbittorrent-cli"
 # Fish-like fast/unobtrusive autosuggestions for zsh
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
