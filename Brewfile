@@ -110,6 +110,8 @@ brew "crystal"
 brew "csview"
 # Command-line csv viewer
 brew "csvlens"
+# Unicode/ASCII/ANSI graphics renderer
+brew "chafa"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
@@ -206,6 +208,10 @@ brew "htop"
 brew "httpie"
 # Official CLI for the IPinfo IP Address API
 brew "ipinfo-cli"
+# Immich CLI for importing images to immich
+brew "immich-go"
+# Tools and libraries to manipulate images - used by ghostty
+brew "imagemagick"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Kubernetes command-line interface
