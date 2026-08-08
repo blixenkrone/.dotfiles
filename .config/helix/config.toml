@@ -9,7 +9,6 @@ theme = "catppuccin_mocha"
 line-number = "relative"
 mouse = true
 bufferline = "always"
-auto-save = true
 color-modes = true
 cursorline = true
 true-color = true
@@ -17,6 +16,9 @@ undercurl = true
 gutters = ["diff",  "diagnostics", "line-numbers", "spacer"]
 # Minimum severity to show a diagnostic after the end of a line:
 end-of-line-diagnostics = "hint"
+
+[editor.auto-save]
+focus-lost = true
 
 [editor.inline-diagnostics]
 # Minimum severity to show a diagnostic on the primary cursor's line.

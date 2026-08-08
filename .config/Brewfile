@@ -307,6 +307,8 @@ brew "terraform"
 brew "terraform-ls"
 # Programmatically correct mistyped console commands
 brew "thefuck"
+# Download from youtube
+brew "yp-dlp"
 # Text interface for Git repositories
 brew "tig"
 # Official tldr client written in Rust
@@ -379,10 +381,6 @@ brew "siderolabs/tap/talosctl"
 brew "tabbyml/tabby/tabby"
 # universal command-line SQL client interface
 brew "xo/xo/usql"
-# AeroSpace is an i3-like tiling window manager for macOS
-cask "aerospace"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Android SDK component
 cask "android-platform-tools"
 # Application uninstaller
