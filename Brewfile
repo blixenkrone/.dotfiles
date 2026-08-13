@@ -430,6 +430,8 @@ cask "discord"
 cask "docker-desktop"
 # Online diagram software
 cask "drawio"
+# CMD Tab app switcher improvement
+cask "dockdoor"
 # Web browser
 cask "firefox"
 # Web browser
