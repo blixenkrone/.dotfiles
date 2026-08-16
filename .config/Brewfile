@@ -424,8 +424,8 @@ cask "gimp"
 cask "google-chrome@canary"
 # Hex editor focussing on speed
 cask "hex-fiend"
-# Dedicated scratchpad for developers
-cask "heynote"
+# Note taking with zen
+cask "zennotes"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # Open source API development ecosystem
