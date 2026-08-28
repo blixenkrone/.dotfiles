@@ -16,6 +16,8 @@ config_version = 1
 enabled = true  # true | false — CodeMirror Vim bindings
 insert_escape = ""  # key sequence to leave insert mode, e.g. "jk"; empty disables
 yank_to_clipboard = false  # sync the system clipboard with Vim yank/delete/change and p/P paste
+block_ime_in_normal_mode = true  # keep the OS input method (a CJK IME) from composing in normal and visual mode, so hjkl stay motions
+wrapped_line_motions = "display"  # display | logical — how $, I, A and dependent operators treat soft-wrapped lines
 which_key_hints = true  # show the leader-key hint overlay (Vim only)
 which_key_hint_mode = "timed"  # timed | sticky
 which_key_hint_timeout_ms = 900  # how long timed hints stay visible (ms)
@@ -38,11 +40,12 @@ hide_builtin_templates = false  # hide the shipped templates from the pickers
 tabs_enabled = true  # enable tab-based editing
 wrap_tabs = false  # wrap the tab strip instead of scrolling it
 font_size = 16  # editor + preview font size (px)
+math_font_scale = 100  # math size as a percentage (50-200); scales $…$ and $$…$$ in editor and preview
 line_height = 1.7  # line-height multiplier
 tab_size = 4  # tab width in columns, from 1 through 8
 list_indent_guides = true  # vertical guide lines at each nested list level
 scroll_off = 0  # vim scrolloff — lines kept above/below the cursor (0 = off)
-time_format = "12h"  # clock format for the @time macro (12h or 24h)
+time_format = "24h"  # clock format for the @time macro (12h or 24h)
 preview_max_width = 920  # max reading width for the preview (px)
 editor_max_width = 920  # max width of the editor column (px)
 completed_task_style = "none"  # none | strikethrough | gray | gray-strikethrough — style checked-task text
@@ -50,8 +53,8 @@ math_renderer = "katex"  # katex | typst: typesetter for $…$ / $$…$$ math
 typst_tag_preambles = false  # true | false — prepend Typst definitions from notes in a `typst` folder, chosen by a note's tags
 loose_math_delimiters = false  # render $$…$$ display math even with text before/after the fences
 default_view_mode = "edit"  # edit | split | preview — the mode a note opens in before it has a remembered one
-line_number_mode = "off"  # off | absolute | relative
-line_number_position = "text"  # text | edge
+line_number_mode = "relative"  # off | absolute | relative
+line_number_position = "edge"  # text | edge
 word_wrap = true  # wrap long lines vs. scroll horizontally
 preview_smooth_scroll = true  # animate half-page scroll in the preview
 pdf_embed_in_edit_mode = "compact"  # compact | full
@@ -63,7 +66,7 @@ theme_mode = "dark"  # light | dark | auto
 theme_id = "tokyo-night-storm"  # resolved theme id; normally set automatically from family + mode
 dark_sidebar = true  # tint the sidebar darker than the canvas
 show_sidebar_chevrons = true  # show disclosure arrows in the sidebar
-content_align = "center"  # center | left
+content_align = "left"  # center | left
 unified_sidebar = true  # merge the note list into the sidebar tree
 
 [typography]
@@ -72,6 +75,7 @@ text_font = ""  # editor + preview font; empty = system default
 mono_font = ""  # code / monospace font; empty = system default
 
 [view]
+atlas_enabled = true  # the Atlas map view of the vault (sidebar row, command, Space g); on by default
 workflows_enabled = false  # opt in to the Workflows view, its sidebar row, command, and leader shortcut (off by default)
 asset_sort_order = "name-asc"  # Assets view sort: name | used | type | size | modified, each -asc or -desc
 note_sort_order = "none"  # none | manual | updated-desc | updated-asc | created-desc | created-asc | name-asc | name-desc
@@ -94,6 +98,8 @@ hidden_workflow_presets = []  # built-in workflow recipes hidden from the galler
 # Binding syntax: "Mod+P" = Cmd/Ctrl+P, "Shift+Mod+K", "Ctrl+W", "Space",
 # or a two-key sequence like "g g". Uncomment a reference line to remap it.
 [keymaps]
+"global.focusPaneLeft" = "Ctrl+H"
+"global.focusPaneRight" = "Ctrl+L"
 
 # --- All actions (defaults shown; uncomment + edit to override) ---
 # Global
@@ -101,6 +107,7 @@ hidden_workflow_presets = []  # built-in workflow recipes hidden from the galler
 # "global.searchNotesNonVim" = "Mod+F"  # Search notes in non-Vim mode
 # "global.commandPalette" = "Shift+Mod+P"  # Open command palette
 # "global.newQuickNote" = "Shift+Mod+N"  # New quick note
+# "global.newNoteHere" = "Mod+N"  # New note in current folder
 # "global.openSettings" = "Mod+,"  # Open settings
 # "global.openFile" = "Mod+O"  # Open file
 # "global.toggleSidebar" = "Mod+1"  # Toggle sidebar
@@ -108,10 +115,8 @@ hidden_workflow_presets = []  # built-in workflow recipes hidden from the galler
 # "global.toggleOutlinePanel" = "Mod+3"  # Toggle outline panel
 # "global.toggleCommentsPanel" = "Shift+Mod+C"  # Toggle comments panel
 # "global.addComment" = "Alt+Mod+M"  # Add comment to selection
-# "global.focusPaneLeft" = "Alt+H"  # Focus pane left
 # "global.focusPaneDown" = "Alt+J"  # Focus pane down
 # "global.focusPaneUp" = "Alt+K"  # Focus pane up
-# "global.focusPaneRight" = "Alt+L"  # Focus pane right
 # "global.modeEdit" = "Mod+4"  # Switch to editor mode
 # "global.modeSplit" = "Mod+5"  # Switch to split mode
 # "global.modePreview" = "Mod+6"  # Switch to preview mode
@@ -139,6 +144,7 @@ hidden_workflow_presets = []  # built-in workflow recipes hidden from the galler
 # "vim.leaderPrefix" = "Space"  # Leader key
 # "vim.leaderOpenBuffers" = "o"  # Leader: open buffers
 # "vim.leaderWorkflows" = "a"  # Leader: open workflows
+# "vim.leaderAtlas" = "g"  # Leader: open atlas
 # "vim.leaderSearchNotes" = "f"  # Leader: search notes
 # "vim.leaderSearchGroup" = "s"  # Leader: search…
 # "vim.leaderSearchVaultText" = "t"  # Leader search: vault text
@@ -204,6 +210,7 @@ hidden_workflow_presets = []  # built-in workflow recipes hidden from the galler
 # "editor.moveLineUp" = "Alt+ArrowUp"  # Move line up
 # "editor.moveLineDown" = "Alt+ArrowDown"  # Move line down
 # "editor.toggleCheckbox" = "Mod+L"  # Toggle checkbox
+# "editor.reflowParagraph" = "Ctrl+Q"  # Reflow paragraph
 # "nav.localEx" = ":"  # Open local ex prompt
 # "nav.newQuickNote" = "n"  # New quick note from Quick Notes view
 # "nav.unarchive" = "u"  # Unarchive selected note
