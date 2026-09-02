@@ -1,41 +1,17 @@
-tap "bufbuild/buf"
-tap "buo/cask-upgrade"
-tap "cloudflare/cloudflare"
+tap "hashicorp/tap", trusted: { formulae: ["hashicorp/tap/terraform"] }
 tap "codecrafters-io/tap"
 tap "derailed/k9s"
-tap "dlvhdr/formulae"
-tap "garden-io/garden"
-tap "goreleaser/tap"
-tap "grishka/grishka"
-tap "gromgit/brewtils"
-tap "homebrew/aliases"
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "hougesen/tap"
-tap "nao1215/tap"
-tap "nats-io/nats-tools"
 tap "netbirdio/tap", trusted: { formulae: ["netbird"] }
-tap "nikitabobko/tap"
 tap "osx-cross/arm"
 tap "osx-cross/avr"
-tap "pact-foundation/tap", "https://github.com/pact-foundation/homebrew-tap.git"
-tap "pulumi/tap"
-tap "qmk/qmk"
 tap "romkatv/powerlevel10k"
-tap "siderolabs/tap"
-tap "tabbyml/tabby"
-tap "xo/xo"
+tap "zennotes/tap", trusted: { formulae: ["zennotes"] }
+tap "hzqtc/taproom"
+# Taproom
+cask "taproom"
 # Run your GitHub Actions locally
 brew "act"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.12"
 # AI pair programming in your terminal
-brew "aider"
-# C parser in Python
-brew "pycparser"
-# C Foreign Function Interface for Python
-brew "cffi"
-# Cryptographic recipes and primitives for Python
 brew "cryptography"
 # C library SSHv1/SSHv2 client and server protocols
 brew "libssh"
@@ -47,18 +23,10 @@ brew "ansible"
 brew "node"
 # Language Server for Ansible Files
 brew "ansible-language-server"
-# Codec library for encoding and decoding AV1 video streams
-brew "aom"
 # Core application library for C
 brew "glib"
-# Protocol definitions and daemon for D-Bus at-spi
-brew "at-spi2-core"
 # Improved shell history for zsh, bash, fish and nushell
 brew "atuin"
-# Fast, efficient and secure backup program
-brew "restic"
-# High level CLI utility for restic
-brew "autorestic"
 # Use AWS IAM credentials to authenticate to Kubernetes
 brew "aws-iam-authenticator"
 # Official Amazon AWS command-line interface
@@ -67,18 +35,10 @@ brew "awscli"
 brew "bash"
 # Language Server for Bash
 brew "bash-language-server"
-# C library of Git core methods that is re-entrant and linkable
-brew "libgit2"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# OpenType text shaping engine
-brew "harfbuzz"
 # Image format providing lossless and lossy compression for web images
 brew "webp"
-# Development kit for the Java programming language
-brew "openjdk"
-# Remove large files or passwords from Git history like git-filter-branch
-brew "bfg"
 # Python code formatter
 brew "black"
 # Yet another cross-platform graphical process/system monitor
@@ -93,16 +53,10 @@ brew "gdk-pixbuf"
 brew "jpeg-xl"
 # Library for encoding and decoding .avif files
 brew "libavif"
-# Framework for layout and rendering of i18n text
-brew "pango"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
-# Create and view interactive cheat sheets for *nix commands
-brew "cheat"
-# Cloudflare Tunnel client (formerly Argo Tunnel)
-brew "cloudflared"
 # Container runtimes on MacOS (and Linux) with minimal setup
 brew "colima"
 # Graphics library to dynamically manipulate images
@@ -111,18 +65,10 @@ brew "gd"
 brew "php"
 # Dependency Manager for PHP
 brew "composer"
-# Utility for rendering projects templates
-brew "copier"
-# CLI tool for Amazon ECS and AWS Fargate
-brew "copilot"
 # Package compiler and linker metadata toolkit
 brew "pkgconf"
 # Fast and statically typed, compiled language with Ruby-like syntax
 brew "crystal"
-# High performance csv viewer for cli
-brew "csview"
-# Command-line csv viewer
-brew "csvlens"
 # JSON, YAML, TOML, XML, and CSV query and modification tool
 brew "dasel"
 # Bash, Zsh and Fish completion for Docker
@@ -143,16 +89,12 @@ brew "eza"
 brew "fd"
 # Create thumbnails for your video files
 brew "ffmpegthumbnailer"
-# User-friendly command-line shell for UNIX-like operating systems
-brew "fish"
 # Terminal JSON viewer
 brew "fx"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Disk usage analyzer with console interface written in Go
 brew "gdu"
-# Interact with Google Gemini AI models from the command-line
-brew "gemini-cli"
 # GitHub command-line tool
 brew "gh"
 # Distributed revision control system
@@ -160,7 +102,7 @@ brew "git"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
 # Interpreted, interactive, object-oriented programming language
-brew "python@3.13"
+brew "python"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
 # Audit git repos for secrets
@@ -187,8 +129,8 @@ brew "golangci-lint"
 brew "golangci-lint-langserver"
 # Language server for the Go language
 brew "gopls"
-# Deliver Go binaries as fast and easily as possible
-brew "goreleaser", link: false
+# Release engineering, simplified
+cask "goreleaser/tap/goreleaser"
 # Ping, but with a graph
 brew "gping"
 # Image manipulation
@@ -241,8 +183,6 @@ brew "mas"
 brew "mkcert"
 # Mock code autogenerator for Golang
 brew "mockery"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # HTTP/2 C Library
@@ -263,14 +203,12 @@ brew "pidof"
 brew "pipx"
 # Fast, disk space efficient package manager
 brew "pnpm"
-# Open source backend for your next project in 1 file
-brew "pocketbase"
 # Tool for managing OCI containers and pods
 brew "podman"
 # PDF rendering library (based on the xpdf-3.0 code base)
 brew "poppler"
 # Object-relational database system
-brew "postgresql@18"
+brew "postgresql"
 # Theme for zsh
 brew "powerlevel10k"
 # Framework for managing multi-language pre-commit hooks
@@ -279,20 +217,8 @@ brew "pre-commit"
 brew "prettier"
 # Protocol buffers (Google's data interchange format)
 brew "protobuf"
-# Protocol buffers library
-brew "protobuf-c"
-# Protocol buffers (Google's data interchange format)
-brew "protobuf@3"
 # Go support for Google's protocol buffers
 brew "protoc-gen-go"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.10"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.9"
-# Command-line interface for qBittorrent written in Go
-brew "qbittorrent-cli"
 # Generic machine emulator and virtualizer
 brew "qemu"
 # Messaging and streaming broker
@@ -325,12 +251,8 @@ brew "sops"
 brew "sqlc"
 # SQL linter and auto-formatter for Humans
 brew "sqlfluff"
-# Fast SQL formatter/linter
-brew "sqruff"
-# Modern and pretty fancy file manager for the terminal
-brew "superfile"
 # Open source continuous file synchronization application
-brew "syncthing", restart_service: :changed
+brew "syncthing"
 # Tool Command Language
 brew "tcl-tk"
 # Tool to build, change, and version infrastructure
@@ -345,16 +267,12 @@ brew "tig"
 brew "tlrc"
 # Program that allows you to count code, quickly
 brew "tokei"
-# Lightweight BitTorrent client
-brew "transmission-cli"
 # Network diagnostic tool, inspired by mtr
 brew "trippy"
 # Language Server Protocol implementation for TypeScript wrapping tsserver
 brew "typescript-language-server"
 # Undo git commands. Your damage control git buddy
 brew "ugit"
-# Command-line unarchiving tools supporting multiple formats
-brew "unar"
 # Validating, recursive, caching DNS resolver
 brew "unbound"
 # Vi 'workalike' with many additional features
@@ -395,15 +313,10 @@ brew "zsh"
 brew "zsh-autosuggestions"
 # Fish shell like syntax highlighting for zsh
 brew "zsh-syntax-highlighting"
-cask "aerospace"
-# GPU-accelerated terminal emulator
-cask "alacritty"
 # Enable Windows-like alt-tab
 cask "alt-tab"
 # Android SDK component
 cask "android-platform-tools"
-# Application uninstaller
-cask "appcleaner"
 # Securely stores and accesses AWS credentials in a development environment
 cask "aws-vault-binary"
 # Tool to flash OS images to SD cards & USB drives
@@ -451,11 +364,8 @@ cask "gimp"
 cask "google-chrome"
 # Web browser
 cask "google-chrome@canary"
-cask "goreleaser"
 # Hex editor focussing on speed
 cask "hex-fiend"
-# Dedicated scratchpad for developers
-cask "heynote"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # HTTP and GraphQL Client
@@ -508,22 +418,10 @@ cask "signal"
 cask "slack"
 # Music streaming service
 cask "spotify"
-# Free, open-source, and completely encrypted notes app
-cask "standard-notes"
-# System monitor for the menu bar
-cask "stats"
-# Replacement for RCDefaultApps, written in Swift
-cask "swiftdefaultappsprefpane"
-# Messaging app with a focus on speed and security
-cask "telegram"
-# Unpacks archive files
-cask "the-unarchiver"
 # To-do list
 cask "todoist-app"
 # Web browser focusing on security
 cask "tor-browser"
-# Open-source BitTorrent client
-cask "transmission"
 # Open-source code editor
 cask "visual-studio-code"
 # Multimedia player
@@ -534,36 +432,9 @@ cask "wireshark-app"
 cask "zed"
 # Gecko based web browser
 cask "zen"
+# Notes
+cask "zennotes"
+
 mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
-go "github.com/air-verse/air"
-go "github.com/go-delve/delve/cmd/dlv"
-go "github.com/ramya-rao-a/go-outline"
-go "github.com/766b/go-outliner"
-go "goa.design/goa/v3/cmd/goa"
-go "golang.org/x/tools/cmd/goimports"
-go "github.com/golangci/golangci-lint/cmd/golangci-lint"
-go "github.com/nametake/golangci-lint-langserver"
-go "github.com/fatih/gomodifytags"
-go "github.com/pressly/goose/v3/cmd/goose"
-go "github.com/haya14busa/goplay/cmd/goplay"
-go "golang.org/x/tools/gopls"
-go "github.com/cweill/gotests/gotests"
-go "golang.org/x/vuln/cmd/govulncheck"
-go "github.com/twpayne/go-xmlstruct/cmd/goxmlstruct"
-go "github.com/josharian/impl"
-go "github.com/vektra/mockery/v2"
-go "github.com/golang/mock/mockgen"
-go "github.com/ogen-go/ogen/cmd/ogen"
-go "google.golang.org/protobuf/cmd/protoc-gen-go"
-go "google.golang.org/grpc/cmd/protoc-gen-go-grpc"
-go "github.com/mgechev/revive"
-go "github.com/timtatt/sift"
-go "github.com/sqls-server/sqls"
-go "honnef.co/go/tools/cmd/staticcheck"
-go "github.com/swaggo/swag/cmd/swag"
-go "github.com/a-h/templ/cmd/templ"
-go "github.com/fiorix/wsdl2go"
-go "github.com/miku/zek/cmd/zek"
-cargo "helix-driver"
