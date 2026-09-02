@@ -6,9 +6,6 @@ tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "romkatv/powerlevel10k"
 tap "zennotes/tap", trusted: { formulae: ["zennotes"] }
-tap "hzqtc/taproom"
-# Taproom
-cask "taproom"
 # Run your GitHub Actions locally
 brew "act"
 # AI pair programming in your terminal
