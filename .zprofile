@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/sbl/.docker/bin"
+# End of Docker Desktop section.
+
 alias c='clear'
 alias d-m='docker-machine'
 alias d-c='docker-compose'
@@ -8,8 +12,7 @@ alias gotest="echo 'Testing all code...' && go test -timeout 35s \$(go list ./..
 alias brew-up='brew upgrade && brew update'
 alias buf='/opt/homebrew/bin/buf'
 alias lzd='lazydocker'
-# alias cd='z'
-alias zd='z'
+alias cd='z'
 alias cdi='zi'
 alias cat='bat'
 alias ls='eza -lah --icons'
@@ -23,7 +26,7 @@ alias lg='lazygit'
 alias lzd='lazydocker'
 alias sc='scooter'
 alias tf='terraform'
-alias ghpr='gh pr create --title $(git branch --show-current)'
+alias ghpr='gh pr create --title "$(git branch --show-current)"'
 alias ghvw='gh pr view -w'
 alias ghcpr='echo $(gh pr view --json url | jq -r .url) | pbcopy'
 
@@ -52,9 +55,9 @@ export NOTES=$HOME/dev/notes
 # DEV PATH
 export EDITOR="hx"
 export VISUAL="hx"
-export DEV=$HOME/dev
-export DOTFILES=$HOME/dev/.dotfiles
+export DOTFILES=$DEV/.dotfiles
 export SYNC=$HOME/Sync
+export DEV=$HOME/Sync/dev
 export SUDO_EDITOR=$(which hx) 
 
 
@@ -132,15 +135,8 @@ cover() {
 }
 
 export NVM_DIR="$HOME/.nvm"
-# Lazy-load nvm — only loads when nvm/node/npm/npx is first called
-_load_nvm() {
-  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && source "/opt/homebrew/opt/nvm/nvm.sh"
-  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && source "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"
-}
-nvm()  { unfunction nvm;  _load_nvm; nvm  "$@" }
-node() { unfunction node; _load_nvm; node "$@" }
-npm()  { unfunction npm;  _load_nvm; npm  "$@" }
-npx()  { unfunction npx;  _load_nvm; npx  "$@" }
+  [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
 
 # OpenAI
@@ -148,7 +144,3 @@ if [ -d ~/.openai/ ]; then
   . ~/.openai/.profile
 fi
 
-# ZeroNorth
-if [ -d ~/.0north/ ]; then
-  . ~/.0north/.old_znprofile
-fi

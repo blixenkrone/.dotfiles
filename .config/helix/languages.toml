@@ -41,11 +41,13 @@ compositeLiteralTypes = true
 name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
-language-servers = [ "gopls", "scls", "golangci-lint-lsp"]
+language-servers = [ "gopls", "scls", "golangci-lint-langserver"]
 # language-servers = ["gopls"]
-formatter = { command = "goimports" }
+# formatter = { command = "goimports" }
 # formatter = { command = "gofumpt" }
-# formatter = { command = "gopls" }
+# `gopls` CLI only does gofmt-style formatting; it does NOT run the organize-imports
+# code action, so unused imports are never removed. `goimports` does both.
+formatter = { command = "goimports" }
 
 [[language]]
 name = "hcl"
