@@ -354,9 +354,6 @@ keybinds clear-defaults=true {
         bind "Alt right" {
             MoveFocus "right"
         }
-        bind "Alt @" {
-            NextSwapLayout
-        }
         bind "Ctrl '" {
             SwitchToMode "locked"
         }
@@ -368,6 +365,9 @@ keybinds clear-defaults=true {
         }
         bind "Alt =" {
             Resize "Increase"
+        }
+        bind "Alt ]" {
+            NextSwapLayout
         }
         bind "Alt [" {
             PreviousSwapLayout
@@ -662,6 +662,7 @@ default_layout "compact"
 // (Requires restart)
 //
 // theme_dir "/tmp"
+
 // Toggle enabling the mouse mode.
 // On certain configurations, or terminals this could potentially interfere with copying text.
 mouse_mode true
@@ -670,7 +671,7 @@ mouse_mode true
 //   - true (default, enabled)
 //   - false
 //
-pane_frames false
+pane_frames true
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
 // or should each user have their own cursor (false)
@@ -787,4 +788,6 @@ show_startup_tips false
 // Default: true
 // 
 // show_release_notes false
+
+scroll_mode_sync false
 

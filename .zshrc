@@ -115,3 +115,13 @@ export EDITOR='hx'
 
 . ~/.ghprofile
 . ~/.zprofile
+
+# >>> corti-cli >>>
+if [ -f "$HOME/.corti/.env" ]; then
+    . "$HOME/.corti/.env"
+    while IFS= read -r corti_line; do
+        case $corti_line in CORTI_*=*) export "$corti_line" ;; esac
+    done < "$HOME/.corti/.env"
+    unset corti_line
+fi
+# <<< corti-cli <<<
