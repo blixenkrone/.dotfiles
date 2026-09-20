@@ -51,9 +51,9 @@ export NOTES=$HOME/dev/notes
 # DEV PATH
 export EDITOR="hx"
 export VISUAL="hx"
-export DEV=$HOME/dev
-export DOTFILES=$HOME/dev/.dotfiles
+export DOTFILES=$DEV/.dotfiles
 export SYNC=$HOME/Sync
+export DEV=$HOME/Sync/dev
 export SUDO_EDITOR=$(which hx) 
 
 
