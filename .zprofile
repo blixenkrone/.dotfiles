@@ -1,3 +1,7 @@
+# The following lines were added by Docker Desktop to add commands to your PATH.
+export PATH="$PATH:/Users/sbl/.docker/bin"
+# End of Docker Desktop section.
+
 alias c='clear'
 alias d-m='docker-machine'
 alias d-c='docker-compose'
@@ -22,7 +26,7 @@ alias lg='lazygit'
 alias lzd='lazydocker'
 alias sc='scooter'
 alias tf='terraform'
-alias ghpr='gh pr create --title $(git branch --show-current)'
+alias ghpr='gh pr create --title "$(git branch --show-current)"'
 alias ghvw='gh pr view -w'
 alias ghcpr='echo $(gh pr view --json url | jq -r .url) | pbcopy'
 
@@ -140,7 +144,3 @@ if [ -d ~/.openai/ ]; then
   . ~/.openai/.profile
 fi
 
-# ZeroNorth
-if [ -d ~/.0north/ ]; then
-  . ~/.0north/.old_znprofile
-fi
