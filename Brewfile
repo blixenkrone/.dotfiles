@@ -6,8 +6,14 @@ tap "osx-cross/arm"
 tap "osx-cross/avr"
 tap "romkatv/powerlevel10k"
 tap "zennotes/tap", trusted: { formulae: ["zennotes"] }
+tap "nklmilojevic/sofka", trusted: { formulae: ["sofka"] }
+tap "abue-ammar/tinycast", trusted: { formulae: ["tinycast"] }
 # Run your GitHub Actions locally
 brew "act"
+# K8S cluster terminal viewer 1
+brew "k9s"
+# K8S cluster terminal viewer 2
+brew "sofka"
 # AI pair programming in your terminal
 brew "cryptography"
 # C library SSHv1/SSHv2 client and server protocols
@@ -355,20 +361,14 @@ cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
-# Free and open-source image editor
-cask "gimp"
 # Web browser
 cask "google-chrome"
-# Web browser
-cask "google-chrome@canary"
 # Hex editor focussing on speed
 cask "hex-fiend"
 # Utility to hide menu bar items
 cask "hiddenbar"
 # HTTP and GraphQL Client
 cask "insomnia"
-# Terminal emulator as alternative to Apple's Terminal app
-cask "iterm2"
 # Note taking and to-do application with synchronisation capabilities
 cask "joplin"
 # Open-source screen recorder built with web technology
@@ -381,12 +381,6 @@ cask "keepingyouawake"
 cask "keycastr"
 # ZSA keyboard firmware flasher
 cask "keymapp"
-# Kubernetes IDE
-cask "lens"
-# Free cross-platform office suite, fresh version
-cask "libreoffice"
-# Privacy-first, open-source platform for knowledge sharing and management
-cask "logseq"
 # Shows the next meeting in the menu bar
 cask "meetingbar"
 # Netbird UI Client
@@ -406,7 +400,7 @@ cask "qmk-toolbox"
 # Workspace simplifier - to organize your workspace and boost your productivity
 cask "rambox"
 # Control your tools with a few keystrokes
-cask "raycast"
+cask "tinycast"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
 # Instant messaging application focusing on security
