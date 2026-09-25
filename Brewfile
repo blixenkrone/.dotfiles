@@ -352,8 +352,6 @@ cask "dockdoor"
 cask "firefox"
 # Web browser
 cask "firefox@developer-edition"
-# Clipboard manager for developers
-cask "flycut"
 # Unofficial native application for Fastmail
 cask "fmail3"
 cask "font-hack-nerd-font"
