@@ -74,7 +74,7 @@ args = ["--stdio"]
 [[language]]
 name = "nix"
 auto-format = true
-formatter = { command = "terraform-ls" }
+formatter = { command = "nixfmt" }
 
 [[language]]
 name = "html"
@@ -133,11 +133,24 @@ name = "docker-compose"
 language-servers = ["yaml-language-server"]
 auto-format = true
 
+[language-server.ruff]
+command = "ruff"
+args = ["server"]
+
+[language-server.basedpyright]
+command = "basedpyright-langserver"
+args = ["--stdio"]
+
 [[language]]
 name = "python"
-language-servers = ["pylsp"]
+roots = ["pyproject.toml", "ruff.toml", ".git"]
 auto-format = true
-formatter = {command = 'black', args = ["--quiet", "-"]}
+language-servers = ["basedpyright", "ruff", "scls"]
+# No `formatter =` on purpose: formatting comes from the ruff language server,
+# which discovers per-repo `ruff.toml` / `[tool.ruff]` (e.g. line-length = 120)
+# and therefore matches the `ruff-format` pre-commit hook. An external
+# `black` formatter here reflowed to black's default 88 cols on every save and
+# pre-commit reflowed it back, producing phantom diffs.
 
 [[language]]
 name = "prisma"
