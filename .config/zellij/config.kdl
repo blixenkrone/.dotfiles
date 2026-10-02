@@ -390,7 +390,7 @@ keybinds clear-defaults=true {
         bind "Alt n" {
             NewPane "right"; SwitchToMode "normal"
         }
-        bind "Alt ~" {
+        bind "Alt -" {
             NewPane "down"; SwitchToMode "normal"
         }
         bind "Ctrl q" {
