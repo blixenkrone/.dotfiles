@@ -635,9 +635,13 @@ plugins {
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
-
-}
-// Use a simplified UI without special fonts (arrow glyphs)
+    "file:~/.config/zellij/plugins/zellij-attention.wasm" {
+        // All options are optional — defaults shown
+        enabled "true"
+        waiting_icon "⏳"
+        completed_icon "✅"
+    }
+}// Use a simplified UI without special fonts (arrow glyphs)
 // simplified_ui true
 // Choose the theme that is specified in the themes section.
 // Default: default

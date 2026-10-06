@@ -44,7 +44,8 @@ shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
 # THEME
-theme = catppuccin-macchiato.conf
+# theme = Catppuccin Macchiato
+theme = Catppuccin Macchiato
 
 # FONT
 font-family = MesloLGS Nerd Font Mono
