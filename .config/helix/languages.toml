@@ -41,7 +41,7 @@ compositeLiteralTypes = true
 name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
-language-servers = [ "gopls", "scls", "golangci-lint-langserver"]
+language-servers = [ "gopls", "scls", "golangci-lint-lsp"]
 # language-servers = ["gopls"]
 # formatter = { command = "goimports" }
 # formatter = { command = "gofumpt" }
@@ -115,12 +115,11 @@ formatter = { command = 'prettier', args = ["--parser", "typescript"] }
 
 [[language]]
 name = "toml"
-formatter = { command = "prettier" }
-auto-format = true
+formatter = { command = "dprint", args = ["fmt", "--stdin", "toml", "--config", "~/.config/dprint/.dprint.json"] }
 
 [[language]]
 name = "yaml"
-formatter = { command = "prettier" }
+formatter = { command = "prettier", args = ["--parser", "yaml"] }
 auto-format = true
 
 [[language]]
