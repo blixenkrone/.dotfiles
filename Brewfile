@@ -298,8 +298,6 @@ brew "witr"
 brew "wtfutil"
 # Language Server for Yaml Files
 brew "yaml-language-server"
-# JavaScript package manager
-brew "yarn"
 # Blazing fast terminal file manager written in Rust, based on async I/O
 brew "yazi"
 # Pluggable terminal workspace, with terminal multiplexer as the base feature
@@ -365,10 +363,6 @@ cask "google-chrome"
 cask "hex-fiend"
 # Utility to hide menu bar items
 cask "hiddenbar"
-# HTTP and GraphQL Client
-cask "insomnia"
-# Note taking and to-do application with synchronisation capabilities
-cask "joplin"
 # Open-source screen recorder built with web technology
 cask "kap"
 # Keyboard customiser
@@ -385,18 +379,12 @@ cask "meetingbar"
 cask "netbirdio/tap/netbird-ui", trusted: true
 # Reverse proxy, secure introspectable tunnels to localhost
 cask "ngrok"
-# Knowledge base that works on top of a local folder of plain text Markdown files
-cask "obsidian"
-# Android file transfer
-cask "openmtp"
 # OpenVPN client
 cask "pritunl"
 # VPN client focusing on security
 cask "protonvpn"
 # Toolbox companion for QMK Firmware
 cask "qmk-toolbox"
-# Workspace simplifier - to organize your workspace and boost your productivity
-cask "rambox"
 # Control your tools with a few keystrokes
 cask "tinycast"
 # Move and resize windows using keyboard shortcuts or snap areas
