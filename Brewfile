@@ -423,6 +423,8 @@ cask "zed"
 cask "zen"
 # Notes
 cask "zennotes"
+# Kubernetes TUI, reimagined in Rust
+brew "sofka"
 
 mas "TestFlight", id: 899247664
 mas "WireGuard", id: 1451685025
