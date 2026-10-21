@@ -37,15 +37,15 @@ mouse-scroll-multiplier = 2
 
 # MACOS SPECIFICS
 macos-option-as-alt = true
-macos-titlebar-style = hidden
+#macos-titlebar-style = hidden  # disabled by ghostty-config: transparent is the default
 macos-non-native-fullscreen = true
-macos-window-shadow = true
+macos-window-shadow = false
 shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
 # THEME
-# theme = Catppuccin Macchiato
 theme = Catppuccin Macchiato
+# theme = Black Metal (Khold)
 
 # FONT
 font-family = MesloLGS Nerd Font Mono
