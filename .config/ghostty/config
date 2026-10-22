@@ -30,8 +30,8 @@ quit-after-last-window-closed = false
 
 ## UI ##
 window-theme = "dark"
-window-padding-balance = true
-window-padding-color = background
+#window-padding-balance = true  # disabled by ghostty-config: back to the default
+window-padding-color = extend
 mouse-hide-while-typing = true
 mouse-scroll-multiplier = 2
 
@@ -39,7 +39,7 @@ mouse-scroll-multiplier = 2
 macos-option-as-alt = true
 #macos-titlebar-style = hidden  # disabled by ghostty-config: transparent is the default
 macos-non-native-fullscreen = true
-macos-window-shadow = false
+#macos-window-shadow = false  # disabled by ghostty-config: back to the default
 shell-integration = zsh
 shell-integration-features = cursor,sudo,title
 
