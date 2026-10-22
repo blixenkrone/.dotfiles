@@ -36,6 +36,10 @@ ST1000 = false
 [language-server.gopls.config.hints]
 compositeLiteralTypes = true
 
+
+[language-server.golangci-lint-lsp.config]
+command = ["bash", "/Users/sbl/.config/helix/scripts/golancilint-linter.sh", "run", "--output.json.path", "stdout", "--show-stats=false", "--issues-exit-code=1"]
+
 # Languages
 [[language]]
 name = "go"
