@@ -1,0 +1,68 @@
+# Docs: ghostty +show-config --default --docs | hx
+
+#
+# KEYBINDS ##
+# Keybinds can also have super keys ie. \x02 == ctrl+b
+keybind = shift+alt+8=text:{
+keybind = shift+alt+9=text:}
+keybind = alt+8=text:[
+keybind = alt+9=text:]
+keybind = alt+¨=text:~
+keybind = alt+`=text:\'
+keybind = alt+´=text:\'
+keybind = ctrl+¨=text:\~
+keybind = alt+i=text:|
+keybind = shift+alt+7=text:\\
+keybind = alt+7=text:\\
+keybind = alt+æ=text:\\
+keybind = alt+å=text:\\
+keybind = alt+ø=text:\\
+keybind = alt+shift+æ=text:\\
+keybind = alt+shift+ø=text:\\
+keybind = alt+shift+å=text:\\
+keybind = alt+'=text:@
+keybind = ctrl+y=text:y\r
+# keybind = ctrl+e=text:y\r
+keybind = æ=text:æ
+keybind = alt+@=text:@
+## GENERAL ##
+quit-after-last-window-closed = false
+
+## UI ##
+window-theme = "dark"
+window-padding-balance = true
+window-padding-color = background
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# MACOS SPECIFICS
+macos-option-as-alt = true
+#macos-titlebar-style = hidden  # disabled by ghostty-config: transparent is the default
+macos-non-native-fullscreen = true
+macos-window-shadow = false
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# THEME
+theme = Catppuccin Macchiato
+# theme = Black Metal (Khold)
+
+# FONT
+font-family = MesloLGS Nerd Font Mono
+# font-family = ZedMono Nerd Font Mono
+font-size = 14
+background-opacity = 0.95
+background-blur-radius = 30
+
+# CURSOR
+cursor-style = block
+cursor-style-blink = false
+
+# CLIPBOARD SETTINGS
+clipboard-read = allow
+clipboard-write = allow
+clipboard-trim-trailing-spaces = true
+clipboard-paste-protection = false
+copy-on-select = clipboard
+
+

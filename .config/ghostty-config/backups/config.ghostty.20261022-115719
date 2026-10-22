@@ -1,0 +1,23 @@
+#background-blur = macos-glass-regular  # disabled by ghostty-config: blur off is the default
+
+window-padding-x = 4
+
+window-padding-y = 4
+
+minimum-contrast = 3
+
+macos-titlebar-style = hidden
+
+scrollbar = never
+
+resize-overlay = never
+
+notify-on-command-finish = unfocused
+
+#window-padding-color = extend  # disabled by ghostty-config: back to the default
+
+#window-padding-color = extend  # disabled by ghostty-config: back to the default
+
+#window-padding-color = extend  # disabled by ghostty-config: back to the default
+
+#window-padding-color = extend-always  # disabled by ghostty-config: back to the default
