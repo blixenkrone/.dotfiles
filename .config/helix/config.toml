@@ -127,8 +127,16 @@ j = { k = "normal_mode"}
 
 [keys.normal.backspace]
 s = [":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- bash ~/.config/helix/scripts/scooter_replacer.sh"]
-g = ":sh zellij run -fc -x 10%% -y 10%% --width 80%% --height 80%% -- lazygit"
-f = ":sh zellij run -fc -- yazi"  # was `y` — no such binary on this machine
+g = ":sh zellij run -fc -x 10%% -y 10%% --width 80%% --height 80%% -- lazygit >/dev/null 2>&1"
+f = [
+  ':sh rm -f /tmp/hx-yazi-chooser',
+  ':insert-output yazi "%{buffer_name}" --chooser-file=/tmp/hx-yazi-chooser',
+  ':sh printf "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{[ -s /tmp/hx-yazi-chooser ] && cat /tmp/hx-yazi-chooser}',
+  ':redraw',
+  ':set mouse false',
+  ':set mouse true',
+]
 t = ":sh zellij run -f -x 10%% -y 10%% --width 80%% --height 80%% -- go test ./..."
 b = ":sh zellij run -f -- just build"
 # r = ":sh zellij run -f -- just run"
