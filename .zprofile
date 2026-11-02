@@ -71,7 +71,7 @@ export PATH="$PATH:/opt/homebrew/bin/docker"
 export BREW_DIR=/opt/homebrew
 
 # GOLANG VARS
-export GOPATH=$HOME/dev/go
+export GOPATH=$DEV/go
 export PATH=$PATH:$GOPATH/bin
 export GOROOT=$BREW_DIR/opt/go/libexec
 export GOPROXY="https://proxy.golang.org,direct"
