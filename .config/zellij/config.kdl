@@ -390,7 +390,7 @@ keybinds clear-defaults=true {
         bind "Alt n" {
             NewPane "right"; SwitchToMode "normal"
         }
-        bind "Alt ~" {
+        bind "Ctrl n" {
             NewPane "down"; SwitchToMode "normal"
         }
         bind "Ctrl q" {
@@ -635,9 +635,13 @@ plugins {
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
 load_plugins {
-
-}
-// Use a simplified UI without special fonts (arrow glyphs)
+    "file:~/.config/zellij/plugins/zellij-attention.wasm" {
+        // All options are optional — defaults shown
+        enabled "true"
+        waiting_icon "⏳"
+        completed_icon "✅"
+    }
+}// Use a simplified UI without special fonts (arrow glyphs)
 // simplified_ui true
 // Choose the theme that is specified in the themes section.
 // Default: default
@@ -725,12 +729,12 @@ on_force_close "detach"
 // otherwise this will error if such a session exists.
 // Default: <RANDOM>
 //
-session_name "main"
+// session_name "main"
 // When `session_name` is provided, attaches to that session
 // if it is already running or creates it otherwise.
 // Default: false
 //
-attach_to_session true
+// attach_to_session false
 // Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible
 // Options:
 //   - true (default)

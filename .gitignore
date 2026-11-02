@@ -8,3 +8,4 @@
 .config/raycast/config.json
 .config/qBittorrent/*
 .config/zed/prompts/**
+/.config/ghostty/themes
