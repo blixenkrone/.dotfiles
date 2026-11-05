@@ -132,6 +132,12 @@ defaults write com.apple.dock autohide -bool true
 echo "  › Don't animate opening applications from the Dock"
 defaults write com.apple.dock launchanim -bool false
 
+echo "  › Reduce motion from animations"
+defaults write com.apple.universalaccess reduceMotion -bool true
+
+echo "  › Reduce transparency"
+defaults write com.apple.universalaccess reduceTransparency -bool true
+
 echo ""
 echo "› Restart related apps"
 for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \

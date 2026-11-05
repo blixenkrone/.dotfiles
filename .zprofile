@@ -56,12 +56,9 @@ export NOTES=$HOME/dev/notes
 export EDITOR="hx"
 export VISUAL="hx"
 export DOTFILES=$DEV/.dotfiles
-export SYNC=$HOME/Sync
+export SYNC=$HOME/Sync/proxmox
 export DEV=$HOME/Sync/dev
 export SUDO_EDITOR=$(which hx) 
-
-
-# ZELLIJ
 
 # DOCKER
 export PATH="$PATH:/opt/homebrew/bin/docker"

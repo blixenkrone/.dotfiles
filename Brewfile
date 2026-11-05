@@ -355,6 +355,7 @@ cask "fmail3"
 cask "font-hack-nerd-font"
 cask "font-meslo-lg-nerd-font"
 cask "font-symbols-only-nerd-font"
+cask "font-iosevka-nerd-font"
 # Terminal emulator that uses platform-native UI and GPU acceleration
 cask "ghostty"
 # Web browser
