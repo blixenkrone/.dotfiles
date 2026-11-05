@@ -420,3 +420,5 @@ mas "WireGuard", id: 1451685025
 mas "Xcode", id: 497799835
 # Coding agent with the IDE wired in
 brew "can1357/tap/omp"
+# Go formatter that additionally inserts import statements
+brew "goimports"

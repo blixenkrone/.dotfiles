@@ -45,8 +45,11 @@ command = ["bash", "/Users/sbl/.config/helix/scripts/golancilint-linter.sh", "ru
 name = "go"
 roots = ["go.work", "go.mod"]
 auto-format = true
-language-servers = [ "gopls", "scls", "golangci-lint-lsp"]
-# language-servers = ["gopls"]
+language-servers = [ "gopls", "scls"]
+# golangci-lint-lsp removed from the chain: it invokes the wrapper, which runs
+# the full custom-gcl lint (~29s with nilaway over the whole repo) on every
+# didOpen/didSave. That saturates the CPU, starves gopls, and helix times out
+# hover/goto-def requests. Lint on demand: `./custom-gcl run ./...`, pre-commit, or CI.
 # formatter = { command = "goimports" }
 # formatter = { command = "gofumpt" }
 # `gopls` CLI only does gofmt-style formatting; it does NOT run the organize-imports

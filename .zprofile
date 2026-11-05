@@ -57,7 +57,7 @@ export EDITOR="hx"
 export VISUAL="hx"
 export DOTFILES=$DEV/.dotfiles
 export SYNC=$HOME/Sync/proxmox
-export DEV=$HOME/Sync/dev
+export DEV=$SYNC/dev
 export SUDO_EDITOR=$(which hx) 
 
 # DOCKER
